@@ -7,15 +7,51 @@ categories: bikeshare
 ## Questions in the previous post ##
 ### `season` variable ###
 * In the previous post, I find some unusual pattern of temperature in different season.
-* In the original data, `season` is defined as the quater in a year(Winter (1 - 3) Spring (4 - 6) Summer(7 - 9) Fall(10 - 12))
-* To represent the condition in Washington better, I redefine the `season` variable as(Winter = (12 - 2) Spring(3 - 5) Summer(6 - 8) Fall(9 - 11)) according to [this post](http://www.washingtondc.com/weather/).
+* In the original data, `season` is defined as the quater in a year`(Winter (1 - 3) Spring (4 - 6) Summer(7 - 9) Fall(10 - 12))`
+* To represent the condition in Washington better, I redefine the `season` variable as`(Winter = (12 - 2) Spring(3 - 5) Summer(6 - 8) Fall(9 - 11))` according to [this post](http://www.washingtondc.com/weather/). 
+* This change improve `rmsle` from `1.03653 to 0.90802`.
 
 ### `datetime` in linear regression ###
 * Datetime is a `POSIXct` variable and is treated as a continuous variable in linear regression.
 * It is the number of seconds since 1970-01-01 00:00:00 GMT.
 * This explains why the coefficient is small but the relationship is significant.
 
-## Interactions ##
+## Linear Regression with interactions ##
+### Pairwise ###
+I do linear regression on all pairs of variables in train by running
+```
+train.lm <- lm(count ~ .*., data=count.feature)
+```
+Result output:
+* Train
+  * [summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_summary.txt)
+  * [anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_anova.txt)
+  * `rmsle for train = 0.4378676 `
+  * `R-squared = 0.8983,	Adjusted R-squared:  0.893`
+  * We can see from the output that all variable(itself or its interaction) has significant impact on the count.
+  * `holiday` and `workingday` have less significant level than other variables.
+* Prediction(after set min = 10)
+  * `rmsle = 0.66178` rank 685/1019
+  * Performs better than 1-way lm`rmsle = 1.03653`
+
+### 3-way interactions ###
+We see pairwise linear regression predicts better than one-way lm. Could 3-way perform even better than pairwise lm?
+```
+train.lm <- lm(count ~ .^2, data=count.feature)
+```
+
+  * There are 3462 coefficient in regression. (Some of variables are not included due to singularities)
+  * [summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_3_summary.txt)
+  * [anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_3_anova.txt)
+  * `Multiple R-squared:  0.9629,	Adjusted R-squared:  0.9454 `
+  * However, the real `rmsle = 3.99`. This model is overfitting.
+
+### `Register` and `Casual` with interaction ###
+In previous post, when using `count = registered + casual`, we get better predictions. I apply this method in pair-wise linear regression.
+
+
+
+## Explore Interactions ##
 ### `Season` ###
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_season.png)
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_season.png)
