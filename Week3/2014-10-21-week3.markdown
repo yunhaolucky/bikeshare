@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Week 3"
+date:   2014-10-21 09:22:44
+categories: bikeshare
+---
+## Questions in the previous post ##
+### `season` variable ###
+* In the previous post, I find some unusual pattern of temperature in different season.
+* In the original data, `season` is defined as the quater in a year(Winter (1 - 3) Spring (4 - 6) Summer(7 - 9) Fall(10 - 12))
+* To represent the condition in Washington better, I redefine the `season` variable as(Winter = (12 - 2) Spring(3 - 5) Summer(6 - 8) Fall(9 - 11)) according to [this post](http://www.washingtondc.com/weather/).
+
+### `datetime` in linear regression ###
+* Datetime is a `POSIXct` variable and is treated as a continuous variable in linear regression.
+* It is the number of seconds since 1970-01-01 00:00:00 GMT.
+* This explains why the coefficient is small but the relationship is significant.
+
+## Interactions ##
+### `Season` ###
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_season.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_season.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_season.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_season.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_season.png)
+
+### `workingday` ###
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_workingday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_workingday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_workingday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_workingday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_workingday.png)
+
+### `holiday` ###
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_holiday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_holiday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_holiday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_holiday.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_holiday.png)
+
+### `weather` ###
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_weather.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_weather.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_weather.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_weather.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_weather.png)

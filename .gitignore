@@ -1,0 +1,21 @@
+# History files
+.Rhistory
+
+# Example code in package build process
+*-Ex.R
+
+# R data files from past sessions
+.Rdata
+
+# RStudio files
+.Rproj.user/
+
+.csv
+*.csv
+
+.DS_Store
+
+Fosdick-Bike-Share-netWGintro.pdf
+
+*.Rproj
+
