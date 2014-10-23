@@ -1,0 +1,71 @@
+Analysis of Variance Table
+
+Response: registered
+                        Df   Sum Sq  Mean Sq   F value    Pr(>F)    
+datetime                 1 24620392 24620392 9610.0268 < 2.2e-16 ***
+season                   3  4637963  1545988  603.4422 < 2.2e-16 ***
+holiday                  1   114139   114139   44.5518 2.604e-11 ***
+workingday               1  3368050  3368050 1314.6440 < 2.2e-16 ***
+weather                  3  2900330   966777  377.3599 < 2.2e-16 ***
+temp                     1 17022968 17022968 6644.5399 < 2.2e-16 ***
+atemp                    1    67397    67397   26.3068 2.965e-07 ***
+humidity                 1 12700117 12700117 4957.2102 < 2.2e-16 ***
+windspeed                1   310029   310029  121.0128 < 2.2e-16 ***
+hour                    23 93790326  4077840 1591.6949 < 2.2e-16 ***
+weekday                  5   198147    39629   15.4684 3.446e-15 ***
+datetime:season          3    88011    29337   11.4511 1.714e-07 ***
+datetime:holiday         1    13127    13127    5.1237 0.0236212 *  
+datetime:workingday      1   396527   396527  154.7757 < 2.2e-16 ***
+datetime:weather         2   218626   109313   42.6680 < 2.2e-16 ***
+datetime:temp            1   741417   741417  289.3958 < 2.2e-16 ***
+datetime:atemp           1   100992   100992   39.4200 3.555e-10 ***
+datetime:humidity        1  1430052  1430052  558.1894 < 2.2e-16 ***
+datetime:windspeed       1    52821    52821   20.6173 5.672e-06 ***
+datetime:hour           23  8620858   374820  146.3027 < 2.2e-16 ***
+datetime:weekday         5    61892    12378    4.8317 0.0002046 ***
+season:holiday           3    27149     9050    3.5323 0.0141490 *  
+season:workingday        3    31829    10610    4.1412 0.0060835 ** 
+season:weather           6   168983    28164   10.9931 3.015e-12 ***
+season:temp              3   487501   162500   63.4285 < 2.2e-16 ***
+season:atemp             3   141357    47119   18.3918 6.761e-12 ***
+season:humidity          3   702918   234306   91.4562 < 2.2e-16 ***
+season:windspeed         3   119815    39938   15.5890 4.098e-10 ***
+season:hour             69  9426778   136620   53.3266 < 2.2e-16 ***
+season:weekday          15   120199     8013    3.1278 3.905e-05 ***
+holiday:weather          2    55053    27527   10.7444 2.181e-05 ***
+holiday:temp             1    28448    28448   11.1039 0.0008645 ***
+holiday:atemp            1     2777     2777    1.0841 0.2978142    
+holiday:humidity         1    17896    17896    6.9853 0.0082307 ** 
+holiday:windspeed        1     1704     1704    0.6651 0.4147806    
+holiday:hour            23   688673    29942   11.6873 < 2.2e-16 ***
+holiday:weekday          2    28887    14444    5.6377 0.0035719 ** 
+workingday:weather       2     6262     3131    1.2221 0.2946399    
+workingday:temp          1   113470   113470   44.2906 2.974e-11 ***
+workingday:atemp         1     1244     1244    0.4857 0.4858580    
+workingday:humidity      1   212797   212797   83.0605 < 2.2e-16 ***
+workingday:windspeed     1     4364     4364    1.7034 0.1918791    
+workingday:hour         23 32353544  1406676  549.0649 < 2.2e-16 ***
+weather:temp             2    64427    32213   12.5737 3.515e-06 ***
+weather:atemp            2     1500      750    0.2928 0.7461516    
+weather:humidity         2    38135    19068    7.4426 0.0005889 ***
+weather:windspeed        2    24546    12273    4.7906 0.0083262 ** 
+weather:hour            46  1355056    29458   11.4982 < 2.2e-16 ***
+weather:weekday         10   142028    14203    5.5437 2.763e-08 ***
+temp:atemp               1        4        4    0.0015 0.9688068    
+temp:humidity            1   102467   102467   39.9956 2.651e-10 ***
+temp:windspeed           1      908      908    0.3545 0.5515873    
+temp:hour               23  2064691    89769   35.0394 < 2.2e-16 ***
+temp:weekday             5    25075     5015    1.9575 0.0815885 .  
+atemp:humidity           1     9493     9493    3.7055 0.0542621 .  
+atemp:windspeed          1     3342     3342    1.3043 0.2534533    
+atemp:hour              23   103816     4514    1.7618 0.0135560 *  
+atemp:weekday            5    64223    12845    5.0136 0.0001368 ***
+humidity:windspeed       1       68       68    0.0265 0.8707128    
+humidity:hour           23   117633     5114    1.9963 0.0031131 ** 
+humidity:weekday         5    63873    12775    4.9863 0.0001453 ***
+windspeed:hour          23   118078     5134    2.0039 0.0029628 ** 
+windspeed:weekday        5    17055     3411    1.3314 0.2475015    
+hour:weekday           115  1314418    11430    4.4613 < 2.2e-16 ***
+Residuals            10340 26490546     2562                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
