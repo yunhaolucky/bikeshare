@@ -49,9 +49,11 @@ r_squared <- function(actual, predict){
   return(a)
 }
 cross_validation <-function(x,y,k=5,formula_lm){
+  if("weather" %in% colnames(x)){
   temp = x$weather != 4
   x = x[temp,]
   y = y[temp]
+  }
   n=nrow(x)
   k = trunc(k)
   leave.out= trunc(n/k)

@@ -48,26 +48,107 @@ train.lm <- lm(count ~ .^2, data=count.feature)
 
 ### `Register` and `Casual` with interaction ###
 
-In previous post, when using `count = registered + casual`, we get better predictions. I apply this method in pair-wise linear regression.
+In previous post, when using `count = registered + casual`, we get better predictions. I apply this method in pair-wise linear regression. (To avoid outfitting, I evaluated the model by cross-validation.)
 
 Col | Casual  | Registered | Combination(Count)
 ----|------------- | -------------|------
 summary_output|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_summary.txt)
 anova_output|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_anova.txt)
-R_squared|0.8491|0.8933|0.8983|
-R_squared (cross_validation)|0.8283779|0.8774045||
+R_squared|0.8491|0.8933|0.8983
+R_squared (cross_validation)|0.8283779|0.8774045|
 rmlse(train)|0.9985498|0.5746182|0.5733307
-rmsle (cross_validation)|1.049515|0.6116291||
+rmsle (cross_validation)|1.049515|0.6116291|
 
 * Prediction `rmsle =  0.67749` which is slightly worse than the model that predicts count directly.
 
+
 ### Explore Interactions ##
 #### `Season` ####
+I take `season` as an example to discuss the consistency between interaction plot and the regression result.
+
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_season.png)
+```
+COUNT:
+season2:atemp                 3.064e+00  2.280e+00   1.344 0.179007
+season3:atemp                 7.242e+00  2.177e+00   3.326 0.000883 ***
+season4:atemp                 5.620e+00  2.352e+00   2.390 0.016879 *
+Registered:
+season2:atemp                 2.523e+00  1.947e+00   1.296 0.194982
+season3:atemp                 5.612e+00  1.859e+00   3.018 0.002546 **
+season4:atemp                 4.378e+00  2.008e+00   2.180 0.029286 *
+Casual:
+season2:atemp                 5.404e-01  7.660e-01   0.705 0.480575
+season3:atemp                 1.630e+00  7.315e-01   2.228 0.025916 *  
+season4:atemp                 1.242e+00  7.902e-01   1.571 0.116137
+```
+*  The significant interactions are:
+  * Count : `winter*atemp & summer*atemp`,`winter*atemp & fall*atemp`
+  * Registered:`winter*atemp & summer*atemp`
+  * Casual :`winter*atemp & summer*atemp`
+* We can also see the difference in the plot.
+* Therefore, `season*atemp` should be included.
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_season.png)
+
+```
+COUNT:
+season2:temp                  2.437e+00  2.746e+00   0.887 0.374885
+season3:temp                 -8.373e+00  2.552e+00  -3.280 0.001040 **
+season4:temp                 -1.077e+00  2.752e+00  -0.392 0.695382
+Registered:
+season2:temp                  9.030e-01  2.345e+00   0.385 0.700200
+season3:temp                 -6.498e+00  2.180e+00  -2.981 0.002879 **
+season4:temp                 -2.023e+00  2.350e+00  -0.861 0.389336
+Casual:
+season2:temp                  1.534e+00  9.227e-01   1.662 0.096493 .  
+season3:temp                 -1.875e+00  8.577e-01  -2.186 0.028862 *  
+season4:temp                  9.456e-01  9.246e-01   1.023 0.306494
+
+```
+* From plot and output, we see `season*temp` has significant relationship with count.
+* However, `temp`'s significance is smaller than that of `atemp`. And according to the common sense,  
+
+
+```
+
+
+season2:humidity              7.192e-02  1.191e-01   0.604 0.545907
+season3:humidity             -7.734e-01  1.924e-01  -4.020 5.86e-05 ***
+season4:humidity             -8.311e-01  1.413e-01  -5.881 4.22e-09 ***
+season2:windspeed             8.947e-02  2.618e-01   0.342 0.732515
+season3:windspeed             5.129e-01  3.637e-01   1.410 0.158562
+season4:windspeed            -3.055e-02  2.862e-01  -0.107 0.915012
+```
+
+
+
+```
+
+season2:humidity             -1.425e-01  4.686e-02  -3.041 0.002361 **
+season3:humidity             -1.765e-01  7.569e-02  -2.332 0.019711 *  
+season4:humidity             -2.454e-01  5.560e-02  -4.413 1.03e-05 ***
+season2:windspeed            -1.705e-01  1.030e-01  -1.655 0.097957 .  
+season3:windspeed             1.357e-02  1.431e-01   0.095 0.924481
+season4:windspeed            -1.913e-01  1.126e-01  -1.699 0.089394 .
+```
+
+
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_season.png)
+
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_season.png)
+```
+season2:humidity             -7.058e-02  1.394e-01  -0.506 0.612753
+season3:humidity             -9.499e-01  2.253e-01  -4.217 2.50e-05 ***
+season4:humidity             -1.076e+00  1.655e-01  -6.505 8.13e-11 ***
+```
+```
+season2:windspeed            -8.098e-02  3.065e-01  -0.264 0.791629
+season3:windspeed             5.265e-01  4.259e-01   1.236 0.216463
+season4:windspeed            -2.218e-01  3.351e-01  -0.662 0.508014
+```
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_season.png)
+
+
+
 
 ### `workingday` ###
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_workingday.png)
