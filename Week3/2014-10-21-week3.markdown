@@ -26,7 +26,7 @@ Result output:
 * Train
   * [summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_summary.txt)
   * [anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_anova.txt)
-  * `rmsle for train = 0.4378676 `
+  * `rmsle for train = 0.5867038 `
   * `R-squared = 0.8983,	Adjusted R-squared:  0.893`
   * We can see from the output that all variable(itself or its interaction) has significant impact on the count.
   * `holiday` and `workingday` have less significant level than other variables.
@@ -34,7 +34,7 @@ Result output:
   * `rmsle = 0.66178` rank 685/1019
   * Performs better than 1-way lm`rmsle = 1.03653`
 
-### 3-way interactions ###
+### 3-variables interactions ###
 We see pairwise linear regression predicts better than one-way lm. Could 3-way perform even better than pairwise lm?
 ```
 train.lm <- lm(count ~ .^2, data=count.feature)
@@ -55,12 +55,14 @@ In previous post, when using `count = registered + casual`, we get better predic
 summary_output|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_summary.txt)|
 anova_output|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_anova.txt)|
 R_squared|0.8491|0.8933|0.8983
+R_squared (cross_validation)|0.8283779|0.8774045|
 rmlse(train)|0.9985498|0.5746182|0.5733307
-R_squared (cross_val)|||
+rmsle (cross_validation)|1.049515|0.6116291|
+
 * Prediction `rmsle =  0.67749` which is slightly worse than the model that predicts count directly.
 
-## Explore Interactions ##
-### `Season` ###
+### Explore Interactions ##
+#### `Season` ####
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_season.png)
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_season.png)
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_season.png)
