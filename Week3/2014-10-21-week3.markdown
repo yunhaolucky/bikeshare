@@ -50,14 +50,14 @@ train.lm <- lm(count ~ .^2, data=count.feature)
 
 In previous post, when using `count = registered + casual`, we get better predictions. I apply this method in pair-wise linear regression.
 
-|Casual  | Registered | Combination(Count)
-------------- | -------------|
-summary_output|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_summary.txt)|
-anova_output|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_anova.txt)|
-R_squared|0.8491|0.8933|0.8983
-R_squared (cross_validation)|0.8283779|0.8774045|
+Col | Casual  | Registered | Combination(Count)
+----|------------- | -------------|------
+summary_output|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_summary.txt)
+anova_output|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_casual_summary.txt)|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week3/lm_2_registered_anova.txt)
+R_squared|0.8491|0.8933|0.8983|
+R_squared (cross_validation)|0.8283779|0.8774045||
 rmlse(train)|0.9985498|0.5746182|0.5733307
-rmsle (cross_validation)|1.049515|0.6116291|
+rmsle (cross_validation)|1.049515|0.6116291||
 
 * Prediction `rmsle =  0.67749` which is slightly worse than the model that predicts count directly.
 
