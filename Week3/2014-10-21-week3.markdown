@@ -105,68 +105,49 @@ season4:temp                  9.456e-01  9.246e-01   1.023 0.306494
 
 ```
 * From plot and output, we see `season*temp` has significant relationship with count.
-* However, `temp`'s significance is smaller than that of `atemp`. And according to the common sense,  
+* However, `temp`'s significance is smaller than that of `atemp`. The correlation between `temp` and `atemp` is strong.
+* I try to remove `temp` from model run pairwise linear regression.
+  * `r_squared(cv) = 0.8819059`
+  * `r_squared(cv) = 0.6020635` which is provides ` 0.00457` better result.
 
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_season.png)
 
 ```
-
-
+COUNT:
+season2:humidity             -7.058e-02  1.394e-01  -0.506 0.612753
+season3:humidity             -9.499e-01  2.253e-01  -4.217 2.50e-05 ***
+season4:humidity             -1.076e+00  1.655e-01  -6.505 8.13e-11 ***
+Registered:
 season2:humidity              7.192e-02  1.191e-01   0.604 0.545907
 season3:humidity             -7.734e-01  1.924e-01  -4.020 5.86e-05 ***
 season4:humidity             -8.311e-01  1.413e-01  -5.881 4.22e-09 ***
+Casual:
+season2:humidity             -1.425e-01  4.686e-02  -3.041 0.002361 **
+season3:humidity             -1.765e-01  7.569e-02  -2.332 0.019711 *  
+season4:humidity             -2.454e-01  5.560e-02  -4.413 1.03e-05 ***
+```
+* The plot oscillates a lot but the general trend is that bigger humidity leads to smaller count. (Clustering might be helpful)
+* It is hard to find the interaction from the plot, but the output tells that `season*humidity` should be included.
+
+![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_season.png)
+
+```
+COUNT:
+season2:windspeed            -8.098e-02  3.065e-01  -0.264 0.791629
+season3:windspeed             5.265e-01  4.259e-01   1.236 0.216463
+season4:windspeed            -2.218e-01  3.351e-01  -0.662 0.508014
+Registered:
+season2:windspeed            -1.705e-01  1.030e-01  -1.655 0.097957 .  
+season3:windspeed             1.357e-02  1.431e-01   0.095 0.924481
+season4:windspeed            -1.913e-01  1.126e-01  -1.699 0.089394 .
+Casual:
 season2:windspeed             8.947e-02  2.618e-01   0.342 0.732515
 season3:windspeed             5.129e-01  3.637e-01   1.410 0.158562
 season4:windspeed            -3.055e-02  2.862e-01  -0.107 0.915012
 ```
+* Although we see interactions in the plot, the regression output tells that `windspeed*season` is not significant.
 
-
-
-```
-
-season2:humidity             -1.425e-01  4.686e-02  -3.041 0.002361 **
-season3:humidity             -1.765e-01  7.569e-02  -2.332 0.019711 *  
-season4:humidity             -2.454e-01  5.560e-02  -4.413 1.03e-05 ***
-season2:windspeed            -1.705e-01  1.030e-01  -1.655 0.097957 .  
-season3:windspeed             1.357e-02  1.431e-01   0.095 0.924481
-season4:windspeed            -1.913e-01  1.126e-01  -1.699 0.089394 .
-```
-
-
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_season.png)
-
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_season.png)
-```
-season2:humidity             -7.058e-02  1.394e-01  -0.506 0.612753
-season3:humidity             -9.499e-01  2.253e-01  -4.217 2.50e-05 ***
-season4:humidity             -1.076e+00  1.655e-01  -6.505 8.13e-11 ***
-```
-```
-season2:windspeed            -8.098e-02  3.065e-01  -0.264 0.791629
-season3:windspeed             5.265e-01  4.259e-01   1.236 0.216463
-season4:windspeed            -2.218e-01  3.351e-01  -0.662 0.508014
-```
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_season.png)
+* Interaction`day*season` is obvious in `casual` plot. The interaction is less obvious in `registered`.
 
-
-
-
-### `workingday` ###
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_workingday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_workingday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_workingday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_workingday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_workingday.png)
-
-### `holiday` ###
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_holiday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_holiday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_holiday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_holiday.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_holiday.png)
-
-### `weather` ###
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/atemp_weather.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/temp_weather.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/windspeed_weather.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/humidity_weather.png)
-![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_weather.png)
+[Other_Interaction_Plot]()
