@@ -132,7 +132,8 @@ train.predict.casual.lm = predict(train.casual.lm,casual.feature);
 rmlse.casual = rmlse_evaluation(benchmark = 2,predict_value = train.predict.casual.lm, target = casual.target)
 test.predict.casual.lm = predict(train.casual.lm,test)
 test.predict.casual.lm = set_benchmark(data = test.predict.casual.lm,benchmark = 2)
-
+library(DAAG)
+cv.lm(df=casual.feature, train.casual.lm,casual.target, m=3)
 ### Linear regression registered count ####
 train.lm.registered= lm(registered ~., data = registered.feature)
 train.predict.registered.lm = predict(train.lm.registered,registered.feature)
