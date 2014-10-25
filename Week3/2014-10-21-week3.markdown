@@ -4,7 +4,16 @@ title:  "Week 3"
 date:   2014-10-21 09:22:44
 categories: bikeshare
 ---
-## Questions in the previous post ##
+##Outline##
+1. Interactions
+  * Pairwise
+  * 3-variable
+  * interaction.plot
+2. Variable Selection
+  * All subsets for pairwise linear regression
+3. Possion Distribution
+
+## Improvement from last post ##
 ### `season` variable ###
 * In the previous post, I find some unusual pattern of temperature in different season.
 * In the original data, `season` is defined as the quater in a year`(Winter (1 - 3) Spring (4 - 6) Summer(7 - 9) Fall(10 - 12))`
@@ -62,7 +71,7 @@ rmsle (cross_validation)|1.049515|0.6116291|
 * Prediction `rmsle =  0.67749` which is slightly worse than the model that predicts count directly.
 
 
-### Explore Interactions ##
+## Explore Interactions ##
 #### `Season` ####
 I take `season` as an example to discuss the consistency between interaction plot and the regression result.
 
@@ -150,4 +159,47 @@ season4:windspeed            -3.055e-02  2.862e-01  -0.107 0.915012
 ![](https://googledrive.com/host/0B47woKFE0zXeZ01RNVh3RFFuOFE/hour_season.png)
 * Interaction`day*season` is obvious in `casual` plot. The interaction is less obvious in `registered`.
 
-[Other_Interaction_Plot]()
+[Other_Interaction_Plot](https://github.com/yunhaolucky/bikeshare/blob/master/Week3/interaction_plot.markdown)
+* From the above analysis, we know it is hard to determine iteractions from plot and we need more accurate ways to select variables.
+
+## Select Variables ##
+### All subsets in Pairwise Linear Regression##
+I write a variable selection function to select variables.(I did not use leaps packages because some factors have too many levels.)
+* Algorithm
+  * Test each subset of 11 variables
+  * Use 5-cross_validation
+  * Run pairwise linear regression on each subset
+  * Pick subset with the highest R-squared and Lowest rmsle for each subset size.
+The output is as following:
+
+|Size|rmsle|r-squared|Best Selection(Best Rmsle)|
+|----|---|---|---|
+|11|0.6100475|0.8839998|{"datetime","season","holiday","workingday","weather","temp","atemp","humidity","humidity","hour","weekday"}|
+|10|0.600389|0.8827981|{"datetime","season","holiday","workingday","weather","atemp","humidity","humidity","hour","weekday"}|
+|9|0.5657392|0.8661472|{"datetime","holiday","workingday","weather","temp","humidity","humidity","hour","weekday"}|
+|8|0.5568338|0.8618536|{"datetime","holiday","workingday","weather","temp","humidity","humidity","hour"}|
+|7|0.5518104|0.8622624|{"datetime","holiday","workingday","weather","temp","humidity","hour"}|
+|6|0.549219|0.8598366|{"datetime","holiday","workingday","weather","temp","hour"}|  
+|5|0.5503646|0.8577884|{"datetime","workingday","weather","temp","hour"}|
+|4|0.5619635|0.8381479|{"datetime","workingday","temp","hour"}|
+|3|0.5968234|0.7346989|{"hour","temp","weekday"}|
+|2|0.7075641|0.5938777|{"hour","weekday"}|
+*  `rmsle` decreases first when size gets bigger then increase after size = 6.
+* `r-squared` keeps increasing when n increases.
+* Best Solution is (n = 6){"datetime","holiday","workingday","weather","temp","hour"}
+ * prediction rmsle = 0.63953 (compared to previous best 0.66178)
+
+## Poisson Distribution ##
+* Poisson Distribution is used to expresses the probability of a specific number of events occurring in a fixed interval of time if these events occur with a known average rate and independently of the time since the last event.
+* In this problem, what we predict is the number of counts occur in 1 hour, which fits the description of Possion Distribution.
+* But in this case, the number of counts might not be independent of the time since the last event.
+
+```r
+train.glm <- glm(count ~ 1+., data=count.feature,family = poisson(link = "log"))
+test.predict.glm = 2^predict(train.glm, test)
+```
+However, all predictions is smaller than 10 and `rmsle > 1.5`
+
+## Future plan ##
+1. The relationship between `count` and other variables might be polynomial with higher degree. Non-linear regression could be an option.
+2. Poisson Distribution.
