@@ -6,12 +6,12 @@ categories: bikeshare
 ---
 ##Outline##
 1. Interactions
-  * Pairwise
-  * 3-variable
-  * interaction.plot
+  * [Pairwise](https://github.com/yunhaolucky/bikeshare/blob/master/Week3/2014-10-21-week3.markdown#pairwise)
+  * [Interaction Plot](https://github.com/yunhaolucky/bikeshare/blob/master/Week3/2014-10-21-week3.markdown#explore-interactions)
+
 2. Variable Selection
-  * All subsets for pairwise linear regression
-3. Possion Distribution
+  * [All subsets for pairwise linear regression](https://github.com/yunhaolucky/bikeshare/blob/master/Week3/2014-10-21-week3.markdown#select-variables)
+3. [Poisson Distribution](https://github.com/yunhaolucky/bikeshare/blob/master/Week3/2014-10-21-week3.markdown#poisson-distribution)
 
 ## Improvement from last post ##
 ### `season` variable ###
