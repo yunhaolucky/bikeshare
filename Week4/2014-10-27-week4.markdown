@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Week 4"
+date:   2014-10-27 09:22:44
+categories: bikeshare
+---
+## Poisson Regression ##
+### Pairwise Possion Regression ###
+```R
+train.possion = glm(count ~ .*., family="poisson",data = count.feature)
+test.predict.lm = exp(predict(train.possion, test))
+```
+|Size|rmsle|r-squared|Best Selection (Lowest Rmsle)|
+|----|---|---|---|
+| 11 | 0.4314291 | 0.9186466  |{ datetime season holiday workingday weather temp atemp humidity windspeed count hour weekday }|
+| 10 | 0.4324096 | 0.9184634 |{ datetime season workingday weather temp atemp humidity windspeed hour weekday }|
+| 9 | 0.4334496 | 0.9143419 |{ datetime season workingday weather temp humidity windspeed hour weekday }|
+| 8 | 0.4367034 | 0.9130384 |{ datetime season holiday weather temp humidity hour weekday }|
+| 7 | 0.4405609 | 0.9067335 |{ datetime season workingday weather temp hour weekday }|
+| 6 | 0.4494527 | 0.8980978 |{ datetime season weather atemp hour weekday }|
+| 5 | 0.4671629 | 0.8630997 |{ datetime weather atemp hour weekday }|
+| 4 | 0.4902696 | 0.8449746 |{ datetime atemp hour weekday }|
+| 3 | 0.5839937 | 0.7199856 |{ atemp hour weekday }|
+| 2 | 0.7081052 | 0.5925592 |{ hour weekday }|
+
+* We see rmsle decreasing when size increases. Higher degree have the potential of better prediction result.
+* The best subsets is to include all predictors (`size = 11`).
+  * Using  

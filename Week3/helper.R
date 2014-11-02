@@ -48,7 +48,7 @@ r_squared <- function(actual, predict){
   a = 1 - sum((predict - actual)^2)/sum((actual - mean(actual))^2)
   return(a)
 }
-cross_validation <-function(x,y,k=5,formula_lm){
+cross_validation <-function(x,y,k=5,formula_lm,lm_func){
   if("weather" %in% colnames(x)){
   temp = x$weather != 4
   x = x[temp,]
@@ -67,7 +67,7 @@ cross_validation <-function(x,y,k=5,formula_lm){
   u = vector("list",k)
   cv.fit = rep(NA,n)
   for(j in 1:k){
-    u[[j]] = lm(formula = formula_lm,data = x[-groups[[j]],])
+    u[[j]] = lm_func(formula = formula_lm,data = x[-groups[[j]],])
     cv.fit[groups[[j]]] = predict(u[[j]],x[groups[[j]],])
   }
   return(list(r_squared = r_squared(y,cv.fit), rmsle = rmlse_evaluation(10,cv.fit,y)))
