@@ -1,0 +1,77 @@
+Analysis of Deviance Table
+
+Model: quasipoisson, link: log
+
+Response: count
+
+Terms added sequentially (first to last)
+
+
+                      Df Deviance Resid. Df Resid. Dev
+NULL                                  10885    1800567
+datetime               1   180978     10884    1619588
+season                 3    82171     10881    1537417
+holiday                1       45     10880    1537372
+workingday             1      129     10879    1537242
+weather                3    29517     10876    1507726
+temp                   1   201230     10875    1306496
+atemp                  1        2     10874    1306494
+humidity               1   124515     10873    1181979
+windspeed              1     2769     10872    1179210
+hour                  23   760592     10849     418618
+weekday                5     1986     10844     416632
+datetime:season        3     5995     10841     410637
+datetime:holiday       1       26     10840     410611
+datetime:workingday    1      309     10839     410302
+datetime:weather       2      140     10837     410162
+datetime:temp          1     1368     10836     408794
+datetime:atemp         1     1121     10835     407673
+datetime:humidity      1      339     10834     407334
+datetime:windspeed     1      121     10833     407212
+datetime:hour         23      729     10810     406483
+datetime:weekday       5      653     10805     405830
+season:holiday         3      523     10802     405307
+season:workingday      3     1279     10799     404028
+season:weather         6     1284     10793     402744
+season:temp            3     8218     10790     394525
+season:atemp           3      927     10787     393599
+season:humidity        3     3347     10784     390252
+season:windspeed       3      478     10781     389774
+season:hour           69    45908     10712     343866
+season:weekday        15      697     10697     343168
+holiday:workingday     0        0     10697     343168
+holiday:weather        2      348     10695     342820
+holiday:temp           1        7     10694     342812
+holiday:atemp          1        7     10693     342805
+holiday:humidity       1      315     10692     342490
+holiday:windspeed      1       30     10691     342460
+holiday:hour          23     3337     10668     339123
+holiday:weekday        2       90     10666     339033
+workingday:weather     2      207     10664     338826
+workingday:temp        1     9489     10663     329337
+workingday:atemp       1      158     10662     329180
+workingday:humidity    1     9622     10661     319557
+workingday:windspeed   1       36     10660     319522
+workingday:hour       23   185570     10637     133951
+workingday:weekday     0        0     10637     133951
+weather:temp           2      428     10635     133524
+weather:atemp          2      224     10633     133299
+weather:humidity       2     1453     10631     131846
+weather:windspeed      2      150     10629     131697
+weather:hour          46     1449     10583     130248
+weather:weekday       10      749     10573     129499
+temp:atemp             1     2423     10572     127076
+temp:humidity          1      290     10571     126786
+temp:windspeed         1       21     10570     126766
+temp:hour             23    11231     10547     115535
+temp:weekday           5      332     10542     115203
+atemp:humidity         1        0     10541     115203
+atemp:windspeed        1        0     10540     115203
+atemp:hour            23      461     10517     114742
+atemp:weekday          5      121     10512     114621
+humidity:windspeed     1        0     10511     114620
+humidity:hour         23      455     10488     114165
+humidity:weekday       5      864     10483     113301
+windspeed:hour        23      455     10460     112845
+windspeed:weekday      5       80     10455     112765
+hour:weekday         115     8564     10340     104201

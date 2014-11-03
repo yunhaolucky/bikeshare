@@ -1,0 +1,12 @@
+count ~ datetime + season + holiday + weather + temp + atemp + 
+    humidity + windspeed + hour + weekday + datetime:season + 
+    datetime:weather + datetime:temp + datetime:humidity + datetime:windspeed + 
+    datetime:hour + datetime:weekday + season:holiday + season:weather + 
+    season:temp + season:atemp + season:humidity + season:windspeed + 
+    season:hour + season:weekday + holiday:weather + holiday:temp + 
+    holiday:windspeed + holiday:hour + holiday:weekday + weather:temp + 
+    weather:atemp + weather:humidity + weather:windspeed + weather:hour + 
+    weather:weekday + temp:atemp + temp:humidity + temp:windspeed + 
+    temp:hour + temp:weekday + atemp:humidity + atemp:hour + 
+    atemp:weekday + humidity:windspeed + humidity:hour + humidity:weekday + 
+    windspeed:hour + windspeed:weekday + hour:weekday

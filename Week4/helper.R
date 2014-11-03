@@ -8,9 +8,7 @@ factor.level$"weather" = c("heavy rain","rain","mist", "clear")
 factor.level$"weekday" = c("Mon","Tue","Wed", "Thur","Fri","Sat","Sun")
 factor.level$"hour" = c(0:23)
 # Define type of variable
-factor.list = c("season","holiday","workingday","weather","weekday","hour")
-numeric.list = c("datetime","atemp","temp","humidity","windspeed")
-resp.list = c("casual","registered","count")
+
 
 
 preprocess <- function(data){
