@@ -5,10 +5,10 @@ date:   2014-10-27 09:22:44
 categories: bikeshare
 ---
 ## Poisson Regression ##
-### Pairwise Possion Regression ###
+### Pairwise poisson Regression ###
 ```R
-train.possion = glm(count ~ .*., family="poisson",data = count.feature)
-test.predict.lm = exp(predict(train.possion, test))
+train.poisson = glm(count ~ .*., family="poisson",data = count.feature)
+test.predict.lm = exp(predict(train., test))
 ```
 |Size|rmsle|r-squared|Best Selection (Lowest Rmsle)|
 |----|---|---|---|
@@ -25,4 +25,28 @@ test.predict.lm = exp(predict(train.possion, test))
 
 * We see rmsle decreasing when size increases. Higher degree have the potential of better prediction result.
 * The best subsets is to include all predictors (`size = 11`).
-  * Using  
+
+### Interpretion of Poisson glm output
+Output of glm.poisson: [summary](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/poisson_output.txt), [anova](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/poisson_anova_output.txt),
+[exp_coeffcient](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/poisson_output_exp.txt)
+  * cross_validation `rmsle = 0.431`, `r-squared = 0.919`
+  * `1-pchisq(104201,10340)` = 0. The residual deviance is too large. This might not be a good fit.
+  *  Some of the coeffecients cannot be explained by the context. e.g. `humidity` and `not_workingday`
+  * All coeffecients related to datetime = 1(datetime is too large for exp)
+  *  Kaggle test `rmsle = 0.46470` rank 262/1090
+  ![
+  ]()
+
+### Combined with casual and registered
+Col | Casual  | Registered | Combination(Count)
+----|------------- | -------------|------
+summary_output|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_casual_summary.txt)|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_registered_summary.txt)
+anova_output|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_casual_summary.txt)|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_registered_anova.txt)
+Residual deviance|44486 (df=10340) (p=0)|87459 (df=10340) (p=0)
+AIC|92284|155990|
+R_squared (cross_validation)|0.8923311|0.9175762|
+rmsle (cross_validation)|0.9814432|0.4327392|
+* Kaggle's test `rmsle = 0.46056` improve `0.004` rank `251/1112`
+* Since p = 0, this model is also not a good fit.
+
+### Quasi-poisson ###

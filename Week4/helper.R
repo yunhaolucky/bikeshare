@@ -5,7 +5,12 @@ factor.level$"holiday" = c("Not_holiday", "holiday")
 factor.level$"workingday" = c("Not_workingday", "workingday")
 factor.level$"season" = c("winter", "spring", "summer","fall")
 factor.level$"weather" = c("heavy rain","rain","mist", "clear")
-
+factor.level$"weekday" = c("Mon","Tue","Wed", "Thur","Fri","Sat","Sun")
+factor.level$"hour" = c(0:23)
+# Define type of variable
+factor.list = c("season","holiday","workingday","weather","weekday","hour")
+numeric.list = c("datetime","atemp","temp","humidity","windspeed")
+resp.list = c("casual","registered","count")
 
 
 preprocess <- function(data){
@@ -137,3 +142,14 @@ print.prediction <-function(test,predict,filename){
   write.csv(output, file = filename, quote=FALSE, row.names=FALSE)
 }
 
+print.output <- function(model,model_name){
+  sink(paste("Week4/output/",model_name,"_summary_output.txt",sep = ""))
+  print(summary(model))
+  sink()
+  sink(paste("Week4/output/",model_name,"_anova_output.txt",sep = ""))
+  print(anova(model))
+  sink()
+  sink(paste("Week4/output/",model_name,"_exp_output.txt",sep = ""))
+  print(exp(coefficients(model)))
+  sink()
+}

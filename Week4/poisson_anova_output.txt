@@ -1,0 +1,1282 @@
+
+Call:
+glm(formula = count ~ . * ., family = "poisson", data = count.feature)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-15.5977   -1.7697   -0.1441    1.5258   20.5609  
+
+Coefficients: (84 not defined because of singularities)
+                               Estimate Std. Error z value
+(Intercept)                  -2.022e+01  5.605e-01 -36.074
+datetime                      1.802e-08  4.236e-10  42.525
+season2                      -1.964e+00  2.235e-01  -8.786
+season3                       2.797e+00  3.172e-01   8.821
+season4                       2.294e+00  2.266e-01  10.122
+holiday1                     -2.003e+00  6.884e-01  -2.910
+workingday1                  -1.662e+00  2.292e-01  -7.251
+weather.L                    -3.287e+00  7.263e-01  -4.526
+weather.Q                     2.795e+00  3.893e-01   7.180
+weather.C                    -4.910e-02  2.151e-02  -2.283
+temp                          3.674e-01  6.450e-02   5.696
+atemp                         3.148e-02  5.779e-02   0.545
+humidity                      3.530e-02  4.525e-03   7.801
+windspeed                    -1.179e-01  8.074e-03 -14.606
+hour.L                        2.855e+00  6.851e-01   4.167
+hour.Q                        2.384e+00  6.037e-01   3.949
+hour.C                       -6.038e+00  5.023e-01 -12.021
+hour^4                        3.337e+00  5.846e-01   5.709
+hour^5                       -4.154e-01  6.282e-01  -0.661
+hour^6                       -2.019e+00  5.934e-01  -3.402
+hour^7                        5.548e+00  5.571e-01   9.958
+hour^8                       -4.667e+00  5.675e-01  -8.224
+hour^9                        3.649e+00  5.944e-01   6.138
+hour^10                       3.785e-01  6.001e-01   0.631
+hour^11                      -1.111e+00  6.001e-01  -1.852
+hour^12                       3.648e+00  6.145e-01   5.937
+hour^13                      -2.634e+00  6.278e-01  -4.195
+hour^14                       6.952e-01  6.164e-01   1.128
+hour^15                      -1.831e+00  5.700e-01  -3.212
+hour^16                       1.955e+00  4.969e-01   3.934
+hour^17                      -1.300e+00  4.145e-01  -3.135
+hour^18                       6.005e-01  3.396e-01   1.768
+hour^19                      -1.488e+00  2.817e-01  -5.282
+hour^20                      -9.425e-02  2.440e-01  -0.386
+hour^21                       2.505e-01  2.357e-01   1.063
+hour^22                       3.622e-01  2.458e-01   1.473
+hour^23                      -8.200e-01  2.506e-01  -3.272
+weekdayMonday                -1.259e+00  2.355e-01  -5.344
+weekdaySaturday              -3.201e+00  2.221e-01 -14.413
+weekdaySunday                        NA         NA      NA
+weekdayThursday              -3.361e+00  2.241e-01 -14.994
+weekdayTuesday               -1.615e+00  2.238e-01  -7.215
+weekdayWednesday             -2.821e+00  2.258e-01 -12.496
+datetime:season2              1.254e-09  1.694e-10   7.401
+datetime:season3             -2.004e-09  2.358e-10  -8.497
+datetime:season4             -1.734e-09  1.672e-10 -10.374
+datetime:holiday1             1.321e-09  5.343e-10   2.472
+datetime:workingday1          1.352e-09  1.709e-10   7.907
+datetime:weather.L            2.332e-09  5.450e-10   4.279
+datetime:weather.Q           -2.075e-09  2.915e-10  -7.117
+datetime:weather.C                   NA         NA      NA
+datetime:temp                -1.778e-10  4.837e-11  -3.676
+datetime:atemp               -3.504e-11  4.331e-11  -0.809
+datetime:humidity            -3.245e-11  3.447e-12  -9.413
+datetime:windspeed            7.646e-11  6.091e-12  12.553
+datetime:hour.L              -1.360e-09  5.124e-10  -2.654
+datetime:hour.Q              -4.556e-09  4.509e-10 -10.102
+datetime:hour.C               3.942e-09  3.755e-10  10.499
+datetime:hour^4              -1.138e-09  4.380e-10  -2.597
+datetime:hour^5               3.178e-10  4.703e-10   0.676
+datetime:hour^6               1.947e-09  4.434e-10   4.392
+datetime:hour^7              -4.467e-09  4.158e-10 -10.744
+datetime:hour^8               3.831e-09  4.240e-10   9.036
+datetime:hour^9              -2.874e-09  4.445e-10  -6.466
+datetime:hour^10             -2.472e-10  4.485e-10  -0.551
+datetime:hour^11              1.426e-09  4.483e-10   3.181
+datetime:hour^12             -3.303e-09  4.595e-10  -7.188
+datetime:hour^13              1.880e-09  4.703e-10   3.997
+datetime:hour^14             -5.838e-10  4.624e-10  -1.263
+datetime:hour^15              1.662e-09  4.280e-10   3.884
+datetime:hour^16             -1.773e-09  3.731e-10  -4.752
+datetime:hour^17              9.694e-10  3.111e-10   3.116
+datetime:hour^18             -5.148e-10  2.547e-10  -2.021
+datetime:hour^19              9.649e-10  2.112e-10   4.569
+datetime:hour^20              2.446e-10  1.828e-10   1.338
+datetime:hour^21             -2.156e-10  1.765e-10  -1.221
+datetime:hour^22             -9.847e-11  1.840e-10  -0.535
+datetime:hour^23              5.559e-10  1.877e-10   2.962
+datetime:weekdayMonday        1.002e-09  1.761e-10   5.690
+datetime:weekdaySaturday      2.497e-09  1.654e-10  15.100
+datetime:weekdaySunday               NA         NA      NA
+datetime:weekdayThursday      2.343e-09  1.681e-10  13.933
+datetime:weekdayTuesday       1.173e-09  1.672e-10   7.017
+datetime:weekdayWednesday     1.974e-09  1.693e-10  11.661
+season2:holiday1              2.163e-01  3.857e-02   5.606
+season3:holiday1              5.516e-01  4.191e-02  13.162
+season4:holiday1              1.845e-01  3.649e-02   5.055
+season2:workingday1          -1.807e-01  1.054e-02 -17.143
+season3:workingday1          -1.746e-01  1.450e-02 -12.046
+season4:workingday1          -1.864e-01  1.072e-02 -17.394
+season2:weather.L             2.534e-01  3.173e-02   7.988
+season3:weather.L             2.978e-01  4.159e-02   7.159
+season4:weather.L             4.831e-02  3.098e-02   1.559
+season2:weather.Q            -9.395e-02  1.710e-02  -5.494
+season3:weather.Q            -1.547e-01  2.265e-02  -6.828
+season4:weather.Q            -3.257e-02  1.650e-02  -1.974
+season2:weather.C                    NA         NA      NA
+season3:weather.C                    NA         NA      NA
+season4:weather.C                    NA         NA      NA
+season2:temp                 -1.890e-02  3.614e-03  -5.230
+season3:temp                 -5.716e-02  3.390e-03 -16.861
+season4:temp                 -3.705e-02  3.585e-03 -10.336
+season2:atemp                 3.622e-02  3.020e-03  11.992
+season3:atemp                 6.168e-02  2.904e-03  21.241
+season4:atemp                 5.436e-02  3.046e-03  17.846
+season2:humidity              4.988e-04  2.007e-04   2.485
+season3:humidity             -3.793e-03  2.912e-04 -13.026
+season4:humidity             -3.922e-03  2.192e-04 -17.890
+season2:windspeed             2.706e-03  3.980e-04   6.799
+season3:windspeed             4.635e-03  5.191e-04   8.929
+season4:windspeed             2.020e-03  4.139e-04   4.881
+season2:hour.L                4.863e-01  3.299e-02  14.741
+season3:hour.L                2.034e-01  4.305e-02   4.725
+season4:hour.L                1.345e-01  3.236e-02   4.156
+season2:hour.Q                3.249e-01  2.911e-02  11.162
+season3:hour.Q                5.837e-01  3.826e-02  15.258
+season4:hour.Q                5.893e-01  2.925e-02  20.147
+season2:hour.C               -2.932e-01  2.414e-02 -12.146
+season3:hour.C               -5.275e-02  3.178e-02  -1.660
+season4:hour.C               -5.000e-02  2.371e-02  -2.109
+season2:hour^4                3.365e-01  2.719e-02  12.377
+season3:hour^4                5.682e-02  3.610e-02   1.574
+season4:hour^4                1.329e-02  2.628e-02   0.506
+season2:hour^5               -4.546e-01  2.996e-02 -15.176
+season3:hour^5               -4.501e-01  3.905e-02 -11.529
+season4:hour^5               -2.561e-01  2.924e-02  -8.759
+season2:hour^6               -7.866e-02  2.923e-02  -2.691
+season3:hour^6                6.646e-02  3.746e-02   1.774
+season4:hour^6                5.078e-03  2.909e-02   0.175
+season2:hour^7                5.651e-01  2.728e-02  20.716
+season3:hour^7                2.815e-01  3.528e-02   7.977
+season4:hour^7                3.474e-01  2.716e-02  12.791
+season2:hour^8               -5.525e-01  2.681e-02 -20.609
+season3:hour^8               -3.911e-01  3.537e-02 -11.059
+season4:hour^8               -4.118e-01  2.626e-02 -15.684
+season2:hour^9                5.020e-02  2.791e-02   1.799
+season3:hour^9                4.825e-02  3.676e-02   1.312
+season4:hour^9               -2.563e-02  2.722e-02  -0.942
+season2:hour^10               6.139e-02  2.909e-02   2.110
+season3:hour^10               3.533e-03  3.765e-02   0.094
+season4:hour^10               8.209e-02  2.874e-02   2.857
+season2:hour^11              -3.775e-01  2.984e-02 -12.651
+season3:hour^11              -2.503e-01  3.816e-02  -6.560
+season4:hour^11              -2.741e-01  2.970e-02  -9.229
+season2:hour^12               3.027e-01  3.020e-02  10.023
+season3:hour^12               1.302e-01  3.882e-02   3.353
+season4:hour^12               2.418e-01  2.985e-02   8.101
+season2:hour^13               1.631e-01  2.977e-02   5.480
+season3:hour^13               9.737e-02  3.886e-02   2.506
+season4:hour^13               6.904e-02  2.892e-02   2.388
+season2:hour^14              -4.603e-02  2.821e-02  -1.632
+season3:hour^14              -7.415e-02  3.755e-02  -1.975
+season4:hour^14               2.356e-03  2.688e-02   0.088
+season2:hour^15              -2.915e-01  2.550e-02 -11.433
+season3:hour^15              -2.316e-01  3.459e-02  -6.694
+season4:hour^15              -2.688e-01  2.392e-02 -11.235
+season2:hour^16               2.747e-01  2.200e-02  12.488
+season3:hour^16               2.206e-01  3.030e-02   7.280
+season4:hour^16               2.421e-01  2.048e-02  11.820
+season2:hour^17              -8.830e-02  1.833e-02  -4.818
+season3:hour^17              -3.646e-02  2.548e-02  -1.431
+season4:hour^17              -6.805e-02  1.710e-02  -3.979
+season2:hour^18              -3.807e-02  1.511e-02  -2.520
+season3:hour^18              -4.409e-02  2.105e-02  -2.094
+season4:hour^18              -2.048e-02  1.425e-02  -1.437
+season2:hour^19               1.756e-01  1.262e-02  13.916
+season3:hour^19               1.123e-01  1.754e-02   6.399
+season4:hour^19               1.165e-01  1.211e-02   9.620
+season2:hour^20              -1.322e-01  1.103e-02 -11.978
+season3:hour^20              -7.475e-02  1.525e-02  -4.901
+season4:hour^20              -9.478e-02  1.080e-02  -8.777
+season2:hour^21              -1.265e-03  1.073e-02  -0.118
+season3:hour^21              -3.559e-02  1.480e-02  -2.405
+season4:hour^21              -9.821e-03  1.066e-02  -0.922
+season2:hour^22              -6.414e-02  1.105e-02  -5.806
+season3:hour^22              -1.043e-02  1.530e-02  -0.682
+season4:hour^22              -3.796e-02  1.097e-02  -3.462
+season2:hour^23               1.730e-02  1.117e-02   1.549
+season3:hour^23              -2.089e-02  1.561e-02  -1.338
+season4:hour^23              -1.191e-02  1.125e-02  -1.059
+season2:weekdayMonday         3.561e-02  1.067e-02   3.336
+season3:weekdayMonday         1.353e-01  1.456e-02   9.296
+season4:weekdayMonday         6.845e-02  1.051e-02   6.510
+season2:weekdaySaturday      -7.203e-02  1.035e-02  -6.958
+season3:weekdaySaturday      -4.572e-02  1.386e-02  -3.299
+season4:weekdaySaturday      -1.094e-01  1.032e-02 -10.599
+season2:weekdaySunday                NA         NA      NA
+season3:weekdaySunday                NA         NA      NA
+season4:weekdaySunday                NA         NA      NA
+season2:weekdayThursday       2.739e-02  1.015e-02   2.699
+season3:weekdayThursday       8.845e-02  1.410e-02   6.274
+season4:weekdayThursday      -1.161e-02  1.000e-02  -1.161
+season2:weekdayTuesday        2.710e-02  9.990e-03   2.713
+season3:weekdayTuesday        1.468e-01  1.348e-02  10.888
+season4:weekdayTuesday        8.232e-02  9.956e-03   8.268
+season2:weekdayWednesday      5.392e-02  1.001e-02   5.385
+season3:weekdayWednesday      1.565e-01  1.359e-02  11.513
+season4:weekdayWednesday      9.848e-02  1.015e-02   9.704
+holiday1:workingday1                 NA         NA      NA
+holiday1:weather.L            7.195e-01  7.408e-02   9.713
+holiday1:weather.Q           -5.596e-01  3.852e-02 -14.527
+holiday1:weather.C                   NA         NA      NA
+holiday1:temp                -1.387e-02  7.264e-03  -1.909
+holiday1:atemp                5.130e-03  6.681e-03   0.768
+holiday1:humidity            -1.750e-03  5.221e-04  -3.351
+holiday1:windspeed            6.906e-03  8.805e-04   7.842
+holiday1:hour.L               8.326e-02  6.231e-02   1.336
+holiday1:hour.Q              -2.724e-01  5.255e-02  -5.183
+holiday1:hour.C               9.858e-01  4.519e-02  21.813
+holiday1:hour^4              -8.919e-01  5.237e-02 -17.031
+holiday1:hour^5              -6.470e-01  5.505e-02 -11.753
+holiday1:hour^6               6.013e-01  5.142e-02  11.695
+holiday1:hour^7              -9.219e-01  4.996e-02 -18.454
+holiday1:hour^8              -1.047e-01  5.187e-02  -2.018
+holiday1:hour^9               5.358e-01  5.352e-02  10.011
+holiday1:hour^10             -2.957e-01  5.347e-02  -5.530
+holiday1:hour^11              1.994e-01  5.361e-02   3.719
+holiday1:hour^12              1.594e-01  5.494e-02   2.901
+holiday1:hour^13              2.172e-02  5.622e-02   0.386
+holiday1:hour^14             -1.839e-02  5.618e-02  -0.327
+holiday1:hour^15              9.043e-02  5.381e-02   1.681
+holiday1:hour^16             -5.936e-03  4.910e-02  -0.121
+holiday1:hour^17             -1.426e-03  4.289e-02  -0.033
+holiday1:hour^18              6.691e-02  3.612e-02   1.852
+holiday1:hour^19             -3.802e-02  2.992e-02  -1.271
+holiday1:hour^20             -2.689e-02  2.505e-02  -1.073
+holiday1:hour^21              1.061e-01  2.222e-02   4.774
+holiday1:hour^22              2.901e-03  2.122e-02   0.137
+holiday1:hour^23             -1.949e-02  2.067e-02  -0.943
+holiday1:weekdayMonday        1.595e-01  2.985e-02   5.344
+holiday1:weekdaySaturday             NA         NA      NA
+holiday1:weekdaySunday               NA         NA      NA
+holiday1:weekdayThursday             NA         NA      NA
+holiday1:weekdayTuesday              NA         NA      NA
+holiday1:weekdayWednesday     8.955e-02  4.496e-02   1.992
+workingday1:weather.L         2.805e-01  3.448e-02   8.135
+workingday1:weather.Q        -1.935e-01  1.897e-02 -10.203
+workingday1:weather.C                NA         NA      NA
+workingday1:temp             -7.299e-03  2.664e-03  -2.739
+workingday1:atemp             6.812e-03  2.367e-03   2.878
+workingday1:humidity         -1.249e-03  2.088e-04  -5.980
+workingday1:windspeed         2.997e-03  3.775e-04   7.939
+workingday1:hour.L            3.483e-01  3.283e-02  10.609
+workingday1:hour.Q           -1.111e+00  2.732e-02 -40.655
+workingday1:hour.C            1.857e+00  2.434e-02  76.285
+workingday1:hour^4           -2.741e+00  2.810e-02 -97.564
+workingday1:hour^5           -7.289e-01  2.927e-02 -24.901
+workingday1:hour^6            1.918e+00  2.800e-02  68.513
+workingday1:hour^7           -1.794e+00  2.743e-02 -65.415
+workingday1:hour^8           -2.737e-01  2.773e-02  -9.870
+workingday1:hour^9            3.643e-01  2.836e-02  12.846
+workingday1:hour^10          -5.860e-01  2.901e-02 -20.201
+workingday1:hour^11           2.410e-01  2.971e-02   8.111
+workingday1:hour^12           3.057e-01  3.022e-02  10.117
+workingday1:hour^13           1.015e-02  3.026e-02   0.335
+workingday1:hour^14          -3.977e-01  2.975e-02 -13.369
+workingday1:hour^15           1.901e-01  2.852e-02   6.664
+workingday1:hour^16           1.695e-01  2.650e-02   6.396
+workingday1:hour^17          -1.295e-01  2.376e-02  -5.451
+workingday1:hour^18           7.990e-02  2.058e-02   3.883
+workingday1:hour^19           4.691e-02  1.731e-02   2.711
+workingday1:hour^20          -8.906e-02  1.434e-02  -6.212
+workingday1:hour^21           5.269e-02  1.225e-02   4.303
+workingday1:hour^22          -1.917e-02  1.130e-02  -1.696
+workingday1:hour^23          -5.140e-03  1.104e-02  -0.465
+workingday1:weekdayMonday            NA         NA      NA
+workingday1:weekdaySaturday          NA         NA      NA
+workingday1:weekdaySunday            NA         NA      NA
+workingday1:weekdayThursday          NA         NA      NA
+workingday1:weekdayTuesday           NA         NA      NA
+workingday1:weekdayWednesday         NA         NA      NA
+weather.L:temp                9.573e-03  8.822e-03   1.085
+weather.Q:temp               -1.736e-03  4.503e-03  -0.386
+weather.C:temp                       NA         NA      NA
+weather.L:atemp              -3.203e-02  7.950e-03  -4.029
+weather.Q:atemp               1.029e-02  4.037e-03   2.549
+weather.C:atemp                      NA         NA      NA
+weather.L:humidity            1.150e-02  5.462e-04  21.050
+weather.Q:humidity           -2.011e-03  3.101e-04  -6.484
+weather.C:humidity                   NA         NA      NA
+weather.L:windspeed           9.260e-03  1.012e-03   9.146
+weather.Q:windspeed          -2.214e-03  5.834e-04  -3.795
+weather.C:windspeed                  NA         NA      NA
+weather.L:hour.L              1.770e-01  9.550e-02   1.854
+weather.Q:hour.L              1.123e-01  5.211e-02   2.155
+weather.C:hour.L                     NA         NA      NA
+weather.L:hour.Q             -7.986e-01  8.572e-02  -9.316
+weather.Q:hour.Q              3.936e-01  4.637e-02   8.487
+weather.C:hour.Q                     NA         NA      NA
+weather.L:hour.C              3.479e-01  7.152e-02   4.864
+weather.Q:hour.C             -2.448e-01  3.892e-02  -6.291
+weather.C:hour.C                     NA         NA      NA
+weather.L:hour^4              1.203e-01  8.069e-02   1.491
+weather.Q:hour^4              5.461e-02  4.410e-02   1.238
+weather.C:hour^4                     NA         NA      NA
+weather.L:hour^5             -6.401e-01  8.862e-02  -7.222
+weather.Q:hour^5              2.472e-01  4.820e-02   5.128
+weather.C:hour^5                     NA         NA      NA
+weather.L:hour^6              1.305e-02  8.593e-02   0.152
+weather.Q:hour^6             -5.960e-02  4.636e-02  -1.286
+weather.C:hour^6                     NA         NA      NA
+weather.L:hour^7             -2.723e-01  7.988e-02  -3.409
+weather.Q:hour^7              1.925e-01  4.328e-02   4.448
+weather.C:hour^7                     NA         NA      NA
+weather.L:hour^8             -1.236e-01  7.836e-02  -1.577
+weather.Q:hour^8              3.378e-02  4.295e-02   0.787
+weather.C:hour^8                     NA         NA      NA
+weather.L:hour^9              3.401e-01  8.118e-02   4.190
+weather.Q:hour^9             -9.031e-02  4.463e-02  -2.023
+weather.C:hour^9                     NA         NA      NA
+weather.L:hour^10            -1.313e-01  8.443e-02  -1.555
+weather.Q:hour^10             7.079e-02  4.596e-02   1.540
+weather.C:hour^10                    NA         NA      NA
+weather.L:hour^11            -3.686e-01  8.700e-02  -4.237
+weather.Q:hour^11             1.042e-01  4.689e-02   2.222
+weather.C:hour^11                    NA         NA      NA
+weather.L:hour^12             2.697e-01  8.799e-02   3.065
+weather.Q:hour^12            -1.331e-01  4.756e-02  -2.798
+weather.C:hour^12                    NA         NA      NA
+weather.L:hour^13            -2.801e-01  8.660e-02  -3.235
+weather.Q:hour^13             1.403e-01  4.734e-02   2.964
+weather.C:hour^13                    NA         NA      NA
+weather.L:hour^14             2.158e-01  8.236e-02   2.621
+weather.Q:hour^14            -1.072e-01  4.548e-02  -2.358
+weather.C:hour^14                    NA         NA      NA
+weather.L:hour^15             1.182e-01  7.496e-02   1.577
+weather.Q:hour^15            -1.609e-02  4.157e-02  -0.387
+weather.C:hour^15                    NA         NA      NA
+weather.L:hour^16             1.610e-01  6.530e-02   2.465
+weather.Q:hour^16            -8.544e-02  3.622e-02  -2.359
+weather.C:hour^16                    NA         NA      NA
+weather.L:hour^17             1.338e-01  5.504e-02   2.431
+weather.Q:hour^17            -8.307e-02  3.045e-02  -2.728
+weather.C:hour^17                    NA         NA      NA
+weather.L:hour^18             9.947e-02  4.582e-02   2.171
+weather.Q:hour^18            -3.282e-03  2.522e-02  -0.130
+weather.C:hour^18                    NA         NA      NA
+weather.L:hour^19            -1.328e-01  3.910e-02  -3.397
+weather.Q:hour^19             5.255e-02  2.133e-02   2.464
+weather.C:hour^19                    NA         NA      NA
+weather.L:hour^20            -6.526e-02  3.502e-02  -1.863
+weather.Q:hour^20             3.349e-02  1.891e-02   1.771
+weather.C:hour^20                    NA         NA      NA
+weather.L:hour^21             8.407e-02  3.449e-02   2.438
+weather.Q:hour^21            -3.880e-02  1.846e-02  -2.101
+weather.C:hour^21                    NA         NA      NA
+weather.L:hour^22            -1.942e-02  3.702e-02  -0.525
+weather.Q:hour^22            -1.320e-02  1.967e-02  -0.671
+weather.C:hour^22                    NA         NA      NA
+weather.L:hour^23             9.581e-02  4.090e-02   2.343
+weather.Q:hour^23            -4.176e-02  2.107e-02  -1.983
+weather.C:hour^23                    NA         NA      NA
+weather.L:weekdayMonday      -4.238e-01  3.430e-02 -12.356
+weather.Q:weekdayMonday       2.298e-01  1.824e-02  12.597
+weather.C:weekdayMonday              NA         NA      NA
+weather.L:weekdaySaturday     5.706e-02  3.353e-02   1.702
+weather.Q:weekdaySaturday    -3.776e-02  1.823e-02  -2.071
+weather.C:weekdaySaturday            NA         NA      NA
+weather.L:weekdaySunday              NA         NA      NA
+weather.Q:weekdaySunday              NA         NA      NA
+weather.C:weekdaySunday              NA         NA      NA
+weather.L:weekdayThursday     3.038e-02  3.368e-02   0.902
+weather.Q:weekdayThursday     4.094e-02  1.842e-02   2.223
+weather.C:weekdayThursday            NA         NA      NA
+weather.L:weekdayTuesday     -1.948e-01  3.144e-02  -6.197
+weather.Q:weekdayTuesday      1.018e-01  1.708e-02   5.959
+weather.C:weekdayTuesday             NA         NA      NA
+weather.L:weekdayWednesday    1.550e-01  3.172e-02   4.885
+weather.Q:weekdayWednesday   -4.728e-02  1.739e-02  -2.720
+weather.C:weekdayWednesday           NA         NA      NA
+temp:atemp                   -2.013e-03  3.258e-05 -61.782
+temp:humidity                -4.169e-04  6.110e-05  -6.824
+temp:windspeed                1.337e-04  8.302e-05   1.610
+temp:hour.L                   6.516e-02  7.980e-03   8.165
+temp:hour.Q                   8.428e-02  6.630e-03  12.712
+temp:hour.C                  -3.447e-02  5.369e-03  -6.422
+temp:hour^4                   3.223e-02  6.437e-03   5.007
+temp:hour^5                  -4.769e-02  7.160e-03  -6.661
+temp:hour^6                  -3.745e-02  6.681e-03  -5.605
+temp:hour^7                   3.496e-02  6.198e-03   5.641
+temp:hour^8                  -4.100e-02  6.344e-03  -6.463
+temp:hour^9                  -8.058e-04  6.752e-03  -0.119
+temp:hour^10                 -3.609e-03  6.874e-03  -0.525
+temp:hour^11                 -1.193e-02  6.936e-03  -1.721
+temp:hour^12                  2.941e-02  7.190e-03   4.091
+temp:hour^13                 -2.356e-03  7.431e-03  -0.317
+temp:hour^14                  1.727e-02  7.310e-03   2.362
+temp:hour^15                 -2.691e-03  6.725e-03  -0.400
+temp:hour^16                  1.001e-02  5.789e-03   1.728
+temp:hour^17                 -5.245e-04  4.717e-03  -0.111
+temp:hour^18                  2.171e-03  3.730e-03   0.582
+temp:hour^19                  2.531e-03  2.915e-03   0.868
+temp:hour^20                 -1.066e-02  2.393e-03  -4.453
+temp:hour^21                 -1.684e-04  2.171e-03  -0.078
+temp:hour^22                 -4.529e-03  2.174e-03  -2.083
+temp:hour^23                  2.665e-03  2.173e-03   1.226
+temp:weekdayMonday           -2.170e-02  2.639e-03  -8.223
+temp:weekdaySaturday         -1.085e-02  3.006e-03  -3.609
+temp:weekdaySunday                   NA         NA      NA
+temp:weekdayThursday         -8.028e-03  2.530e-03  -3.174
+temp:weekdayTuesday          -3.072e-02  2.461e-03 -12.483
+temp:weekdayWednesday        -1.088e-02  2.610e-03  -4.167
+atemp:humidity                3.918e-04  5.487e-05   7.140
+atemp:windspeed               9.883e-06  7.449e-05   0.133
+atemp:hour.L                  9.421e-03  7.120e-03   1.323
+atemp:hour.Q                 -5.543e-02  5.885e-03  -9.417
+atemp:hour.C                 -1.848e-02  4.752e-03  -3.889
+atemp:hour^4                  3.252e-03  5.723e-03   0.568
+atemp:hour^5                  2.941e-02  6.384e-03   4.606
+atemp:hour^6                  3.244e-03  5.969e-03   0.543
+atemp:hour^7                  2.012e-02  5.537e-03   3.634
+atemp:hour^8                  9.848e-03  5.665e-03   1.738
+atemp:hour^9                  6.293e-03  6.030e-03   1.044
+atemp:hour^10                 9.167e-03  6.140e-03   1.493
+atemp:hour^11                -1.116e-02  6.200e-03  -1.799
+atemp:hour^12                 9.491e-04  6.426e-03   0.148
+atemp:hour^13                -5.031e-05  6.634e-03  -0.008
+atemp:hour^14                -1.130e-02  6.522e-03  -1.732
+atemp:hour^15                -7.186e-03  5.992e-03  -1.199
+atemp:hour^16                -3.640e-03  5.149e-03  -0.707
+atemp:hour^17                -1.030e-03  4.184e-03  -0.246
+atemp:hour^18                 2.982e-04  3.294e-03   0.091
+atemp:hour^19                 2.226e-03  2.566e-03   0.867
+atemp:hour^20                 4.099e-03  2.102e-03   1.950
+atemp:hour^21                 2.235e-03  1.892e-03   1.181
+atemp:hour^22                -1.010e-03  1.893e-03  -0.533
+atemp:hour^23                -1.299e-03  1.885e-03  -0.689
+atemp:weekdayMonday           1.381e-02  2.347e-03   5.884
+atemp:weekdaySaturday         8.691e-03  2.714e-03   3.203
+atemp:weekdaySunday                  NA         NA      NA
+atemp:weekdayThursday         2.266e-03  2.292e-03   0.989
+atemp:weekdayTuesday          2.296e-02  2.217e-03  10.357
+atemp:weekdayWednesday        5.086e-03  2.327e-03   2.185
+humidity:windspeed            2.059e-05  6.816e-06   3.021
+humidity:hour.L              -2.346e-03  6.358e-04  -3.690
+humidity:hour.Q               4.221e-03  5.400e-04   7.817
+humidity:hour.C               1.246e-03  4.569e-04   2.728
+humidity:hour^4               4.420e-04  5.436e-04   0.813
+humidity:hour^5              -2.031e-03  5.878e-04  -3.455
+humidity:hour^6               1.013e-03  5.475e-04   1.850
+humidity:hour^7               1.397e-03  5.152e-04   2.712
+humidity:hour^8              -2.196e-03  5.322e-04  -4.126
+humidity:hour^9               1.779e-03  5.606e-04   3.174
+humidity:hour^10             -4.000e-04  5.611e-04  -0.713
+humidity:hour^11             -9.912e-04  5.570e-04  -1.779
+humidity:hour^12             -3.440e-05  5.735e-04  -0.060
+humidity:hour^13              3.398e-04  5.944e-04   0.572
+humidity:hour^14              3.297e-04  5.905e-04   0.558
+humidity:hour^15             -9.155e-05  5.495e-04  -0.167
+humidity:hour^16              5.240e-04  4.799e-04   1.092
+humidity:hour^17              2.286e-05  3.996e-04   0.057
+humidity:hour^18             -1.413e-04  3.258e-04  -0.434
+humidity:hour^19              6.944e-04  2.679e-04   2.592
+humidity:hour^20              5.943e-06  2.309e-04   0.026
+humidity:hour^21             -9.243e-04  2.225e-04  -4.153
+humidity:hour^22             -1.243e-03  2.342e-04  -5.307
+humidity:hour^23              1.951e-04  2.416e-04   0.808
+humidity:weekdayMonday        5.877e-04  2.167e-04   2.712
+humidity:weekdaySaturday      7.458e-05  2.017e-04   0.370
+humidity:weekdaySunday               NA         NA      NA
+humidity:weekdayThursday      4.112e-03  2.022e-04  20.340
+humidity:weekdayTuesday       1.954e-04  2.021e-04   0.967
+humidity:weekdayWednesday     5.384e-04  2.054e-04   2.622
+windspeed:hour.L             -8.102e-03  1.376e-03  -5.888
+windspeed:hour.Q             -6.484e-03  1.165e-03  -5.567
+windspeed:hour.C              1.217e-03  9.868e-04   1.233
+windspeed:hour^4             -2.947e-03  1.172e-03  -2.515
+windspeed:hour^5              4.413e-03  1.262e-03   3.497
+windspeed:hour^6              1.590e-04  1.175e-03   0.135
+windspeed:hour^7             -2.029e-03  1.097e-03  -1.850
+windspeed:hour^8              1.158e-03  1.131e-03   1.023
+windspeed:hour^9              1.442e-03  1.190e-03   1.212
+windspeed:hour^10             2.014e-04  1.195e-03   0.169
+windspeed:hour^11             3.496e-03  1.190e-03   2.938
+windspeed:hour^12            -2.583e-03  1.227e-03  -2.106
+windspeed:hour^13             2.265e-04  1.268e-03   0.179
+windspeed:hour^14            -1.048e-03  1.256e-03  -0.834
+windspeed:hour^15             6.782e-04  1.166e-03   0.582
+windspeed:hour^16            -2.640e-03  1.015e-03  -2.600
+windspeed:hour^17             2.687e-03  8.392e-04   3.202
+windspeed:hour^18            -1.859e-03  6.703e-04  -2.773
+windspeed:hour^19            -4.422e-04  5.283e-04  -0.837
+windspeed:hour^20            -3.836e-04  4.214e-04  -0.910
+windspeed:hour^21            -5.195e-04  3.797e-04  -1.368
+windspeed:hour^22            -1.108e-04  3.829e-04  -0.289
+windspeed:hour^23             1.794e-05  3.767e-04   0.048
+windspeed:weekdayMonday      -2.551e-03  3.777e-04  -6.752
+windspeed:weekdaySaturday     2.042e-03  3.612e-04   5.654
+windspeed:weekdaySunday              NA         NA      NA
+windspeed:weekdayThursday    -1.290e-03  3.628e-04  -3.554
+windspeed:weekdayTuesday     -2.013e-04  3.696e-04  -0.545
+windspeed:weekdayWednesday    1.643e-04  3.704e-04   0.443
+hour.L:weekdayMonday          1.479e-02  3.909e-02   0.378
+hour.Q:weekdayMonday         -6.354e-01  3.551e-02 -17.894
+hour.C:weekdayMonday         -1.822e-01  2.868e-02  -6.354
+hour^4:weekdayMonday         -6.736e-01  3.105e-02 -21.694
+hour^5:weekdayMonday          1.625e-01  3.481e-02   4.668
+hour^6:weekdayMonday          3.930e-01  3.466e-02  11.341
+hour^7:weekdayMonday          1.291e-01  3.274e-02   3.944
+hour^8:weekdayMonday          2.378e-01  3.195e-02   7.445
+hour^9:weekdayMonday         -6.780e-02  3.311e-02  -2.047
+hour^10:weekdayMonday         2.070e-02  3.441e-02   0.602
+hour^11:weekdayMonday         3.296e-02  3.513e-02   0.938
+hour^12:weekdayMonday         6.376e-02  3.512e-02   1.815
+hour^13:weekdayMonday        -5.546e-02  3.400e-02  -1.631
+hour^14:weekdayMonday        -3.114e-02  3.158e-02  -0.986
+hour^15:weekdayMonday         1.685e-03  2.792e-02   0.060
+hour^16:weekdayMonday         1.899e-02  2.356e-02   0.806
+hour^17:weekdayMonday         5.462e-05  1.923e-02   0.003
+hour^18:weekdayMonday         2.710e-02  1.561e-02   1.737
+hour^19:weekdayMonday        -1.448e-02  1.306e-02  -1.109
+hour^20:weekdayMonday        -1.365e-02  1.138e-02  -1.199
+hour^21:weekdayMonday        -4.107e-02  1.114e-02  -3.687
+hour^22:weekdayMonday         1.324e-02  1.217e-02   1.087
+hour^23:weekdayMonday        -3.918e-03  1.278e-02  -0.307
+hour.L:weekdaySaturday        4.410e-01  2.901e-02  15.204
+hour.Q:weekdaySaturday       -9.989e-02  2.102e-02  -4.752
+hour.C:weekdaySaturday        3.023e-01  2.211e-02  13.672
+hour^4:weekdaySaturday       -2.075e-01  2.735e-02  -7.586
+hour^5:weekdaySaturday       -4.185e-01  2.576e-02 -16.241
+hour^6:weekdaySaturday        5.854e-02  2.273e-02   2.575
+hour^7:weekdaySaturday       -2.940e-01  2.405e-02 -12.225
+hour^8:weekdaySaturday       -2.029e-01  2.605e-02  -7.787
+hour^9:weekdaySaturday        1.230e-01  2.595e-02   4.740
+hour^10:weekdaySaturday      -1.069e-01  2.527e-02  -4.230
+hour^11:weekdaySaturday      -6.117e-02  2.558e-02  -2.391
+hour^12:weekdaySaturday       1.466e-01  2.658e-02   5.513
+hour^13:weekdaySaturday      -5.394e-02  2.790e-02  -1.933
+hour^14:weekdaySaturday       5.831e-02  2.937e-02   1.985
+hour^15:weekdaySaturday      -2.525e-03  3.029e-02  -0.083
+hour^16:weekdaySaturday       8.295e-03  2.976e-02   0.279
+hour^17:weekdaySaturday       1.065e-02  2.751e-02   0.387
+hour^18:weekdaySaturday      -8.619e-03  2.400e-02  -0.359
+hour^19:weekdaySaturday       5.499e-02  1.996e-02   2.755
+hour^20:weekdaySaturday      -3.320e-02  1.613e-02  -2.059
+hour^21:weekdaySaturday       2.058e-02  1.300e-02   1.583
+hour^22:weekdaySaturday      -3.246e-02  1.064e-02  -3.050
+hour^23:weekdaySaturday       1.397e-02  9.519e-03   1.468
+hour.L:weekdaySunday                 NA         NA      NA
+hour.Q:weekdaySunday                 NA         NA      NA
+hour.C:weekdaySunday                 NA         NA      NA
+hour^4:weekdaySunday                 NA         NA      NA
+hour^5:weekdaySunday                 NA         NA      NA
+hour^6:weekdaySunday                 NA         NA      NA
+hour^7:weekdaySunday                 NA         NA      NA
+hour^8:weekdaySunday                 NA         NA      NA
+hour^9:weekdaySunday                 NA         NA      NA
+hour^10:weekdaySunday                NA         NA      NA
+hour^11:weekdaySunday                NA         NA      NA
+hour^12:weekdaySunday                NA         NA      NA
+hour^13:weekdaySunday                NA         NA      NA
+hour^14:weekdaySunday                NA         NA      NA
+hour^15:weekdaySunday                NA         NA      NA
+hour^16:weekdaySunday                NA         NA      NA
+hour^17:weekdaySunday                NA         NA      NA
+hour^18:weekdaySunday                NA         NA      NA
+hour^19:weekdaySunday                NA         NA      NA
+hour^20:weekdaySunday                NA         NA      NA
+hour^21:weekdaySunday                NA         NA      NA
+hour^22:weekdaySunday                NA         NA      NA
+hour^23:weekdaySunday                NA         NA      NA
+hour.L:weekdayThursday        3.010e-01  3.840e-02   7.838
+hour.Q:weekdayThursday       -4.338e-01  3.482e-02 -12.460
+hour.C:weekdayThursday       -5.678e-02  2.803e-02  -2.026
+hour^4:weekdayThursday       -6.338e-01  3.027e-02 -20.938
+hour^5:weekdayThursday       -1.508e-02  3.427e-02  -0.440
+hour^6:weekdayThursday        2.802e-01  3.423e-02   8.186
+hour^7:weekdayThursday        2.494e-02  3.220e-02   0.774
+hour^8:weekdayThursday        1.183e-01  3.121e-02   3.792
+hour^9:weekdayThursday       -2.095e-02  3.241e-02  -0.646
+hour^10:weekdayThursday      -6.703e-02  3.393e-02  -1.976
+hour^11:weekdayThursday       9.862e-02  3.484e-02   2.831
+hour^12:weekdayThursday       3.199e-02  3.483e-02   0.918
+hour^13:weekdayThursday      -3.986e-02  3.358e-02  -1.187
+hour^14:weekdayThursday      -5.888e-02  3.101e-02  -1.899
+hour^15:weekdayThursday       7.484e-03  2.725e-02   0.275
+hour^16:weekdayThursday       4.703e-02  2.289e-02   2.055
+hour^17:weekdayThursday       1.717e-03  1.863e-02   0.092
+hour^18:weekdayThursday       3.565e-02  1.509e-02   2.363
+hour^19:weekdayThursday      -5.929e-03  1.264e-02  -0.469
+hour^20:weekdayThursday      -9.743e-03  1.103e-02  -0.883
+hour^21:weekdayThursday      -8.294e-03  1.080e-02  -0.768
+hour^22:weekdayThursday       6.308e-03  1.191e-02   0.530
+hour^23:weekdayThursday       2.148e-02  1.253e-02   1.714
+hour.L:weekdayTuesday         1.877e-01  4.092e-02   4.587
+hour.Q:weekdayTuesday        -7.440e-01  3.750e-02 -19.840
+hour.C:weekdayTuesday        -5.569e-02  3.041e-02  -1.831
+hour^4:weekdayTuesday        -9.126e-01  3.236e-02 -28.206
+hour^5:weekdayTuesday        -2.399e-02  3.636e-02  -0.660
+hour^6:weekdayTuesday         3.756e-01  3.656e-02  10.273
+hour^7:weekdayTuesday        -3.739e-02  3.471e-02  -1.077
+hour^8:weekdayTuesday         1.667e-01  3.372e-02   4.945
+hour^9:weekdayTuesday        -7.097e-02  3.478e-02  -2.041
+hour^10:weekdayTuesday        1.483e-02  3.611e-02   0.411
+hour^11:weekdayTuesday        9.228e-02  3.680e-02   2.507
+hour^12:weekdayTuesday        1.030e-02  3.655e-02   0.282
+hour^13:weekdayTuesday       -3.210e-02  3.503e-02  -0.916
+hour^14:weekdayTuesday       -6.551e-02  3.218e-02  -2.036
+hour^15:weekdayTuesday       -1.946e-02  2.815e-02  -0.691
+hour^16:weekdayTuesday        3.421e-02  2.354e-02   1.453
+hour^17:weekdayTuesday        4.252e-02  1.909e-02   2.228
+hour^18:weekdayTuesday        2.111e-02  1.542e-02   1.369
+hour^19:weekdayTuesday        1.232e-03  1.287e-02   0.096
+hour^20:weekdayTuesday        1.478e-02  1.123e-02   1.316
+hour^21:weekdayTuesday       -1.359e-03  1.097e-02  -0.124
+hour^22:weekdayTuesday        2.061e-02  1.209e-02   1.704
+hour^23:weekdayTuesday        9.307e-03  1.282e-02   0.726
+hour.L:weekdayWednesday       1.532e-01  3.897e-02   3.930
+hour.Q:weekdayWednesday      -4.546e-01  3.536e-02 -12.856
+hour.C:weekdayWednesday      -6.251e-03  2.826e-02  -0.221
+hour^4:weekdayWednesday      -7.929e-01  3.074e-02 -25.795
+hour^5:weekdayWednesday      -9.602e-02  3.481e-02  -2.759
+hour^6:weekdayWednesday       3.835e-01  3.482e-02  11.013
+hour^7:weekdayWednesday       1.705e-02  3.274e-02   0.521
+hour^8:weekdayWednesday       1.720e-01  3.172e-02   5.421
+hour^9:weekdayWednesday      -4.258e-02  3.296e-02  -1.292
+hour^10:weekdayWednesday     -2.856e-02  3.454e-02  -0.827
+hour^11:weekdayWednesday      6.839e-02  3.548e-02   1.928
+hour^12:weekdayWednesday      5.518e-02  3.548e-02   1.555
+hour^13:weekdayWednesday     -4.884e-03  3.419e-02  -0.143
+hour^14:weekdayWednesday     -5.125e-02  3.155e-02  -1.625
+hour^15:weekdayWednesday     -1.163e-02  2.769e-02  -0.420
+hour^16:weekdayWednesday      1.177e-02  2.321e-02   0.507
+hour^17:weekdayWednesday      2.440e-02  1.886e-02   1.294
+hour^18:weekdayWednesday      2.164e-02  1.525e-02   1.419
+hour^19:weekdayWednesday      2.358e-02  1.278e-02   1.845
+hour^20:weekdayWednesday     -8.574e-03  1.117e-02  -0.768
+hour^21:weekdayWednesday     -1.712e-02  1.094e-02  -1.565
+hour^22:weekdayWednesday      1.803e-02  1.207e-02   1.494
+hour^23:weekdayWednesday     -1.273e-02  1.276e-02  -0.997
+                             Pr(>|z|)    
+(Intercept)                   < 2e-16 ***
+datetime                      < 2e-16 ***
+season2                       < 2e-16 ***
+season3                       < 2e-16 ***
+season4                       < 2e-16 ***
+holiday1                     0.003616 ** 
+workingday1                  4.14e-13 ***
+weather.L                    6.01e-06 ***
+weather.Q                    6.95e-13 ***
+weather.C                    0.022444 *  
+temp                         1.22e-08 ***
+atemp                        0.585892    
+humidity                     6.14e-15 ***
+windspeed                     < 2e-16 ***
+hour.L                       3.09e-05 ***
+hour.Q                       7.86e-05 ***
+hour.C                        < 2e-16 ***
+hour^4                       1.13e-08 ***
+hour^5                       0.508402    
+hour^6                       0.000669 ***
+hour^7                        < 2e-16 ***
+hour^8                        < 2e-16 ***
+hour^9                       8.35e-10 ***
+hour^10                      0.528271    
+hour^11                      0.064011 .  
+hour^12                      2.91e-09 ***
+hour^13                      2.72e-05 ***
+hour^14                      0.259432    
+hour^15                      0.001318 ** 
+hour^16                      8.36e-05 ***
+hour^17                      0.001718 ** 
+hour^18                      0.077040 .  
+hour^19                      1.28e-07 ***
+hour^20                      0.699311    
+hour^21                      0.287914    
+hour^22                      0.140634    
+hour^23                      0.001069 ** 
+weekdayMonday                9.08e-08 ***
+weekdaySaturday               < 2e-16 ***
+weekdaySunday                      NA    
+weekdayThursday               < 2e-16 ***
+weekdayTuesday               5.39e-13 ***
+weekdayWednesday              < 2e-16 ***
+datetime:season2             1.35e-13 ***
+datetime:season3              < 2e-16 ***
+datetime:season4              < 2e-16 ***
+datetime:holiday1            0.013447 *  
+datetime:workingday1         2.63e-15 ***
+datetime:weather.L           1.87e-05 ***
+datetime:weather.Q           1.10e-12 ***
+datetime:weather.C                 NA    
+datetime:temp                0.000237 ***
+datetime:atemp               0.418496    
+datetime:humidity             < 2e-16 ***
+datetime:windspeed            < 2e-16 ***
+datetime:hour.L              0.007960 ** 
+datetime:hour.Q               < 2e-16 ***
+datetime:hour.C               < 2e-16 ***
+datetime:hour^4              0.009393 ** 
+datetime:hour^5              0.499233    
+datetime:hour^6              1.12e-05 ***
+datetime:hour^7               < 2e-16 ***
+datetime:hour^8               < 2e-16 ***
+datetime:hour^9              1.01e-10 ***
+datetime:hour^10             0.581550    
+datetime:hour^11             0.001468 ** 
+datetime:hour^12             6.57e-13 ***
+datetime:hour^13             6.43e-05 ***
+datetime:hour^14             0.206763    
+datetime:hour^15             0.000103 ***
+datetime:hour^16             2.02e-06 ***
+datetime:hour^17             0.001833 ** 
+datetime:hour^18             0.043260 *  
+datetime:hour^19             4.90e-06 ***
+datetime:hour^20             0.180896    
+datetime:hour^21             0.222015    
+datetime:hour^22             0.592642    
+datetime:hour^23             0.003058 ** 
+datetime:weekdayMonday       1.27e-08 ***
+datetime:weekdaySaturday      < 2e-16 ***
+datetime:weekdaySunday             NA    
+datetime:weekdayThursday      < 2e-16 ***
+datetime:weekdayTuesday      2.27e-12 ***
+datetime:weekdayWednesday     < 2e-16 ***
+season2:holiday1             2.07e-08 ***
+season3:holiday1              < 2e-16 ***
+season4:holiday1             4.30e-07 ***
+season2:workingday1           < 2e-16 ***
+season3:workingday1           < 2e-16 ***
+season4:workingday1           < 2e-16 ***
+season2:weather.L            1.37e-15 ***
+season3:weather.L            8.14e-13 ***
+season4:weather.L            0.118922    
+season2:weather.Q            3.93e-08 ***
+season3:weather.Q            8.60e-12 ***
+season4:weather.Q            0.048419 *  
+season2:weather.C                  NA    
+season3:weather.C                  NA    
+season4:weather.C                  NA    
+season2:temp                 1.69e-07 ***
+season3:temp                  < 2e-16 ***
+season4:temp                  < 2e-16 ***
+season2:atemp                 < 2e-16 ***
+season3:atemp                 < 2e-16 ***
+season4:atemp                 < 2e-16 ***
+season2:humidity             0.012948 *  
+season3:humidity              < 2e-16 ***
+season4:humidity              < 2e-16 ***
+season2:windspeed            1.05e-11 ***
+season3:windspeed             < 2e-16 ***
+season4:windspeed            1.06e-06 ***
+season2:hour.L                < 2e-16 ***
+season3:hour.L               2.31e-06 ***
+season4:hour.L               3.23e-05 ***
+season2:hour.Q                < 2e-16 ***
+season3:hour.Q                < 2e-16 ***
+season4:hour.Q                < 2e-16 ***
+season2:hour.C                < 2e-16 ***
+season3:hour.C               0.096938 .  
+season4:hour.C               0.034949 *  
+season2:hour^4                < 2e-16 ***
+season3:hour^4               0.115477    
+season4:hour^4               0.613099    
+season2:hour^5                < 2e-16 ***
+season3:hour^5                < 2e-16 ***
+season4:hour^5                < 2e-16 ***
+season2:hour^6               0.007126 ** 
+season3:hour^6               0.076077 .  
+season4:hour^6               0.861401    
+season2:hour^7                < 2e-16 ***
+season3:hour^7               1.51e-15 ***
+season4:hour^7                < 2e-16 ***
+season2:hour^8                < 2e-16 ***
+season3:hour^8                < 2e-16 ***
+season4:hour^8                < 2e-16 ***
+season2:hour^9               0.072067 .  
+season3:hour^9               0.189378    
+season4:hour^9               0.346380    
+season2:hour^10              0.034833 *  
+season3:hour^10              0.925239    
+season4:hour^10              0.004282 ** 
+season2:hour^11               < 2e-16 ***
+season3:hour^11              5.39e-11 ***
+season4:hour^11               < 2e-16 ***
+season2:hour^12               < 2e-16 ***
+season3:hour^12              0.000799 ***
+season4:hour^12              5.46e-16 ***
+season2:hour^13              4.25e-08 ***
+season3:hour^13              0.012212 *  
+season4:hour^13              0.016956 *  
+season2:hour^14              0.102714    
+season3:hour^14              0.048320 *  
+season4:hour^14              0.930147    
+season2:hour^15               < 2e-16 ***
+season3:hour^15              2.17e-11 ***
+season4:hour^15               < 2e-16 ***
+season2:hour^16               < 2e-16 ***
+season3:hour^16              3.33e-13 ***
+season4:hour^16               < 2e-16 ***
+season2:hour^17              1.45e-06 ***
+season3:hour^17              0.152467    
+season4:hour^17              6.93e-05 ***
+season2:hour^18              0.011736 *  
+season3:hour^18              0.036245 *  
+season4:hour^18              0.150676    
+season2:hour^19               < 2e-16 ***
+season3:hour^19              1.57e-10 ***
+season4:hour^19               < 2e-16 ***
+season2:hour^20               < 2e-16 ***
+season3:hour^20              9.55e-07 ***
+season4:hour^20               < 2e-16 ***
+season2:hour^21              0.906106    
+season3:hour^21              0.016188 *  
+season4:hour^21              0.356720    
+season2:hour^22              6.39e-09 ***
+season3:hour^22              0.495196    
+season4:hour^22              0.000536 ***
+season2:hour^23              0.121304    
+season3:hour^23              0.180888    
+season4:hour^23              0.289745    
+season2:weekdayMonday        0.000850 ***
+season3:weekdayMonday         < 2e-16 ***
+season4:weekdayMonday        7.49e-11 ***
+season2:weekdaySaturday      3.44e-12 ***
+season3:weekdaySaturday      0.000971 ***
+season4:weekdaySaturday       < 2e-16 ***
+season2:weekdaySunday              NA    
+season3:weekdaySunday              NA    
+season4:weekdaySunday              NA    
+season2:weekdayThursday      0.006960 ** 
+season3:weekdayThursday      3.52e-10 ***
+season4:weekdayThursday      0.245539    
+season2:weekdayTuesday       0.006675 ** 
+season3:weekdayTuesday        < 2e-16 ***
+season4:weekdayTuesday        < 2e-16 ***
+season2:weekdayWednesday     7.24e-08 ***
+season3:weekdayWednesday      < 2e-16 ***
+season4:weekdayWednesday      < 2e-16 ***
+holiday1:workingday1               NA    
+holiday1:weather.L            < 2e-16 ***
+holiday1:weather.Q            < 2e-16 ***
+holiday1:weather.C                 NA    
+holiday1:temp                0.056274 .  
+holiday1:atemp               0.442575    
+holiday1:humidity            0.000804 ***
+holiday1:windspeed           4.42e-15 ***
+holiday1:hour.L              0.181456    
+holiday1:hour.Q              2.18e-07 ***
+holiday1:hour.C               < 2e-16 ***
+holiday1:hour^4               < 2e-16 ***
+holiday1:hour^5               < 2e-16 ***
+holiday1:hour^6               < 2e-16 ***
+holiday1:hour^7               < 2e-16 ***
+holiday1:hour^8              0.043636 *  
+holiday1:hour^9               < 2e-16 ***
+holiday1:hour^10             3.21e-08 ***
+holiday1:hour^11             0.000200 ***
+holiday1:hour^12             0.003724 ** 
+holiday1:hour^13             0.699251    
+holiday1:hour^14             0.743468    
+holiday1:hour^15             0.092838 .  
+holiday1:hour^16             0.903789    
+holiday1:hour^17             0.973475    
+holiday1:hour^18             0.063989 .  
+holiday1:hour^19             0.203874    
+holiday1:hour^20             0.283124    
+holiday1:hour^21             1.81e-06 ***
+holiday1:hour^22             0.891272    
+holiday1:hour^23             0.345595    
+holiday1:weekdayMonday       9.08e-08 ***
+holiday1:weekdaySaturday           NA    
+holiday1:weekdaySunday             NA    
+holiday1:weekdayThursday           NA    
+holiday1:weekdayTuesday            NA    
+holiday1:weekdayWednesday    0.046402 *  
+workingday1:weather.L        4.11e-16 ***
+workingday1:weather.Q         < 2e-16 ***
+workingday1:weather.C              NA    
+workingday1:temp             0.006156 ** 
+workingday1:atemp            0.004008 ** 
+workingday1:humidity         2.23e-09 ***
+workingday1:windspeed        2.05e-15 ***
+workingday1:hour.L            < 2e-16 ***
+workingday1:hour.Q            < 2e-16 ***
+workingday1:hour.C            < 2e-16 ***
+workingday1:hour^4            < 2e-16 ***
+workingday1:hour^5            < 2e-16 ***
+workingday1:hour^6            < 2e-16 ***
+workingday1:hour^7            < 2e-16 ***
+workingday1:hour^8            < 2e-16 ***
+workingday1:hour^9            < 2e-16 ***
+workingday1:hour^10           < 2e-16 ***
+workingday1:hour^11          5.02e-16 ***
+workingday1:hour^12           < 2e-16 ***
+workingday1:hour^13          0.737268    
+workingday1:hour^14           < 2e-16 ***
+workingday1:hour^15          2.66e-11 ***
+workingday1:hour^16          1.59e-10 ***
+workingday1:hour^17          5.00e-08 ***
+workingday1:hour^18          0.000103 ***
+workingday1:hour^19          0.006716 ** 
+workingday1:hour^20          5.25e-10 ***
+workingday1:hour^21          1.69e-05 ***
+workingday1:hour^22          0.089821 .  
+workingday1:hour^23          0.641669    
+workingday1:weekdayMonday          NA    
+workingday1:weekdaySaturday        NA    
+workingday1:weekdaySunday          NA    
+workingday1:weekdayThursday        NA    
+workingday1:weekdayTuesday         NA    
+workingday1:weekdayWednesday       NA    
+weather.L:temp               0.277915    
+weather.Q:temp               0.699862    
+weather.C:temp                     NA    
+weather.L:atemp              5.60e-05 ***
+weather.Q:atemp              0.010811 *  
+weather.C:atemp                    NA    
+weather.L:humidity            < 2e-16 ***
+weather.Q:humidity           8.92e-11 ***
+weather.C:humidity                 NA    
+weather.L:windspeed           < 2e-16 ***
+weather.Q:windspeed          0.000147 ***
+weather.C:windspeed                NA    
+weather.L:hour.L             0.063788 .  
+weather.Q:hour.L             0.031143 *  
+weather.C:hour.L                   NA    
+weather.L:hour.Q              < 2e-16 ***
+weather.Q:hour.Q              < 2e-16 ***
+weather.C:hour.Q                   NA    
+weather.L:hour.C             1.15e-06 ***
+weather.Q:hour.C             3.15e-10 ***
+weather.C:hour.C                   NA    
+weather.L:hour^4             0.135956    
+weather.Q:hour^4             0.215678    
+weather.C:hour^4                   NA    
+weather.L:hour^5             5.11e-13 ***
+weather.Q:hour^5             2.92e-07 ***
+weather.C:hour^5                   NA    
+weather.L:hour^6             0.879332    
+weather.Q:hour^6             0.198542    
+weather.C:hour^6                   NA    
+weather.L:hour^7             0.000652 ***
+weather.Q:hour^7             8.68e-06 ***
+weather.C:hour^7                   NA    
+weather.L:hour^8             0.114747    
+weather.Q:hour^8             0.431572    
+weather.C:hour^8                   NA    
+weather.L:hour^9             2.79e-05 ***
+weather.Q:hour^9             0.043038 *  
+weather.C:hour^9                   NA    
+weather.L:hour^10            0.120028    
+weather.Q:hour^10            0.123534    
+weather.C:hour^10                  NA    
+weather.L:hour^11            2.26e-05 ***
+weather.Q:hour^11            0.026281 *  
+weather.C:hour^11                  NA    
+weather.L:hour^12            0.002176 ** 
+weather.Q:hour^12            0.005145 ** 
+weather.C:hour^12                  NA    
+weather.L:hour^13            0.001218 ** 
+weather.Q:hour^13            0.003033 ** 
+weather.C:hour^13                  NA    
+weather.L:hour^14            0.008776 ** 
+weather.Q:hour^14            0.018390 *  
+weather.C:hour^14                  NA    
+weather.L:hour^15            0.114834    
+weather.Q:hour^15            0.698767    
+weather.C:hour^15                  NA    
+weather.L:hour^16            0.013699 *  
+weather.Q:hour^16            0.018332 *  
+weather.C:hour^16                  NA    
+weather.L:hour^17            0.015054 *  
+weather.Q:hour^17            0.006368 ** 
+weather.C:hour^17                  NA    
+weather.L:hour^18            0.029938 *  
+weather.Q:hour^18            0.896444    
+weather.C:hour^18                  NA    
+weather.L:hour^19            0.000682 ***
+weather.Q:hour^19            0.013732 *  
+weather.C:hour^19                  NA    
+weather.L:hour^20            0.062431 .  
+weather.Q:hour^20            0.076573 .  
+weather.C:hour^20                  NA    
+weather.L:hour^21            0.014778 *  
+weather.Q:hour^21            0.035635 *  
+weather.C:hour^21                  NA    
+weather.L:hour^22            0.599886    
+weather.Q:hour^22            0.502331    
+weather.C:hour^22                  NA    
+weather.L:hour^23            0.019135 *  
+weather.Q:hour^23            0.047412 *  
+weather.C:hour^23                  NA    
+weather.L:weekdayMonday       < 2e-16 ***
+weather.Q:weekdayMonday       < 2e-16 ***
+weather.C:weekdayMonday            NA    
+weather.L:weekdaySaturday    0.088776 .  
+weather.Q:weekdaySaturday    0.038361 *  
+weather.C:weekdaySaturday          NA    
+weather.L:weekdaySunday            NA    
+weather.Q:weekdaySunday            NA    
+weather.C:weekdaySunday            NA    
+weather.L:weekdayThursday    0.367015    
+weather.Q:weekdayThursday    0.026238 *  
+weather.C:weekdayThursday          NA    
+weather.L:weekdayTuesday     5.76e-10 ***
+weather.Q:weekdayTuesday     2.54e-09 ***
+weather.C:weekdayTuesday           NA    
+weather.L:weekdayWednesday   1.03e-06 ***
+weather.Q:weekdayWednesday   0.006535 ** 
+weather.C:weekdayWednesday         NA    
+temp:atemp                    < 2e-16 ***
+temp:humidity                8.84e-12 ***
+temp:windspeed               0.107321    
+temp:hour.L                  3.22e-16 ***
+temp:hour.Q                   < 2e-16 ***
+temp:hour.C                  1.35e-10 ***
+temp:hour^4                  5.53e-07 ***
+temp:hour^5                  2.72e-11 ***
+temp:hour^6                  2.08e-08 ***
+temp:hour^7                  1.69e-08 ***
+temp:hour^8                  1.03e-10 ***
+temp:hour^9                  0.905001    
+temp:hour^10                 0.599578    
+temp:hour^11                 0.085305 .  
+temp:hour^12                 4.30e-05 ***
+temp:hour^13                 0.751211    
+temp:hour^14                 0.018160 *  
+temp:hour^15                 0.689002    
+temp:hour^16                 0.083936 .  
+temp:hour^17                 0.911463    
+temp:hour^18                 0.560548    
+temp:hour^19                 0.385279    
+temp:hour^20                 8.48e-06 ***
+temp:hour^21                 0.938170    
+temp:hour^22                 0.037224 *  
+temp:hour^23                 0.220049    
+temp:weekdayMonday            < 2e-16 ***
+temp:weekdaySaturday         0.000308 ***
+temp:weekdaySunday                 NA    
+temp:weekdayThursday         0.001505 ** 
+temp:weekdayTuesday           < 2e-16 ***
+temp:weekdayWednesday        3.09e-05 ***
+atemp:humidity               9.32e-13 ***
+atemp:windspeed              0.894448    
+atemp:hour.L                 0.185767    
+atemp:hour.Q                  < 2e-16 ***
+atemp:hour.C                 0.000101 ***
+atemp:hour^4                 0.569936    
+atemp:hour^5                 4.10e-06 ***
+atemp:hour^6                 0.586857    
+atemp:hour^7                 0.000279 ***
+atemp:hour^8                 0.082177 .  
+atemp:hour^9                 0.296625    
+atemp:hour^10                0.135474    
+atemp:hour^11                0.071947 .  
+atemp:hour^12                0.882583    
+atemp:hour^13                0.993949    
+atemp:hour^14                0.083272 .  
+atemp:hour^15                0.230394    
+atemp:hour^16                0.479686    
+atemp:hour^17                0.805598    
+atemp:hour^18                0.927851    
+atemp:hour^19                0.385768    
+atemp:hour^20                0.051203 .  
+atemp:hour^21                0.237571    
+atemp:hour^22                0.593823    
+atemp:hour^23                0.490771    
+atemp:weekdayMonday          4.00e-09 ***
+atemp:weekdaySaturday        0.001362 ** 
+atemp:weekdaySunday                NA    
+atemp:weekdayThursday        0.322805    
+atemp:weekdayTuesday          < 2e-16 ***
+atemp:weekdayWednesday       0.028871 *  
+humidity:windspeed           0.002519 ** 
+humidity:hour.L              0.000224 ***
+humidity:hour.Q              5.41e-15 ***
+humidity:hour.C              0.006381 ** 
+humidity:hour^4              0.416154    
+humidity:hour^5              0.000550 ***
+humidity:hour^6              0.064382 .  
+humidity:hour^7              0.006695 ** 
+humidity:hour^8              3.69e-05 ***
+humidity:hour^9              0.001504 ** 
+humidity:hour^10             0.475952    
+humidity:hour^11             0.075192 .  
+humidity:hour^12             0.952174    
+humidity:hour^13             0.567522    
+humidity:hour^14             0.576610    
+humidity:hour^15             0.867695    
+humidity:hour^16             0.274938    
+humidity:hour^17             0.954392    
+humidity:hour^18             0.664462    
+humidity:hour^19             0.009554 ** 
+humidity:hour^20             0.979464    
+humidity:hour^21             3.28e-05 ***
+humidity:hour^22             1.11e-07 ***
+humidity:hour^23             0.419227    
+humidity:weekdayMonday       0.006692 ** 
+humidity:weekdaySaturday     0.711547    
+humidity:weekdaySunday             NA    
+humidity:weekdayThursday      < 2e-16 ***
+humidity:weekdayTuesday      0.333579    
+humidity:weekdayWednesday    0.008749 ** 
+windspeed:hour.L             3.90e-09 ***
+windspeed:hour.Q             2.59e-08 ***
+windspeed:hour.C             0.217501    
+windspeed:hour^4             0.011902 *  
+windspeed:hour^5             0.000471 ***
+windspeed:hour^6             0.892325    
+windspeed:hour^7             0.064348 .  
+windspeed:hour^8             0.306161    
+windspeed:hour^9             0.225549    
+windspeed:hour^10            0.866142    
+windspeed:hour^11            0.003307 ** 
+windspeed:hour^12            0.035228 *  
+windspeed:hour^13            0.858212    
+windspeed:hour^14            0.404026    
+windspeed:hour^15            0.560819    
+windspeed:hour^16            0.009323 ** 
+windspeed:hour^17            0.001362 ** 
+windspeed:hour^18            0.005559 ** 
+windspeed:hour^19            0.402597    
+windspeed:hour^20            0.362686    
+windspeed:hour^21            0.171245    
+windspeed:hour^22            0.772277    
+windspeed:hour^23            0.962019    
+windspeed:weekdayMonday      1.45e-11 ***
+windspeed:weekdaySaturday    1.57e-08 ***
+windspeed:weekdaySunday            NA    
+windspeed:weekdayThursday    0.000379 ***
+windspeed:weekdayTuesday     0.585988    
+windspeed:weekdayWednesday   0.657460    
+hour.L:weekdayMonday         0.705086    
+hour.Q:weekdayMonday          < 2e-16 ***
+hour.C:weekdayMonday         2.10e-10 ***
+hour^4:weekdayMonday          < 2e-16 ***
+hour^5:weekdayMonday         3.04e-06 ***
+hour^6:weekdayMonday          < 2e-16 ***
+hour^7:weekdayMonday         8.00e-05 ***
+hour^8:weekdayMonday         9.71e-14 ***
+hour^9:weekdayMonday         0.040617 *  
+hour^10:weekdayMonday        0.547402    
+hour^11:weekdayMonday        0.348134    
+hour^12:weekdayMonday        0.069491 .  
+hour^13:weekdayMonday        0.102865    
+hour^14:weekdayMonday        0.324107    
+hour^15:weekdayMonday        0.951886    
+hour^16:weekdayMonday        0.420118    
+hour^17:weekdayMonday        0.997734    
+hour^18:weekdayMonday        0.082430 .  
+hour^19:weekdayMonday        0.267579    
+hour^20:weekdayMonday        0.230485    
+hour^21:weekdayMonday        0.000227 ***
+hour^22:weekdayMonday        0.276900    
+hour^23:weekdayMonday        0.759153    
+hour.L:weekdaySaturday        < 2e-16 ***
+hour.Q:weekdaySaturday       2.01e-06 ***
+hour.C:weekdaySaturday        < 2e-16 ***
+hour^4:weekdaySaturday       3.30e-14 ***
+hour^5:weekdaySaturday        < 2e-16 ***
+hour^6:weekdaySaturday       0.010024 *  
+hour^7:weekdaySaturday        < 2e-16 ***
+hour^8:weekdaySaturday       6.86e-15 ***
+hour^9:weekdaySaturday       2.13e-06 ***
+hour^10:weekdaySaturday      2.34e-05 ***
+hour^11:weekdaySaturday      0.016785 *  
+hour^12:weekdaySaturday      3.52e-08 ***
+hour^13:weekdaySaturday      0.053185 .  
+hour^14:weekdaySaturday      0.047134 *  
+hour^15:weekdaySaturday      0.933579    
+hour^16:weekdaySaturday      0.780457    
+hour^17:weekdaySaturday      0.698635    
+hour^18:weekdaySaturday      0.719537    
+hour^19:weekdaySaturday      0.005867 ** 
+hour^20:weekdaySaturday      0.039534 *  
+hour^21:weekdaySaturday      0.113333    
+hour^22:weekdaySaturday      0.002289 ** 
+hour^23:weekdaySaturday      0.142137    
+hour.L:weekdaySunday               NA    
+hour.Q:weekdaySunday               NA    
+hour.C:weekdaySunday               NA    
+hour^4:weekdaySunday               NA    
+hour^5:weekdaySunday               NA    
+hour^6:weekdaySunday               NA    
+hour^7:weekdaySunday               NA    
+hour^8:weekdaySunday               NA    
+hour^9:weekdaySunday               NA    
+hour^10:weekdaySunday              NA    
+hour^11:weekdaySunday              NA    
+hour^12:weekdaySunday              NA    
+hour^13:weekdaySunday              NA    
+hour^14:weekdaySunday              NA    
+hour^15:weekdaySunday              NA    
+hour^16:weekdaySunday              NA    
+hour^17:weekdaySunday              NA    
+hour^18:weekdaySunday              NA    
+hour^19:weekdaySunday              NA    
+hour^20:weekdaySunday              NA    
+hour^21:weekdaySunday              NA    
+hour^22:weekdaySunday              NA    
+hour^23:weekdaySunday              NA    
+hour.L:weekdayThursday       4.58e-15 ***
+hour.Q:weekdayThursday        < 2e-16 ***
+hour.C:weekdayThursday       0.042803 *  
+hour^4:weekdayThursday        < 2e-16 ***
+hour^5:weekdayThursday       0.659799    
+hour^6:weekdayThursday       2.70e-16 ***
+hour^7:weekdayThursday       0.438744    
+hour^8:weekdayThursday       0.000150 ***
+hour^9:weekdayThursday       0.517974    
+hour^10:weekdayThursday      0.048164 *  
+hour^11:weekdayThursday      0.004642 ** 
+hour^12:weekdayThursday      0.358438    
+hour^13:weekdayThursday      0.235131    
+hour^14:weekdayThursday      0.057575 .  
+hour^15:weekdayThursday      0.783565    
+hour^16:weekdayThursday      0.039882 *  
+hour^17:weekdayThursday      0.926547    
+hour^18:weekdayThursday      0.018142 *  
+hour^19:weekdayThursday      0.639057    
+hour^20:weekdayThursday      0.377157    
+hour^21:weekdayThursday      0.442339    
+hour^22:weekdayThursday      0.596234    
+hour^23:weekdayThursday      0.086563 .  
+hour.L:weekdayTuesday        4.50e-06 ***
+hour.Q:weekdayTuesday         < 2e-16 ***
+hour.C:weekdayTuesday        0.067094 .  
+hour^4:weekdayTuesday         < 2e-16 ***
+hour^5:weekdayTuesday        0.509415    
+hour^6:weekdayTuesday         < 2e-16 ***
+hour^7:weekdayTuesday        0.281379    
+hour^8:weekdayTuesday        7.61e-07 ***
+hour^9:weekdayTuesday        0.041284 *  
+hour^10:weekdayTuesday       0.681390    
+hour^11:weekdayTuesday       0.012162 *  
+hour^12:weekdayTuesday       0.778015    
+hour^13:weekdayTuesday       0.359529    
+hour^14:weekdayTuesday       0.041767 *  
+hour^15:weekdayTuesday       0.489379    
+hour^16:weekdayTuesday       0.146119    
+hour^17:weekdayTuesday       0.025906 *  
+hour^18:weekdayTuesday       0.171009    
+hour^19:weekdayTuesday       0.923762    
+hour^20:weekdayTuesday       0.188200    
+hour^21:weekdayTuesday       0.901466    
+hour^22:weekdayTuesday       0.088297 .  
+hour^23:weekdayTuesday       0.467709    
+hour.L:weekdayWednesday      8.50e-05 ***
+hour.Q:weekdayWednesday       < 2e-16 ***
+hour.C:weekdayWednesday      0.824925    
+hour^4:weekdayWednesday       < 2e-16 ***
+hour^5:weekdayWednesday      0.005803 ** 
+hour^6:weekdayWednesday       < 2e-16 ***
+hour^7:weekdayWednesday      0.602508    
+hour^8:weekdayWednesday      5.93e-08 ***
+hour^9:weekdayWednesday      0.196463    
+hour^10:weekdayWednesday     0.408322    
+hour^11:weekdayWednesday     0.053901 .  
+hour^12:weekdayWednesday     0.119899    
+hour^13:weekdayWednesday     0.886415    
+hour^14:weekdayWednesday     0.104242    
+hour^15:weekdayWednesday     0.674482    
+hour^16:weekdayWednesday     0.612109    
+hour^17:weekdayWednesday     0.195657    
+hour^18:weekdayWednesday     0.155798    
+hour^19:weekdayWednesday     0.065052 .  
+hour^20:weekdayWednesday     0.442597    
+hour^21:weekdayWednesday     0.117523    
+hour^22:weekdayWednesday     0.135205    
+hour^23:weekdayWednesday     0.318727    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 1800567  on 10885  degrees of freedom
+Residual deviance:  104201  on 10340  degrees of freedom
+AIC: 174940
+
+Number of Fisher Scoring iterations: 5
+
