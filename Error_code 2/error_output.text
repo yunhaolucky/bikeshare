@@ -1,0 +1,2 @@
+Error in solve.default(cov[-1, -1]) :
+  system is computationally singular: reciprocal condition number = 5.09656e-20

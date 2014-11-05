@@ -1,29 +1,29 @@
           (Intercept)              datetime               season2 
-         5.301392e-12          1.000000e+00          7.444870e-02 
+         2.289465e-11          1.000000e+00          9.006384e-02 
               season3               season4              holiday1 
-         2.758440e+01          1.092200e+01          9.907604e-03 
+         1.588311e+01          6.364527e+00          2.198242e-01 
           workingday1             weather.L             weather.Q 
-         1.075648e+00          3.905161e+00          1.005308e+00 
+         1.721845e-01          2.038087e+00          1.810454e+00 
             weather.C                  temp                 atemp 
-         8.515828e-01          1.034962e+00          1.287562e+00 
+         8.253108e-01          1.111246e+00          1.326156e+00 
              humidity             windspeed                hour.L 
-         1.046828e+00          8.798670e-01          1.083708e+02 
+         1.046000e+00          8.806281e-01          2.781528e+01 
                hour.Q                hour.C                hour^4 
-         4.742751e-01          1.141902e-03          1.869928e+02 
+         9.216834e+00          1.983539e-03          4.222132e+01 
                hour^5                hour^6                hour^7 
-         1.485679e-01          2.307688e-01          1.651209e+02 
+         7.158782e-01          1.054912e-01          2.132195e+02 
                hour^8                hour^9               hour^10 
-         1.045943e-02          5.772781e+01          7.395089e-01 
+         7.956478e-03          4.005227e+01          1.443084e+00 
               hour^11               hour^12               hour^13 
-         7.762160e-01          3.812115e+01          7.256089e-02 
+         3.256297e-01          3.855084e+01          7.008008e-02 
               hour^14               hour^15               hour^16 
-         2.530599e+00          1.069154e-01          1.280457e+01 
+         2.431520e+00          1.451962e-01          7.165238e+00 
               hour^17               hour^18               hour^19 
-         1.792152e-01          1.711526e+00          2.220159e-01 
+         2.728809e-01          1.879427e+00          2.403531e-01 
               hour^20               hour^21               hour^22 
-         1.178585e+00          1.459156e+00          1.376557e+00 
+         8.727766e-01          1.435997e+00          1.407476e+00 
               hour^23      datetime:season2      datetime:season3 
-         5.001544e-01          1.000000e+00          1.000000e+00 
+         4.287713e-01          1.000000e+00          1.000000e+00 
      datetime:season4     datetime:holiday1  datetime:workingday1 
          1.000000e+00          1.000000e+00          1.000000e+00 
    datetime:weather.L    datetime:weather.Q    datetime:weather.C 
@@ -47,226 +47,226 @@
      datetime:hour^21      datetime:hour^22      datetime:hour^23 
          1.000000e+00          1.000000e+00          1.000000e+00 
      season2:holiday1      season3:holiday1      season4:holiday1 
-         1.839953e+00          1.977660e+00          1.543832e+00 
+         1.343413e+00          2.019751e+00          1.350333e+00 
   season2:workingday1   season3:workingday1   season4:workingday1 
-         9.782225e-01          9.694531e-01          9.970771e-01 
+         9.033159e-01          9.704678e-01          9.316095e-01 
     season2:weather.L     season3:weather.L     season4:weather.L 
-         1.192569e+00          1.344226e+00          1.062458e+00 
+         1.215309e+00          1.358681e+00          1.060029e+00 
     season2:weather.Q     season3:weather.Q     season4:weather.Q 
-         9.569923e-01          8.356240e-01          9.516920e-01 
+         9.439807e-01          8.380358e-01          9.544559e-01 
     season2:weather.C     season3:weather.C     season4:weather.C 
                    NA                    NA                    NA 
          season2:temp          season3:temp          season4:temp 
-         9.713684e-01          9.371755e-01          9.573711e-01 
+         9.755682e-01          9.396553e-01          9.615213e-01 
         season2:atemp         season3:atemp         season4:atemp 
-         1.041906e+00          1.066164e+00          1.055764e+00 
+         1.041814e+00          1.067889e+00          1.058788e+00 
      season2:humidity      season3:humidity      season4:humidity 
-         1.002122e+00          9.973199e-01          9.975780e-01 
+         1.001094e+00          9.967087e-01          9.969685e-01 
     season2:windspeed     season3:windspeed     season4:windspeed 
-         1.004319e+00          1.006773e+00          1.003643e+00 
+         1.003520e+00          1.005979e+00          1.002651e+00 
        season2:hour.L        season3:hour.L        season4:hour.L 
-         1.698068e+00          1.240019e+00          1.215834e+00 
+         1.621320e+00          1.222894e+00          1.159802e+00 
        season2:hour.Q        season3:hour.Q        season4:hour.Q 
-         1.532363e+00          2.022341e+00          1.898190e+00 
+         1.401325e+00          1.851837e+00          1.818969e+00 
        season2:hour.C        season3:hour.C        season4:hour.C 
-         7.826749e-01          9.588187e-01          9.434875e-01 
+         7.486428e-01          9.498384e-01          9.484473e-01 
        season2:hour^4        season3:hour^4        season4:hour^4 
-         1.393629e+00          1.120611e+00          1.078209e+00 
+         1.440264e+00          1.088511e+00          1.050478e+00 
        season2:hour^5        season3:hour^5        season4:hour^5 
-         5.782828e-01          6.333152e-01          7.298019e-01 
+         6.383738e-01          6.436037e-01          7.765493e-01 
        season2:hour^6        season3:hour^6        season4:hour^6 
-         1.004908e+00          1.102716e+00          1.020881e+00 
+         9.167143e-01          1.035756e+00          9.702408e-01 
        season2:hour^7        season3:hour^7        season4:hour^7 
-         1.836716e+00          1.353711e+00          1.440160e+00 
+         1.766738e+00          1.324306e+00          1.414245e+00 
        season2:hour^8        season3:hour^8        season4:hour^8 
-         5.473296e-01          6.356110e-01          6.466100e-01 
+         5.706874e-01          6.594404e-01          6.504264e-01 
        season2:hour^9        season3:hour^9        season4:hour^9 
-         1.082860e+00          1.079118e+00          9.842829e-01 
+         1.049838e+00          1.046820e+00          9.655801e-01 
       season2:hour^10       season3:hour^10       season4:hour^10 
-         1.016309e+00          9.588422e-01          1.049543e+00 
+         1.056698e+00          9.918838e-01          1.075072e+00 
       season2:hour^11       season3:hour^11       season4:hour^11 
-         7.098516e-01          8.115962e-01          7.731531e-01 
+         6.883923e-01          7.767180e-01          7.566138e-01 
       season2:hour^12       season3:hour^12       season4:hour^12 
-         1.384749e+00          1.144841e+00          1.258015e+00 
+         1.355116e+00          1.142855e+00          1.268446e+00 
       season2:hour^13       season3:hour^13       season4:hour^13 
-         1.182555e+00          1.142025e+00          1.087420e+00 
+         1.175397e+00          1.099787e+00          1.070099e+00 
       season2:hour^14       season3:hour^14       season4:hour^14 
-         9.432898e-01          8.968347e-01          1.002214e+00 
+         9.523524e-01          9.288423e-01          1.008564e+00 
       season2:hour^15       season3:hour^15       season4:hour^15 
-         7.083345e-01          7.960185e-01          7.565718e-01 
+         7.412083e-01          7.878711e-01          7.571900e-01 
       season2:hour^16       season3:hour^16       season4:hour^16 
-         1.397063e+00          1.265240e+00          1.306171e+00 
+         1.319435e+00          1.254778e+00          1.279814e+00 
       season2:hour^17       season3:hour^17       season4:hour^17 
-         8.961380e-01          9.670520e-01          9.261218e-01 
+         9.144004e-01          9.653814e-01          9.337667e-01 
       season2:hour^18       season3:hour^18       season4:hour^18 
-         9.522361e-01          9.382925e-01          9.663097e-01 
+         9.583111e-01          9.495566e-01          9.754202e-01 
       season2:hour^19       season3:hour^19       season4:hour^19 
-         1.202079e+00          1.132197e+00          1.139032e+00 
+         1.187379e+00          1.113580e+00          1.123512e+00 
       season2:hour^20       season3:hour^20       season4:hour^20 
-         8.767272e-01          9.198005e-01          9.134494e-01 
+         8.742056e-01          9.261386e-01          9.096885e-01 
       season2:hour^21       season3:hour^21       season4:hour^21 
-         9.978615e-01          9.654436e-01          9.921251e-01 
+         9.996366e-01          9.656464e-01          9.906981e-01 
       season2:hour^22       season3:hour^22       season4:hour^22 
-         9.454682e-01          9.759063e-01          9.591634e-01 
+         9.341053e-01          9.792962e-01          9.573971e-01 
       season2:hour^23       season3:hour^23       season4:hour^23 
-         1.034669e+00          9.915128e-01          9.978038e-01 
+         1.016536e+00          9.721497e-01          9.835890e-01 
  holiday1:workingday1    holiday1:weather.L    holiday1:weather.Q 
-                   NA          1.248994e+00          7.831873e-01 
+                   NA          1.219254e+00          7.697502e-01 
    holiday1:weather.C         holiday1:temp        holiday1:atemp 
-                   NA          9.893266e-01          9.929802e-01 
+                   NA          9.746716e-01          1.011042e+00 
     holiday1:humidity    holiday1:windspeed       holiday1:hour.L 
-         9.988508e-01          1.003944e+00          1.025395e+00 
+         9.993847e-01          1.003692e+00          9.258341e-01 
       holiday1:hour.Q       holiday1:hour.C       holiday1:hour^4 
-         3.637488e-01          1.947995e+00          2.130823e-01 
+         4.553500e-01          1.960154e+00          2.497183e-01 
       holiday1:hour^5       holiday1:hour^6       holiday1:hour^7 
-         7.798503e-01          2.695396e+00          4.243098e-01 
+         7.296528e-01          2.508754e+00          5.080672e-01 
       holiday1:hour^8       holiday1:hour^9      holiday1:hour^10 
-         1.220646e+00          1.389206e+00          7.704850e-01 
+         1.219999e+00          1.497440e+00          7.981514e-01 
      holiday1:hour^11      holiday1:hour^12      holiday1:hour^13 
-         1.277381e+00          1.236141e+00          1.003401e+00 
+         1.303105e+00          1.150979e+00          1.008269e+00 
      holiday1:hour^14      holiday1:hour^15      holiday1:hour^16 
-         9.111394e-01          1.129902e+00          1.031668e+00 
+         9.227336e-01          1.093948e+00          1.008524e+00 
      holiday1:hour^17      holiday1:hour^18      holiday1:hour^19 
-         9.591199e-01          1.108470e+00          9.244331e-01 
+         9.921503e-01          1.098903e+00          9.307071e-01 
      holiday1:hour^20      holiday1:hour^21      holiday1:hour^22 
-         9.733257e-01          1.066852e+00          1.013306e+00 
+         9.766301e-01          1.063429e+00          1.031123e+00 
      holiday1:hour^23 workingday1:weather.L workingday1:weather.Q 
-         9.697453e-01          1.220316e+00          9.020345e-01 
+         9.696297e-01          1.207179e+00          9.040538e-01 
 workingday1:weather.C      workingday1:temp     workingday1:atemp 
-                   NA          9.872712e-01          1.013622e+00 
+                   NA          9.912987e-01          1.003841e+00 
  workingday1:humidity workingday1:windspeed    workingday1:hour.L 
-         1.000070e+00          1.001304e+00          1.375477e+00 
+         1.000189e+00          1.001012e+00          1.309674e+00 
    workingday1:hour.Q    workingday1:hour.C    workingday1:hour^4 
-         1.595648e-01          4.921729e+00          3.244895e-02 
+         2.219479e-01          5.059655e+00          4.089960e-02 
    workingday1:hour^5    workingday1:hour^6    workingday1:hour^7 
-         7.007080e-01          9.175247e+00          1.771021e-01 
+         6.055817e-01          8.820528e+00          2.007651e-01 
    workingday1:hour^8    workingday1:hour^9   workingday1:hour^10 
-         1.006758e+00          1.206995e+00          6.110749e-01 
+         9.705521e-01          1.294313e+00          5.760074e-01 
   workingday1:hour^11   workingday1:hour^12   workingday1:hour^13 
-         1.390957e+00          1.298671e+00          1.013666e+00 
+         1.387398e+00          1.287051e+00          1.009755e+00 
   workingday1:hour^14   workingday1:hour^15   workingday1:hour^16 
-         5.878846e-01          1.253955e+00          1.231664e+00 
+         6.259684e-01          1.194515e+00          1.207798e+00 
   workingday1:hour^17   workingday1:hour^18   workingday1:hour^19 
-         8.942642e-01          1.081003e+00          1.030333e+00 
+         8.841150e-01          1.112020e+00          1.020421e+00 
   workingday1:hour^20   workingday1:hour^21   workingday1:hour^22 
-         9.293226e-01          1.020253e+00          1.019980e+00 
+         9.285224e-01          1.028963e+00          1.007991e+00 
   workingday1:hour^23        weather.L:temp        weather.Q:temp 
-         1.005800e+00          1.017072e+00          9.922064e-01 
+         9.919250e-01          1.009930e+00          9.935586e-01 
        weather.C:temp       weather.L:atemp       weather.Q:atemp 
-                   NA          9.626910e-01          1.016500e+00 
+                   NA          9.661896e-01          1.015991e+00 
       weather.C:atemp    weather.L:humidity    weather.Q:humidity 
-                   NA          1.010693e+00          9.983227e-01 
+                   NA          1.009338e+00          9.991162e-01 
    weather.C:humidity   weather.L:windspeed   weather.Q:windspeed 
-                   NA          1.009527e+00          9.974950e-01 
+                   NA          1.007104e+00          9.989357e-01 
   weather.C:windspeed      weather.L:hour.L      weather.Q:hour.L 
-                   NA          1.121917e+00          1.159104e+00 
+                   NA          1.176548e+00          1.144259e+00 
      weather.C:hour.L      weather.L:hour.Q      weather.Q:hour.Q 
-                   NA          4.342430e-01          1.517042e+00 
+                   NA          4.173782e-01          1.582044e+00 
      weather.C:hour.Q      weather.L:hour.C      weather.Q:hour.C 
-                   NA          1.260519e+00          8.364832e-01 
+                   NA          1.388314e+00          7.937751e-01 
      weather.C:hour.C      weather.L:hour^4      weather.Q:hour^4 
-                   NA          1.074995e+00          1.086933e+00 
+                   NA          1.073345e+00          1.118944e+00 
      weather.C:hour^4      weather.L:hour^5      weather.Q:hour^5 
-                   NA          5.061831e-01          1.300439e+00 
+                   NA          4.975919e-01          1.296438e+00 
      weather.C:hour^5      weather.L:hour^6      weather.Q:hour^6 
-                   NA          8.703203e-01          1.015750e+00 
+                   NA          8.607585e-01          1.024698e+00 
      weather.C:hour^6      weather.L:hour^7      weather.Q:hour^7 
-                   NA          6.673922e-01          1.308850e+00 
+                   NA          7.544082e-01          1.209355e+00 
      weather.C:hour^7      weather.L:hour^8      weather.Q:hour^8 
-                   NA          7.834759e-01          1.088849e+00 
+                   NA          8.046649e-01          1.080763e+00 
      weather.C:hour^8      weather.L:hour^9      weather.Q:hour^9 
-                   NA          1.409425e+00          9.121629e-01 
+                   NA          1.362782e+00          9.295782e-01 
      weather.C:hour^9     weather.L:hour^10     weather.Q:hour^10 
-                   NA          7.236247e-01          1.185162e+00 
+                   NA          8.033165e-01          1.127191e+00 
     weather.C:hour^10     weather.L:hour^11     weather.Q:hour^11 
-                   NA          7.049577e-01          1.098851e+00 
+                   NA          7.063963e-01          1.100745e+00 
     weather.C:hour^11     weather.L:hour^12     weather.Q:hour^12 
-                   NA          1.442956e+00          8.371470e-01 
+                   NA          1.383657e+00          8.485680e-01 
     weather.C:hour^12     weather.L:hour^13     weather.Q:hour^13 
-                   NA          7.761510e-01          1.142872e+00 
+                   NA          7.801170e-01          1.154129e+00 
     weather.C:hour^13     weather.L:hour^14     weather.Q:hour^14 
-                   NA          1.191581e+00          9.044727e-01 
+                   NA          1.278056e+00          8.813765e-01 
     weather.C:hour^14     weather.L:hour^15     weather.Q:hour^15 
-                   NA          1.104826e+00          1.016567e+00 
+                   NA          1.098941e+00          1.003707e+00 
     weather.C:hour^15     weather.L:hour^16     weather.Q:hour^16 
-                   NA          1.156363e+00          9.421065e-01 
+                   NA          1.110436e+00          9.514856e-01 
     weather.C:hour^16     weather.L:hour^17     weather.Q:hour^17 
-                   NA          1.139873e+00          9.243217e-01 
+                   NA          1.187072e+00          9.021740e-01 
     weather.C:hour^17     weather.L:hour^18     weather.Q:hour^18 
-                   NA          1.040037e+00          1.028541e+00 
+                   NA          1.084748e+00          1.005784e+00 
     weather.C:hour^18     weather.L:hour^19     weather.Q:hour^19 
-                   NA          9.167959e-01          1.024023e+00 
+                   NA          8.838680e-01          1.050308e+00 
     weather.C:hour^19     weather.L:hour^20     weather.Q:hour^20 
-                   NA          9.115727e-01          1.042588e+00 
+                   NA          9.161281e-01          1.046558e+00 
     weather.C:hour^20     weather.L:hour^21     weather.Q:hour^21 
-                   NA          1.034663e+00          9.896799e-01 
+                   NA          1.068814e+00          9.735127e-01 
     weather.C:hour^21     weather.L:hour^22     weather.Q:hour^22 
-                   NA          9.761109e-01          9.892746e-01 
+                   NA          9.639959e-01          9.925585e-01 
     weather.C:hour^22     weather.L:hour^23     weather.Q:hour^23 
-                   NA          1.118597e+00          9.441398e-01 
+                   NA          1.118203e+00          9.552718e-01 
     weather.C:hour^23            temp:atemp         temp:humidity 
-                   NA          9.982804e-01          9.996315e-01 
+                   NA          9.979396e-01          9.994417e-01 
        temp:windspeed           temp:hour.L           temp:hour.Q 
-         1.000358e+00          1.049196e+00          1.102698e+00 
+         1.000226e+00          1.057692e+00          1.103316e+00 
           temp:hour.C           temp:hour^4           temp:hour^5 
-         9.773909e-01          1.055911e+00          9.546163e-01 
+         9.762385e-01          1.054613e+00          9.492077e-01 
           temp:hour^6           temp:hour^7           temp:hour^8 
-         9.605218e-01          1.033749e+00          9.547183e-01 
+         9.598379e-01          1.032140e+00          9.614974e-01 
           temp:hour^9          temp:hour^10          temp:hour^11 
-         1.000579e+00          9.971243e-01          9.877828e-01 
+         9.977873e-01          1.000125e+00          9.900000e-01 
          temp:hour^12          temp:hour^13          temp:hour^14 
-         1.036099e+00          9.996901e-01          1.019217e+00 
+         1.027426e+00          1.000126e+00          1.017323e+00 
          temp:hour^15          temp:hour^16          temp:hour^17 
-         9.899483e-01          1.016704e+00          9.977576e-01 
+         9.968313e-01          1.009944e+00          9.994553e-01 
          temp:hour^18          temp:hour^19          temp:hour^20 
-         1.003147e+00          1.002277e+00          9.907226e-01 
+         1.002460e+00          1.003532e+00          9.882961e-01 
          temp:hour^21          temp:hour^22          temp:hour^23 
-         9.997069e-01          9.959053e-01          1.003894e+00 
+         9.983906e-01          9.941673e-01          1.003216e+00 
        atemp:humidity       atemp:windspeed          atemp:hour.L 
-         1.000317e+00          9.997339e-01          1.016473e+00 
+         1.000511e+00          9.998776e-01          1.018150e+00 
          atemp:hour.Q          atemp:hour.C          atemp:hour^4 
-         9.351665e-01          9.762711e-01          9.783003e-01 
+         9.311823e-01          9.719419e-01          9.820943e-01 
          atemp:hour^5          atemp:hour^6          atemp:hour^7 
-         1.025525e+00          1.011499e+00          1.022719e+00 
+         1.034080e+00          1.009131e+00          1.023957e+00 
          atemp:hour^8          atemp:hour^9         atemp:hour^10 
-         1.013139e+00          1.007389e+00          1.006540e+00 
+         1.009442e+00          1.007672e+00          1.006089e+00 
         atemp:hour^11         atemp:hour^12         atemp:hour^13 
-         9.872802e-01          9.974488e-01          9.975402e-01 
+         9.872457e-01          1.003041e+00          9.975048e-01 
         atemp:hour^14         atemp:hour^15         atemp:hour^16 
-         9.865813e-01          9.959574e-01          9.925483e-01 
+         9.887561e-01          9.933580e-01          9.962354e-01 
         atemp:hour^17         atemp:hour^18         atemp:hour^19 
-         1.000676e+00          9.997526e-01          1.002626e+00 
+         9.989285e-01          1.000193e+00          1.001411e+00 
         atemp:hour^20         atemp:hour^21         atemp:hour^22 
-         1.003183e+00          1.001049e+00          9.995075e-01 
+         1.005233e+00          1.003362e+00          1.000726e+00 
         atemp:hour^23    humidity:windspeed       humidity:hour.L 
-         9.965969e-01          1.000043e+00          9.971166e-01 
+         9.983205e-01          1.000039e+00          9.964803e-01 
       humidity:hour.Q       humidity:hour.C       humidity:hour^4 
-         1.002827e+00          1.000252e+00          1.000298e+00 
+         1.004184e+00          1.000944e+00          1.000056e+00 
       humidity:hour^5       humidity:hour^6       humidity:hour^7 
-         9.980539e-01          1.000879e+00          1.002444e+00 
+         9.983304e-01          1.001408e+00          1.001710e+00 
       humidity:hour^8       humidity:hour^9      humidity:hour^10 
-         9.981137e-01          1.002156e+00          9.993230e-01 
+         9.981541e-01          1.001946e+00          9.996017e-01 
      humidity:hour^11      humidity:hour^12      humidity:hour^13 
-         9.994204e-01          1.000493e+00          1.000113e+00 
+         9.989933e-01          1.000151e+00          1.000433e+00 
      humidity:hour^14      humidity:hour^15      humidity:hour^16 
-         1.000387e+00          9.994795e-01          1.000895e+00 
+         1.000149e+00          9.998047e-01          1.000643e+00 
      humidity:hour^17      humidity:hour^18      humidity:hour^19 
-         1.000282e+00          1.000058e+00          1.000381e+00 
+         1.000082e+00          9.998109e-01          1.000668e+00 
      humidity:hour^20      humidity:hour^21      humidity:hour^22 
-         9.998872e-01          9.992848e-01          9.986985e-01 
+         9.999802e-01          9.989780e-01          9.986591e-01 
      humidity:hour^23      windspeed:hour.L      windspeed:hour.Q 
-         1.000145e+00          9.912432e-01          9.914026e-01 
+         1.000169e+00          9.914390e-01          9.917132e-01 
      windspeed:hour.C      windspeed:hour^4      windspeed:hour^5 
-         1.000463e+00          9.969037e-01          1.005372e+00 
+         1.000865e+00          9.964393e-01          1.004608e+00 
      windspeed:hour^6      windspeed:hour^7      windspeed:hour^8 
-         1.000081e+00          9.997466e-01          1.001695e+00 
+         1.001391e+00          9.976778e-01          1.002191e+00 
      windspeed:hour^9     windspeed:hour^10     windspeed:hour^11 
-         1.003548e+00          9.985318e-01          1.003550e+00 
+         1.002541e+00          9.989802e-01          1.002979e+00 
     windspeed:hour^12     windspeed:hour^13     windspeed:hour^14 
-         9.966966e-01          9.987169e-01          9.989409e-01 
+         9.966682e-01          9.996132e-01          9.984294e-01 
     windspeed:hour^15     windspeed:hour^16     windspeed:hour^17 
-         1.000498e+00          9.978325e-01          1.002681e+00 
+         1.000692e+00          9.978230e-01          1.002947e+00 
     windspeed:hour^18     windspeed:hour^19     windspeed:hour^20 
-         9.983200e-01          9.992385e-01          9.994008e-01 
+         9.980235e-01          9.995150e-01          9.999426e-01 
     windspeed:hour^21     windspeed:hour^22     windspeed:hour^23 
-         9.989365e-01          9.995331e-01          9.995585e-01 
+         9.991499e-01          9.997039e-01          9.999720e-01 

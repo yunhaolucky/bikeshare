@@ -28,8 +28,8 @@ test.predict.lm = exp(predict(train., test))
 * The best subsets is to include all predictors (`size = 11`).
 
 ### Interpretion of Poisson glm output
-Output of glm.poisson: [summary](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/poisson_output.txt), [anova](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/poisson_anova_output.txt),
-[exp_coeffcient](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/poisson_output_exp.txt)
+Output of glm.poisson: [summary](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/poisson_summary_output.txt), [anova](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/poisson_anova_output.txt),
+[exp_coeffcient](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/poisson_exp_output.txt)
   * cross_validation `rmsle = 0.431`, `r-squared = 0.919`
   * `1-pchisq(104201,10340)` = 0. The residual deviance is too large. This might not be a good fit.
   *  Some of the coeffecients cannot be explained by the context. e.g. `humidity` and `not_workingday`
@@ -41,8 +41,8 @@ Output of glm.poisson: [summary](https://raw.githubusercontent.com/yunhaolucky/b
 ### Combined with casual and registered
 Col | Casual  | Registered | Combination(Count)
 ----|------------- | -------------|------
-summary_output|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_casual_summary.txt)|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_registered_summary.txt)
-anova_output|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_casual_summary.txt)|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/lm_2_registered_anova.txt)
+summary_output|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/casual_possion_summary_output.txt)|[summary_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/casual_possion_anova_output.txt)
+anova_output|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/registered_possion_summary_output.txt)|[anova_output](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/registered_possion_anova_output.txt)
 Residual deviance|44486 (df=10340) (p=0)|87459 (df=10340) (p=0)
 AIC|92284|155990|
 R_squared (cross_validation)|0.8923311|0.9175762|
@@ -61,17 +61,20 @@ rmsle (cross_validation)|0.9814432|0.4327392|
 ### Quasi-poisson ###
 Residual deviance showes that poisson model is not a good fit. To solve the problem of overdispertion, quasi-possion regression should be applied.
 
-Output of glm.quasipoisson: [summary](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/quasipoisson_output.txt), [anova](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/quasipoisson_anova_output.txt),
-[exp_coeffcient](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/quasipoisson_output_exp.txt)
+Output of glm.quasipoisson: [summary](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/quasipoisson_summary_output.txt), [anova](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/quasipoisson_anova_output.txt),
+[exp_coeffcient](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/quasipoisson_exp_output.txt)
 * Dispersion parameter = 10.15729 != 1
 * Residual deviance:  104201  on 10340  degrees of freedom
 * `rmsle = 0.433`
 * `r-squared = 0.918`
 
 ### Negative Binomial ###
-Output of glm.nb: [summary](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/nb_output.txt), [anova](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/nb_anova_output.txt),
+Output of glm.nb: [summary](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/nb_summary_output.txt), [anova](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/nb_anova_output.txt),
 [exp_coeffcient](https://raw.githubusercontent.com/yunhaolucky/bikeshare/master/Week4/output/nb_output_exp.txt)
 * Theta:  14.093
 * Residual deviance:  12173  on 10340  degrees of freedom
 * `rmsle = 0.429`
 * `r-squared = 0.908`
+[](http://plantecology.syr.edu/fridley/bio793/glm.html)
+[](http://www.statistics.ma.tum.de/fileadmin/w00bdb/www/czado/lec6.pdf)
+[](http://cran.r-project.org/web/packages/pscl/vignettes/countreg.pdf)
