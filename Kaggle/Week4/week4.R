@@ -35,7 +35,7 @@ print.prediction(test,test.predict.lm,"stepwise_poisson.csv")
 
 # Combined poisson
 ## predict casual
-casual.feature =  train[,-c(11,12)]
+casual.feature =  train[,-c(11,12,14)]
 casual.poisson = glm(casual ~ .*., family="poisson",data = casual.feature)
 print.output(casual.poisson,"casual_possion")
 cv.result.casual <- crossValidation(feature = casual.feature,resp = casual.feature$casual,k = 5,
@@ -43,7 +43,7 @@ cv.result.casual <- crossValidation(feature = casual.feature,resp = casual.featu
 casual.poisson.prediction = exp(predict(casual.poisson, test))
 remove(casual.feature)
 ## predict registered 
-registered.feature = train[,-c(10,12)]
+registered.feature = train[,-c(10,12,14)]
 registered.poisson = glm(registered ~ .*., family="poisson",data = registered.feature)
 print.output(registered.poisson,"registered_possion")
 cv.result.registered <- crossValidation(feature = registered.feature,resp = registered.feature$registered,k = 5,

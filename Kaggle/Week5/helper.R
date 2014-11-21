@@ -108,7 +108,7 @@ crossValidation <-function(feature,resp,k = 5, method ,...){
   }
   groups[[k]] <- order[(1 + (k - 1) * fold.size):n]
   
-  # predict using cross_validation 
+  # prsumedict using cross_validation 
   models = vector("list",k) ## list of models
   predict.value = rep(NA,n) ## predict values
   for(i in 1:k){
@@ -141,13 +141,13 @@ print.prediction <-function(test,predict,filename){
 }
 
 print.output <- function(model,model_name){
-  sink(paste("Week4/output/",model_name,"_summary_output.txt",sep = ""))
+  sink(paste("Week5/output/",model_name,"_summary_output.txt",sep = ""))
   print(summary(model))
   sink()
-  sink(paste("Week4/output/",model_name,"_anova_output.txt",sep = ""))
+  sink(paste("Week5/output/",model_name,"_anova_output.txt",sep = ""))
   print(anova(model))
   sink()
-  sink(paste("Week4/output/",model_name,"_exp_output.txt",sep = ""))
+  sink(paste("Week5/output/",model_name,"_exp_output.txt",sep = ""))
   print(exp(coefficients(model)))
   sink()
 }
