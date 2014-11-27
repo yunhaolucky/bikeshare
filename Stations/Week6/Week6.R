@@ -1,12 +1,24 @@
-#### read in stations information ####
+setwd(paste(getwd(),"/Stations",sep = ""))
+source("Week6/Helper.R")
+store = ridership
+# input stasions information(id, name, latitude, longtitude)
+stations <- read.csv("stations.csv")
+# input ridership information
+ridership <- read.csv("2014-Q2-Trips-History-Data.csv")
+# Use riderships on 2014-6-30 as sampmle 
+ridership = ridership[c(1:10604),]
+#Add riding distance and average speed to data frame
+ridership = add_distance_speed(ridership)
+write.csv(ridership, file = "rideJune30.csv", quote=FALSE, row.names=FALSE)
 
-require(jsonlite)
-dat <- fromJSON("stations.json")
-id = as.numeric(substr(dat$network$stations$name,1,5))
-name = substr(dat$network$stations$name,9,100)
-latitude = dat$network$stations$latitude
-longitude = dat$network$stations$longitude
-stations = data.frame(id,name,latitude,longitude) 
-remove(id,name,latitude,longitude,dat)
-write.csv(stations, file = "stations.csv", quote=FALSE, row.names=TRUE)
+ridership[ridership$End.terminal == 31232,]
+stations
+?sort
+sort(stations)
+s = sort(stations$id)
+for(j in 1:352){
+  if (s[i] == s[i+1]){
+    print(s[i])
+  }
+}
 
