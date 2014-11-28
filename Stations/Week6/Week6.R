@@ -11,14 +11,8 @@ ridership = ridership[c(1:10604),]
 ridership = add_distance_speed(ridership)
 write.csv(ridership, file = "rideJune30.csv", quote=FALSE, row.names=FALSE)
 
-ridership[ridership$End.terminal == 31232,]
-stations
-?sort
-sort(stations)
+### Find all replicates 
 s = sort(stations$id)
-for(j in 1:352){
-  if (s[i] == s[i+1]){
-    print(s[i])
-  }
+for(i in 1:352){
+  if (s[i] == s[i+1]){print(s[i])}
 }
-

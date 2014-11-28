@@ -90,5 +90,6 @@ L.marker([38.9113,-77.04654]).addTo(map);
 for(var i = 0; i < r.length; i ++){
     r[i].marker.addTo(map);
 }
+var json = JSON.parse("rideJune3012.json");
 
 

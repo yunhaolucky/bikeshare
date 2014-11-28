@@ -5,6 +5,41 @@ add_distance_speed <- function(data){
   return(data.frame(data,distance,speed))
 }
 
+output.ridership.json <- function(ridership,filename){
+  minstart = as.numeric(as.POSIXlt(ridership$Start.date[length(ridership[,1])],format = "%m/%d/%Y %H:%M"))
+  start = (as.numeric(as.POSIXlt(ridership$Start.date,format = "%m/%d/%Y %H:%M"))-minstart)/60
+  end = (as.numeric(as.POSIXlt(ridership$End.date,format = "%m/%d/%Y %H:%M"))-minstart)/60
+  stations_s = ridership$Start.terminal
+  stations_e = ridership$End.terminal
+  riderlist = data.frame(start = rev(start),end = rev(end),stations_s = rev(stations_s),stations_e = rev(stations_e))
+  json = json.add_property(json,"start_time",ridership$Start.date[length(ridership[,1])])
+  json = json.add_property(json,"ridership",json.toarray(riderlist))
+  json = paste(json,'"',name,'":',value,",",sep = '')
+  sink(paste('data/',filename,'.json',sep = ''))
+  cat('{',json,'}')
+  sink()
+  }
+
+json.add_property <- function(json, name,value){
+  res = paste(json,'"',name,'":',value,",",sep = "")
+  return(res)
+}
+json.toarray <- function(dtf){
+  clnms <- colnames(dtf)
+  name.value <- function(i){
+    quote <- '';
+    if(!class(dtf[, i]) %in% c('numeric', 'integer')){
+      quote <- '"';
+    }
+    paste('"', i, '" : ', quote, dtf[,i], quote, sep='')
+  }
+  objs <- apply(sapply(clnms, name.value), 1, function(x){paste(x, collapse=', ')})
+  objs <- paste('{', objs, '}')
+  res <- paste('[', paste(objs, collapse=', '), ']')
+  return(res)
+}
+
+
 
 distance <- function(s1, s2,u = "mile"){
   # calculate distance between station1 and station2
