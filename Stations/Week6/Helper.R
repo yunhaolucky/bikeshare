@@ -12,7 +12,7 @@ output.ridership.json <- function(ridership,filename){
   stations_s = ridership$Start.terminal
   stations_e = ridership$End.terminal
   riderlist = data.frame(start = rev(start),end = rev(end),stations_s = rev(stations_s),stations_e = rev(stations_e))
-  json = json.add_property(json,"start_time",ridership$Start.date[length(ridership[,1])])
+  #json = json.add_property(json,"start_time",ridership$Start.date[length(ridership[,1])])
   json = json.add_property(json,"ridership",json.toarray(riderlist))
   json = paste(json,'"',name,'":',value,",",sep = '')
   sink(paste('data/',filename,'.json',sep = ''))

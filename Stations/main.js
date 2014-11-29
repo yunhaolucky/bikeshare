@@ -90,6 +90,9 @@ L.marker([38.9113,-77.04654]).addTo(map);
 for(var i = 0; i < r.length; i ++){
     r[i].marker.addTo(map);
 }
-var json = JSON.parse("rideJune3012.json");
-
+var my_JSON_object;
+var url = "https://rawgit.com/yunhaolucky/bikeshare/master/Stations/data/rideJune3012.json";
+$.get(url, function(data) { 
+       my_JSON_object = JSON.parse(data);
+}, 'text');
 
