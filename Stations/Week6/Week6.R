@@ -16,3 +16,6 @@ s = sort(stations$id)
 for(i in 1:352){
   if (s[i] == s[i+1]){print(s[i])}
 }
+
+### write to json file for javescript reading
+output.ridership.json(ridership,"rideJune3012")
