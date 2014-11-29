@@ -17,5 +17,9 @@ for(i in 1:352){
   if (s[i] == s[i+1]){print(s[i])}
 }
 
+#### Find NA in ridership  and remove it
+which(is.na(ridership$End.terminal))
+ridership = ridership[c(1:8677,8679:10604),]
+
 ### write to json file for javescript reading
 output.ridership.json(ridership,"rideJune3012")

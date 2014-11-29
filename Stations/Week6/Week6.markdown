@@ -26,4 +26,4 @@ All replicates are(2012 Jan - Dec):
 All stations can be checked in this [map](https://a.tiles.mapbox.com/v4/yunhaocs.kb529eif/page.html?access_token=pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg#13/38.9135/-77.0452)
 
 #### Ridership ####
-I pick `Jun 30 2012` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`
+I pick `Jun 30 2012` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012` (As ridership`8678` never returns, I remove this ridership. Therefore, I have `10603` ridership in total.)

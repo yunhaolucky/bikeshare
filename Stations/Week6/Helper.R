@@ -9,9 +9,11 @@ output.ridership.json <- function(ridership,filename){
   minstart = as.numeric(as.POSIXlt(ridership$Start.date[length(ridership[,1])],format = "%m/%d/%Y %H:%M"))
   start = (as.numeric(as.POSIXlt(ridership$Start.date,format = "%m/%d/%Y %H:%M"))-minstart)/60
   end = (as.numeric(as.POSIXlt(ridership$End.date,format = "%m/%d/%Y %H:%M"))-minstart)/60
-  stations_s = ridership$Start.terminal
-  stations_e = ridership$End.terminal
-  riderlist = data.frame(start = rev(start),end = rev(end),stations_s = rev(stations_s),stations_e = rev(stations_e))
+  s_lat =to.list(lapply(ridership$Start.terminal, function(x)station.lat(x)))
+  s_lon =to.list(lapply(ridership$Start.terminal, function(x)station.lon(x)))
+  e_lat = to.list(lapply(ridership$End.terminal, function(x)station.lat(x)))
+  e_lon = to.list(lapply(ridership$End.terminal, function(x)station.lon(x)))
+  riderlist = data.frame(start = rev(start),end = rev(end),s_lat = rev(s_lat),s_lon = rev(s_lon),e_lat = rev(e_lat),e_lon = rev(e_lon))
   #json = json.add_property(json,"start_time",ridership$Start.date[length(ridership[,1])])
   json = json.add_property(json,"ridership",json.toarray(riderlist))
   json = paste(json,'"',name,'":',value,",",sep = '')
@@ -20,6 +22,21 @@ output.ridership.json <- function(ridership,filename){
   sink()
   }
 
+station.lat <- function(id){
+  return(stations[stations$id == id,]$latitude)
+}
+
+station.lon <- function(id){
+  return(stations[stations$id == id,]$longitude)
+}
+
+to.list <- function(old){
+  res = c()
+  for(i in c(1:length(old))){
+    res = c(res,old[[i]][1])
+  }
+  return(res)
+}
 json.add_property <- function(json, name,value){
   res = paste(json,'"',name,'":',value,",",sep = "")
   return(res)

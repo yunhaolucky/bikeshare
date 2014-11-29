@@ -63,7 +63,12 @@ function addLayer(layer, name, zIndex) {
 
     layers.appendChild(link);
 }
-
+var ridelist;
+var url = "https://rawgit.com/yunhaolucky/bikeshare/master/Stations/data/rideJune3012.json";
+$.get(url, function(data) { 
+       ridelist = JSON.parse(data).ridership;
+}, 'text');
+var index = 0;
 var r = [];
 r.push(new ridership(1,10,38.91114, -77.04754,38.9113,-77.04654)); 
 r.push(new ridership(10,17,38.9113,-77.04654,38.9116,-77.04665));
@@ -71,6 +76,7 @@ var t = 0;
 window.setInterval(function() {
     var p;
     var status;
+    while(index < ridelist.length && ridelist[index].start <
     for(var i = 0; i < r.length; i ++){
         //alert("t"+r[i].isRunning(t));
         status = r[i].isRunning(t);
@@ -85,14 +91,8 @@ window.setInterval(function() {
     }
     t += 1;
 }, 50);
-L.marker([38.91114, -77.04754]).addTo(map);
-L.marker([38.9113,-77.04654]).addTo(map);
 for(var i = 0; i < r.length; i ++){
     r[i].marker.addTo(map);
 }
-var my_JSON_object;
-var url = "https://rawgit.com/yunhaolucky/bikeshare/master/Stations/data/rideJune3012.json";
-$.get(url, function(data) { 
-       my_JSON_object = JSON.parse(data);
-}, 'text');
+
 
