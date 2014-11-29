@@ -70,13 +70,16 @@ $.get(url, function(data) {
 }, 'text');
 var index = 0;
 var r = [];
-r.push(new ridership(1,10,38.91114, -77.04754,38.9113,-77.04654)); 
-r.push(new ridership(10,17,38.9113,-77.04654,38.9116,-77.04665));
 var t = 0;
 window.setInterval(function() {
     var p;
     var status;
-    while(index < ridelist.length && ridelist[index].start <
+    var cur;
+    while(index < 10603 && ridelist[index].start == t){
+        cur = ridelist[index];
+        r.push(new ridership(cur.start,cur.end,cur.s_lat,cur.s_lon,cur.e_lat,cur.e_lon));
+        index ++;
+    }
     for(var i = 0; i < r.length; i ++){
         //alert("t"+r[i].isRunning(t));
         status = r[i].isRunning(t);
@@ -87,6 +90,7 @@ window.setInterval(function() {
             r[i].marker.setLatLng(L.latLng(p[0],p[1]));
         }else if (status == 2) {
             map.removeLayer(r[i].marker);
+            r.splice(i,1);
         }
     }
     t += 1;

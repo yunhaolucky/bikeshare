@@ -20,6 +20,8 @@ for(i in 1:352){
 #### Find NA in ridership  and remove it
 which(is.na(ridership$End.terminal))
 ridership = ridership[c(1:8677,8679:10604),]
+remove = c(which(is.na(s_lat)),which(is.na(e_lat)))
+ridership = ridership[-remove,]
 
 ### write to json file for javescript reading
 output.ridership.json(ridership,"rideJune3012")
