@@ -17,7 +17,6 @@ output.ridership.json <- function(ridership,filename){
   riderlist = data.frame(start = rev(start),end = rev(end),s_lat = rev(s_lat),s_lon = rev(s_lon),e_lat = rev(e_lat),e_lon = rev(e_lon))
   #json = json.add_property(json,"start_time",ridership$Start.date[length(ridership[,1])])
   json = json.add_property(json,"ridership",json.toarray(riderlist))
-  json = paste(json,'"',name,'":',value,",",sep = '')
   sink(paste('data/',filename,'.json',sep = ''))
   cat('{',json,'}')
   sink()
