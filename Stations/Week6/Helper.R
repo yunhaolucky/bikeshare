@@ -6,6 +6,7 @@ add_distance_speed <- function(data){
 }
 
 output.ridership.json <- function(ridership,filename){
+  json = ""
   minstart = as.numeric(as.POSIXlt(ridership$Start.date[length(ridership[,1])],format = "%m/%d/%Y %H:%M"))
   start = (as.numeric(as.POSIXlt(ridership$Start.date,format = "%m/%d/%Y %H:%M"))-minstart)/60
   end = (as.numeric(as.POSIXlt(ridership$End.date,format = "%m/%d/%Y %H:%M"))-minstart)/60

@@ -34,7 +34,7 @@ var layers = document.getElementById('menu-ui');
 
 addLayer(L.mapbox.tileLayer('examples.map-i87786ca'), 'Base Map', 1);
 addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Lanes', 2);
-addLayer(L.mapbox.tileLayer('yunhaocs.kb529eif'), 'Bike Stations', 3);
+addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Stations', 3);
 
 function addLayer(layer, name, zIndex) {
     layer
@@ -63,40 +63,6 @@ function addLayer(layer, name, zIndex) {
 
     layers.appendChild(link);
 }
-var ridelist;
-var url = "https://rawgit.com/yunhaolucky/bikeshare/master/Stations/data/rideJune3012.json";
-$.get(url, function(data) { 
-       ridelist = JSON.parse(data).ridership;
-}, 'text');
-var index = 0;
-var r = [];
-var t = 0;
-window.setInterval(function() {
-    var p;
-    var status;
-    var cur;
-    while(index < 10603 && ridelist[index].start == t){
-        cur = ridelist[index];
-        r.push(new ridership(cur.start,cur.end,cur.s_lat,cur.s_lon,cur.e_lat,cur.e_lon));
-        index ++;
-    }
-    for(var i = 0; i < r.length; i ++){
-        //alert("t"+r[i].isRunning(t));
-        status = r[i].isRunning(t);
-        //alert(status);
-        if( status == 1){
-            p = r[i].position(t);
-            //alert(p);
-            r[i].marker.setLatLng(L.latLng(p[0],p[1]));
-        }else if (status == 2) {
-            map.removeLayer(r[i].marker);
-            r.splice(i,1);
-        }
-    }
-    t += 1;
-}, 50);
-for(var i = 0; i < r.length; i ++){
-    r[i].marker.addTo(map);
-}
+
 
 
