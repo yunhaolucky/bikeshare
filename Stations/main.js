@@ -7,7 +7,9 @@ function ridership(stime,etime,lat1,lon1,lat2,lon2){
     this.lon2 = lon2;
     this.marker = L.marker([lat1, lat2], {
         icon: L.mapbox.marker.icon({
-        'marker-color': '#f86767'
+        'marker-size': 'small',
+        'marker-symbol': 'bicycle',
+        'marker-color': '#fa0'
         })
     });
     // 0: before 1:running 2:after
@@ -28,13 +30,13 @@ function ridership(stime,etime,lat1,lon1,lat2,lon2){
 
 L.mapbox.accessToken = 'pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg';
 var map = L.mapbox.map('map', 'examples.map-h67hf2ic')
-  .setView([38.91114, -77.04754], 18);
+  .setView([38.91114, -77.04754], 12);
 
-var layers = document.getElementById('menu-ui');
+//var layers = document.getElementById('menu-ui');
 
-addLayer(L.mapbox.tileLayer('examples.map-i87786ca'), 'Base Map', 1);
-addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Lanes', 2);
-addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Stations', 3);
+//addLayer(L.mapbox.tileLayer('examples.map-i87786ca'), 'Base Map', 1);
+//addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Lanes', 2);
+//addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Stations', 3);
 
 function addLayer(layer, name, zIndex) {
     layer
@@ -63,6 +65,72 @@ function addLayer(layer, name, zIndex) {
 
     layers.appendChild(link);
 }
+var ridelist;
+var isLoadingJson = true;
+var url = "https://rawgit.com/yunhaolucky/bikeshare/master/Stations/data/rideJune3012.json";
+$.get(url, function(data) { 
+       ridelist = JSON.parse(data).ridership;
+       isLoadingJson = false;
+}, 'text');
 
+var index = 0;
+    var r = [];
+    var t = 0;
+function setLocation(){
+    if(isLoadingJson){
+        setTimeout(setLocation, 250);
+    }else{
+while(index < ridelist.length && ridelist[index].start == t){
+        cur = ridelist[index];
+            console.log(index);
+        if(cur.start != cur.end){
+        r.push(new ridership(cur.start,cur.end,cur.s_lat,cur.s_lon,cur.e_lat,cur.e_lon));
+        }
+        index ++;
+}
+        var p;
+        var status;
+        var cur;
+    for(var i = 0; i < r.length; i ++){
+        status = r[i].isRunning(t);
+        if( status == 1){
+            p = r[i].position(t);
+            if(t > 150){
+            console.log(r[i].stime+"-" + r[i].etime +": "+p);
+            }
+            r[i].marker.setLatLng(L.latLng(p[0],p[1]));
+            r[i].marker.addTo(map);
+        }else if (status == 2) {
+            map.removeLayer(r[i].marker);
+            r.splice(i,1);
+        }
+    }
+    t += 1;
+    info.update(t);
+    }
+}
+var interval = window.setInterval(setLocation, 100);
+for(var i = 0; i < r.length; i ++){
+    r[i].marker.addTo(map);
+}
 
+var info = L.control();
 
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+// method that we will use to update the control based on feature properties passed
+info.update = function (t) {
+    var hours   = Math.floor(t / 60);
+    var minutes = t - (hours * 60);
+
+    if (hours   < 10) {hours   = "0"+hours;}
+    if (minutes < 10) {minutes = "0"+minutes;}
+    var time    = hours+':'+minutes;
+    this._div.innerHTML = '<h4>'+time+'</h4>';
+};
+
+info.addTo(map);
