@@ -1,4 +1,9 @@
-post 5
+---
+layout: post
+title:  "Week 6"
+date:   2014-11-27 08:27
+categories: bikeshare
+---
 
 #### Stations ####
 Get the station information from [citBike](citybike.us). The System has 354 stations and each station should have an unique id, name, latitude and longtitude.
@@ -28,3 +33,5 @@ All stations can be checked in this [map](https://a.tiles.mapbox.com/v4/yunhaocs
 #### Ridership ####
 I pick `Jun 30 2012` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`  
 As ridership`8678` never returns, I remove this ridership. Also, Station `White House [17th & State Pl NW]` location information is not included in the station xml file, I remove all the ridership starts or ends at this station(`1088  2206  2293  2860  2983  7697  7321  7870  8433 10037`. Therefore, There are `10595` riderships in total.
+
+[Animation of Riderships](http://nameless-mountain-3948.herokuapp.com/)

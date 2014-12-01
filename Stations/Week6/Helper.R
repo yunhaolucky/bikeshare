@@ -38,7 +38,7 @@ to.list <- function(old){
   return(res)
 }
 json.add_property <- function(json, name,value){
-  res = paste(json,'"',name,'":',value,",",sep = "")
+  res = paste(json,'"',name,'":',value,sep = "")
   return(res)
 }
 json.toarray <- function(dtf){
