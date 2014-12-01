@@ -114,7 +114,7 @@ for(var i = 0; i < r.length; i ++){
     r[i].marker.addTo(map);
 }
 
-var info = L.control();
+var info = L.control({position: 'bottomleft'});
 
 info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -130,7 +130,7 @@ info.update = function (t) {
     if (hours   < 10) {hours   = "0"+hours;}
     if (minutes < 10) {minutes = "0"+minutes;}
     var time    = hours+':'+minutes;
-    this._div.innerHTML = '<h4>'+time+'</h4>';
+    this._div.innerHTML = 'bikes on roads:'+r.length+'<p><h4>time: '+time+'</h4>';
 };
 
 info.addTo(map);

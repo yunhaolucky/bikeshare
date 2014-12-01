@@ -24,4 +24,7 @@ ridership = ridership[-remove,]
 ### write to json file for javescript reading
 output.ridership.json(ridership,"rideJune3012")
 
-### get 
+#Add riding distance and average speed to data frame
+ridership = add_distance_speed(ridership)
+hist(ridership$distance,breaks = 150,main = "Histogram of Riding Distance of ridership",xlab = "distance(miles)")
+
