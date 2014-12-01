@@ -130,7 +130,7 @@ info.update = function (t) {
     if (hours   < 10) {hours   = "0"+hours;}
     if (minutes < 10) {minutes = "0"+minutes;}
     var time    = hours+':'+minutes;
-    this._div.innerHTML = 'bikes on roads:'+r.length+'<p><h4>time: '+time+'</h4>';
+    this._div.innerHTML = 'bikes on roads:'+r.length+'<p><h4>time:'+time+'</h4>';
 };
 
 info.addTo(map);

@@ -31,7 +31,7 @@ All replicates are(2012 Jan - Dec):
 All stations can be checked in this [map](https://a.tiles.mapbox.com/v4/yunhaocs.kb529eif/page.html?access_token=pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg#13/38.9135/-77.0452)
 
 ### Rideship ###
-I pick `Jun 30 2012` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`  
+I pick `Jun 30 2012(Saturday)` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`  
 As ridership`8678` never returns, I remove this ridership. Also, Station `White House [17th & State Pl NW]` location information is not included in the station xml file, I remove all the ridership starts or ends at this station(`1088  2206  2293  2860  2983  7697  7321  7870  8433 10037`. Therefore, There are `10595` riderships in total.
 * `8524(80.45%)` rides are from registered riders while `2069(19.55%)` are from casual riders.
 * There are `7.357639` rides per minute.
@@ -54,3 +54,44 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
   * `distance < 0.1 mile`:`436` in total (`244(56%)` are from registered registered)
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/box_distance.png)
 * There is no big difference in riding distance between casual and registered riders `p = 3.2e-13`.
+
+#### Travelling Time ####
+Summary of travelling time(seconds):
+```
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+2     389     657    1004    1101   65190
+```
+![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/hist_time.png)
+* Most rides ends within 30 minutes.
+* `188` rides last less than 1 minute.
+* `384` rides last longer than 1 hour.
+![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/boxplot_time.png)
+The travelling time of casual riders is generally longer than registered riders.(but `p = 2e-16`)
+
+#### Speed ####
+`speed` = `distance`/`travelling time`. Summary of speed(mph):
+```
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+0.000   4.236   5.952   5.601   7.300  13.710
+```
+Even the maximum is smaller than the average biking speed monitored by New York city Bike. The reason could be that I use shortest distance to calculate.
+![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/hist_speed.png)
+![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/boxplot_speed.png)
+ casual riders is generally slower than registered riders.(but `p < 2e-16`)
+
+#### Speed and Distance ####
+![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/plot_dist_speed.png)
+We see a big range of speed when distance is small. But when distance becomes larger, the speed converges to about 8mph.
+
+
+
+
+Probably useful links:
+
+* https://github.com/dssg/bikeshare
+* "Car traffic predicton"
+https://who.rocq.inria.fr/Jean-Marc.Lasgouttes/workshop/iwi-loubes.pdf
+* "New York Traffic data"
+http://www.nyc.gov/html/dot/html/about/datafeeds.shtml#Bikes
+* "Computer networks traffic prediction"
+http://dept.stat.lsa.umich.edu/~gmichail/nkrig_rev1.pdf

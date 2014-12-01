@@ -27,4 +27,11 @@ output.ridership.json(ridership,"rideJune3012")
 #Add riding distance and average speed to data frame
 ridership = add_distance_speed(ridership)
 hist(ridership$distance,breaks = 150,main = "Histogram of Riding Distance of ridership",xlab = "distance(miles)")
+casual_distance = ridership[ridership$Subscriber.Type == "Casual",]$distance
+registered_distance = ridership[ridership$Subscriber.Type == "Registered",]$distance
+boxplot(distance~Subscriber.Type,data = ridership,main = "Boxplot of Riding Distance(miles)")
 
+freqs_in = aggregate(ridership$Start.terminal, by=list(ridership$Start.terminal),FUN=length)
+freqs_out = aggregate(ridership$End.terminal, by=list(ridership$End.terminal),FUN=length)
+
+# Duration #
