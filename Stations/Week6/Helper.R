@@ -14,7 +14,8 @@ output.ridership.json <- function(ridership,filename){
   s_lon =to.list(lapply(ridership$Start.terminal, function(x)station.lon(x)))
   e_lat = to.list(lapply(ridership$End.terminal, function(x)station.lat(x)))
   e_lon = to.list(lapply(ridership$End.terminal, function(x)station.lon(x)))
-  riderlist = data.frame(start = rev(start),end = rev(end),s_lat = rev(s_lat),s_lon = rev(s_lon),e_lat = rev(e_lat),e_lon = rev(e_lon))
+  type = to.list(lapply(ridership$Subscriber.Type, function(x)rideship.type(x)))
+  riderlist = data.frame(start = rev(start),end = rev(end),s_lat = rev(s_lat),s_lon = rev(s_lon),e_lat = rev(e_lat),e_lon = rev(e_lon),type = rev(type))
   #json = json.add_property(json,"start_time",ridership$Start.date[length(ridership[,1])])
   json = json.add_property(json,"ridership",json.toarray(riderlist))
   sink(paste('data/',filename,'.json',sep = ''))
@@ -29,7 +30,13 @@ station.lat <- function(id){
 station.lon <- function(id){
   return(stations[stations$id == id,]$longitude)
 }
-
+rideship.type <- function(type){
+  if(type == "Registered"){
+    return(0)
+  }else{
+    return(1)
+  }
+}
 to.list <- function(old){
   res = c()
   for(i in c(1:length(old))){

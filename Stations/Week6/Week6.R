@@ -35,3 +35,18 @@ freqs_in = aggregate(ridership$Start.terminal, by=list(ridership$Start.terminal)
 freqs_out = aggregate(ridership$End.terminal, by=list(ridership$End.terminal),FUN=length)
 
 # Duration #
+duration = as.numeric(as.difftime(as.character(ridership$Duration),"%Hh %Mm %Ss",units="secs"))
+hist(duration,main = "Histogram of travelling time(Seconds)",xlim = c(1,6000),breaks = 1000)
+boxplot(duration~Subscriber.Type,data = ridership,outline = 0,main = "Boxplot of travelling time(seconds) w/o outliers")
+length(which(duration < 60))
+summary(aov(duration~Subscriber.Type,data = ridership))
+
+# Speed #
+speed = ridership$speed*3600
+summary(speed)
+hist(speed,main = "Histogram of speed(mph)",breaks = 70)
+boxplot(speed~ridership$Subscriber.Type,outline = 0,main = "Boxplot of travelling time(seconds) w/o outliers")
+summary(aov(speed~ridership$Subscriber.Type))
+               
+plot(ridership$distance,speed,main = "plot of distance and speed",xlab = "distance(mile)",ylab = "speed(mph)")
+lines(lowess(ridership$distance,speed), col="red")
