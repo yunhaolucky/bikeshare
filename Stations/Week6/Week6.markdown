@@ -32,14 +32,22 @@ All changes(2012 Jan - Dec) are listed below:
 All stations in the [map](https://a.tiles.mapbox.com/v4/yunhaocs.kb529eif/page.html?access_token=pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg#13/38.9135/-77.0452)
 
 ### Rideship ###
-I pick `Jun 30 2012(Saturday)` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`.
-As ridership `8678` never returns, I remove this ridership. 
-Also, Station `White House [17th & State Pl NW]` location information is not included in the station xml file, I remove all the ridership starts or ends at this station(`1088  2206  2293  2860  2983  7697  7321  7870  8433 10037`. Therefore, There are `10595` riderships in total.
+I pick `Jun 30 2012(Saturday)` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`.  
+As ridership `8678` never returns, I remove this ridership.   
+Also, Station `White House [17th & State Pl NW]` location information is not included in the station xml file, I remove all the ridership starts or ends at this station(`1088  2206  2293  2860  2983  7697  7321  7870  8433 10037`). Therefore, There are `10595` riderships in total.
+
 * `8524(80.45%)` rides are from registered riders while `2069(19.55%)` are from casual riders.
 * There are `7.357639` rides per minute.
 * `302` stations have out-rides while `304` stations have in-rides.
 
 [Animation of Riderships](http://nameless-mountain-3948.herokuapp.com/)
+* Stations
+  * Most riderships are in the Washington D.C area. Most stations in Arlington area has no rides.
+  * Lots of bikes get into Washington D.C area in the morning(6 - 8am) and out of town in the evening(5 - 9pm)
+* Casual vs Registered
+   * Lots casual rideships have companions.
+   * Most casual rideships are in the area of Washiton Monument and West Potomac Park, while most registered riderships are in-town and out-town traffic.
+   * Most casual rideships happens during morning and evening, while most casual rideships happens during the day.
 
 #### Distance ####
 I use [Haversine formula](http://en.wikipedia.org/wiki/Haversine_formula) to calculate the distance between two stations.
@@ -84,8 +92,6 @@ Even the maximum is smaller than the average biking speed monitored by New York 
 #### Speed and Distance ####
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/plot_dist_speed.png)
 We see a big range of speed when distance is small. But when distance becomes larger, the speed converges to about 8mph.
-
-
 
 
 Probably useful links:
