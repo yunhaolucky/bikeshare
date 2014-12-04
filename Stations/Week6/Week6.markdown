@@ -88,13 +88,15 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 ```
 Even the maximum is smaller than the average biking speed maximum limit by New York city Bike(I use shortest distance between two stations to calculate.)
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/hist_speed.png)
+* The speed histogram looks pretty normal,expcept the peak at 0.
+* `Potential round-trip`(speed < 3)`: There are `1687` trips.
+
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/boxplot_speed.png)
 Casual riders is generally slower than registered riders.(but `p < 2e-16`)
 
 #### Speed and Distance ####
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/plot_dist_speed.png)
 We see a big range of speed when distance is small. But when distance becomes larger, the speed converges to about 8mph.
-
 
 Probably useful links:
 
