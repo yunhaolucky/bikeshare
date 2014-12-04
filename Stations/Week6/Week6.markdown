@@ -56,6 +56,7 @@ summary of distance(miles):
 Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 0.0000  0.5557  0.9308  1.1090  1.4870  8.1630
 ```
+
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/hist_distance.png)
 * The most common riding distance are about 1 mile.
 * Most (`7404`) rides have distance smaller than 2 miles.
@@ -76,6 +77,7 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 * `188` rides last less than 1 minute.
 * `384` rides last longer than 1 hour.
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/boxplot_time.png)
+
 The travelling time of casual riders is generally longer than registered riders.(but `p = 2e-16`)
 
 #### Speed ####
@@ -84,10 +86,10 @@ The travelling time of casual riders is generally longer than registered riders.
 Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 0.000   4.236   5.952   5.601   7.300  13.710
 ```
-Even the maximum is smaller than the average biking speed monitored by New York city Bike. The reason could be that I use shortest distance to calculate.
+Even the maximum is smaller than the average biking speed maximum limit by New York city Bike(I use shortest distance between two stations to calculate.)
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/hist_speed.png)
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/boxplot_speed.png)
- casual riders is generally slower than registered riders.(but `p < 2e-16`)
+Casual riders is generally slower than registered riders.(but `p < 2e-16`)
 
 #### Speed and Distance ####
 ![](https://googledrive.com/host/0B47woKFE0zXeaTJqc01sQjRrWU0/plot_dist_speed.png)
