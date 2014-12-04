@@ -29,7 +29,7 @@ All changes(2012 Jan - Dec) are listed below:
 31615 6th & H St NE
 31633 Independence Ave & L'Enfant Plaza SW/DOE
 ```
-All stations can be checked in this [map](https://a.tiles.mapbox.com/v4/yunhaocs.kb529eif/page.html?access_token=pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg#13/38.9135/-77.0452)
+All stations in the [map](https://a.tiles.mapbox.com/v4/yunhaocs.kb529eif/page.html?access_token=pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg#13/38.9135/-77.0452)
 
 ### Rideship ###
 I pick `Jun 30 2012(Saturday)` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`  
