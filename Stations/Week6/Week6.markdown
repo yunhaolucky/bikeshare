@@ -6,21 +6,22 @@ categories: bikeshare
 ---
 
 ### Stations ###
-Get the station information from [citBike](citybike.us). The System has 354 stations and each station should have an unique id, name, latitude and longtitude.
+Get the station information from [citBike](http://citybik.es/). The System has 354 stations and each station should have an unique id, name, latitude and longtitude.
 
-In the data provided citBike, several different stations share the same id. This happens when  bikeshare system make changes to its station configuration. For example,
+#### Remove replicates ####
+In the data provided citBike, several different stations share the same id. This happens when bikeshare system make changes to its station configuration. For example,
 ```
 index      id                         name latitude longitude
 104 31232 7th & F St NW / National Portrait Gallery 38.89732 -77.02232
 352 31232 8th & F St NW / National Portrait Gallery 38.89689 -77.02292
 ```
-But in the ridership in 2014Q2, all `31232` terminals are refered to `7th & F St NW / National Portait Gallery`.
-All replicates are(2012 Jan - Dec):
+But in the ridership in 2nd quarter of 2014, all `31232` terminals are refered as `7th & F St NW / National Portait Gallery`.
+All changes(2012 Jan - Dec) are listed below:
 ```
 31013 23rd & Eads St
 31074 Thomas Jefferson Cmty Ctr / 2nd St S & Ivy
-31083
-31086
+31083 No data available
+31086 No data available
 31216 McPherson Square / 14th & H St NW
 31232 7th & F St NW / National Portrait Gallery
 31268 13th & U St NW
