@@ -32,8 +32,9 @@ All changes(2012 Jan - Dec) are listed below:
 All stations in the [map](https://a.tiles.mapbox.com/v4/yunhaocs.kb529eif/page.html?access_token=pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg#13/38.9135/-77.0452)
 
 ### Rideship ###
-I pick `Jun 30 2012(Saturday)` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`  
-As ridership`8678` never returns, I remove this ridership. Also, Station `White House [17th & State Pl NW]` location information is not included in the station xml file, I remove all the ridership starts or ends at this station(`1088  2206  2293  2860  2983  7697  7321  7870  8433 10037`. Therefore, There are `10595` riderships in total.
+I pick `Jun 30 2012(Saturday)` as an example of the ridership. There are `10604` rides ends `before Jul 1 2012` or starts `after June 30 2012`.
+As ridership `8678` never returns, I remove this ridership. 
+Also, Station `White House [17th & State Pl NW]` location information is not included in the station xml file, I remove all the ridership starts or ends at this station(`1088  2206  2293  2860  2983  7697  7321  7870  8433 10037`. Therefore, There are `10595` riderships in total.
 * `8524(80.45%)` rides are from registered riders while `2069(19.55%)` are from casual riders.
 * There are `7.357639` rides per minute.
 * `302` stations have out-rides while `304` stations have in-rides.
