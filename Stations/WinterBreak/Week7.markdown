@@ -1,8 +1,13 @@
 ### # of Bikes in use
 I calculate the number of bikes still in use at the end of every minute. (That is to say, if a ride start and end within the same minute, it will not be counted.)  
-
+2014 July 1st (Tuesday)
 ![](https://googledrive.com/host/0B47woKFE0zXeZUN1Rkp2bTdneWs/inservicejune30.png)
 (Green points -- every minute. Blue line -- every 30 minute. Redline - number of Bike)
+2014 July 5th (Saturday)
+![](https://googledrive.com/host/0B47woKFE0zXeZUN1Rkp2bTdneWs/inservicejuly5th.png)
+
+* There are two obvious peaks in the curve on working days. While on weekends, the # of bikes in service are high in the whole afternoon and evening.
+* Ridership on weekends tends to be longer than on workdays.
 
 ## Properties of Start and End nodes
 * \#bikes, \# of empty slots
@@ -51,7 +56,8 @@ I also sent an email to Oliver O'Brien who had a website that keep track of the 
 ### Feature: Empty & Full of each station
 This data is from Capital Bikeshare's Data Dashboard. It records all the full/empty status in 2014 April - June.
 
-## Properties between Stations
-* distance between stations
+June 30th(Saturday)
+![](https://googledrive.com/host/0B47woKFE0zXeZUN1Rkp2bTdneWs/fulljune30.png)
+![](https://googledrive.com/host/0B47woKFE0zXeZUN1Rkp2bTdneWs/emptyjune30.png)
 
-* frequency in historical data
+Most of day has very few instances of full and empty status. Therefore, it is hard to plot.
