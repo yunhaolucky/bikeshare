@@ -1,0 +1,6 @@
+#### Gravity Model ####
+The bikeshare traffic can be thought of as a network. Each stations can be as nodes in the network and each stations has an edge between them. The ridership can be thought as the flow between two nodes along edges.
+
+ We can computer traffic matrix for each hour easily as the net out-flowes and net in-flowes can be measured using ridership data.
+
+ 

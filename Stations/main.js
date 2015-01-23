@@ -1,17 +1,27 @@
-function ridership(stime,etime,lat1,lon1,lat2,lon2){
+function ridership(stime,etime,lat1,lon1,lat2,lon2,type){
     this.stime = stime;
     this.etime = etime;
     this.lat1 = lat1;
     this.lon1 = lon1;
     this.lat2 = lat2;
     this.lon2 = lon2;
-    this.marker = L.marker([lat1, lat2], {
-        icon: L.mapbox.marker.icon({
-        'marker-size': 'small',
-        'marker-symbol': 'bicycle',
-        'marker-color': '#fa0'
-        })
-    });
+    if(type == 0){
+        this.marker = L.marker([lat1, lat2], {
+            icon: L.mapbox.marker.icon({
+            'marker-size': 'small',
+            'marker-symbol': 'bicycle',
+            'marker-color': '#fa0'
+            })
+        });
+    }else{
+        this.marker = L.marker([lat1, lat2], {
+            icon: L.mapbox.marker.icon({
+            'marker-size': 'small',
+            'marker-symbol': 'bicycle',
+            'marker-color': '#af0'
+            })
+        }); 
+    }
     // 0: before 1:running 2:after
     this.isRunning = function(current_time){
         if(current_time < this.stime){
@@ -30,13 +40,12 @@ function ridership(stime,etime,lat1,lon1,lat2,lon2){
 
 L.mapbox.accessToken = 'pk.eyJ1IjoieXVuaGFvY3MiLCJhIjoiaXBjOFctNCJ9.4JGjv-vwZz_ERyR5empKRg';
 var map = L.mapbox.map('map', 'examples.map-h67hf2ic')
-  .setView([38.91114, -77.04754], 12);
+  .setView([38.91114, -77.04754], 14);
 
-//var layers = document.getElementById('menu-ui');
+var layers = document.getElementById('menu-ui');
 
-//addLayer(L.mapbox.tileLayer('examples.map-i87786ca'), 'Base Map', 1);
-//addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Lanes', 2);
-//addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Stations', 3);
+addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Lanes', 1);
+addLayer(L.mapbox.tileLayer('examples.bike-locations'), 'Bike Stations', 2);
 
 function addLayer(layer, name, zIndex) {
     layer
@@ -84,7 +93,7 @@ while(index < ridelist.length && ridelist[index].start == t){
         cur = ridelist[index];
             console.log(index);
         if(cur.start != cur.end){
-        r.push(new ridership(cur.start,cur.end,cur.s_lat,cur.s_lon,cur.e_lat,cur.e_lon));
+        r.push(new ridership(cur.start,cur.end,cur.s_lat,cur.s_lon,cur.e_lat,cur.e_lon,cur.type));
         }
         index ++;
 }
@@ -130,7 +139,7 @@ info.update = function (t) {
     if (hours   < 10) {hours   = "0"+hours;}
     if (minutes < 10) {minutes = "0"+minutes;}
     var time    = hours+':'+minutes;
-    this._div.innerHTML = 'bikes on roads:'+r.length+'<p><h4>time:'+time+'</h4>';
+    this._div.innerHTML = 'bikes on roads:'+r.length+'     <p>time:'+time+'';
 };
 
 info.addTo(map);
