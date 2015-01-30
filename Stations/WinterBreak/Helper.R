@@ -99,6 +99,42 @@ ridership.get_day <- function(ridelist,date){
   return(resultlist)
 }
 
+
+full_empty.get_day <- function(ridelist,date){
+  # Get the ridership data from one single day
+  # Args:
+  #   ridelist: (data.frame) ridership history data from Capital Bike Website
+  #   date:(string) in the format of "%m/%d/%Y"
+  # Return:
+  #    if ridelist does not contain data on `date` print `Not exsit`
+  #    else return all rideship date on `date`
+  #TODO: Binary search
+  tempdate = as.POSIXlt(strptime(date,"%m/%d/%Y"))
+  start = 0
+  end = 0
+  for( i in c(1:nrow(ridelist))){
+    if(start == 0){
+      mid.date = as.POSIXlt(strptime(ridelist$Start[i],"%Y-%m-%d"))
+      if(mid.date == tempdate){
+        print(mid.date)
+        start = i
+      }
+    }else if(end == 0){
+      mid.date = as.POSIXlt(strptime(ridelist$Start[i],"%Y-%m-%d"))
+      if(mid.date != tempdate){
+        end = i - 1
+      }
+    }
+  }
+  if(start == 0){
+    print("Not exsit")
+  }else if (end == 0){
+    end = nrow(ridelist)
+  }
+  resultlist = ridelist[c(start:end),]
+  return(resultlist)
+}
+
 list.add_min_distance<-function(list){
   # Add min and distance column to the ridershipt list
   # Args:
@@ -115,4 +151,5 @@ list.add_min_distance<-function(list){
   temp.distance = apply(data.frame(temp.sta_s, temp.sta_e), 1, function(x) distance(x[1],x[2]))
   return(data.frame(start = temp.start,end = temp.end, start_station = temp.sta_s,end_station = temp.sta_e,type = temp.type,distance = temp.distance))
 }
+
 

@@ -1,0 +1,45 @@
+### P(S,E,T) = P(E,T|S) * P(S) ###
+I use all ridership `Registered` and `Weekday` data from `April to June in 2014`. There are `502191` rows.
+
+#### P(S): # of bikes starting from each station ####
+```
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   5     212     956    1564    2440   13960
+```
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/ps.png)
+
+From the map, We notice that the location of the station effects # of rides significantly.
+
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/s_location.png)
+
+
+#### P(E,T|S) = P(E|S,T) * P(T|S) ####
+There are `321` stations that have riderships. I pick 10 stations according to how many rides starts from that station.
+
+##### P(T|S) ####
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/s_t1.png)
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/s_t2.png)
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/s_t3.png)
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/s_t4.png)
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/s_t5.png)
+We see no obvious pattern in the above graphs. Therefore, we need a model of time for each station.
+
+`N(T|S)~Poisson(λ)` `λ~f(S,s.lat,s.long)`
+
+##### P(E|S,T) #####
+Given Starting station and time, we can predict the ending point.
+E  = F(T,S) = F(T,s.lat,s.long)
+
+
+
+
+
+#### P(E) ####
+```
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   4     231     795    1564    2592   13350
+```
+
+![](https://googledrive.com/host/0B47woKFE0zXedWZNcHFXU3kyUTA/e_dist.png)
+
+The distribution of End point is not very different from the distribution of Start point.
