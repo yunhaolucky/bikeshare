@@ -19,7 +19,7 @@ In this project, I leveraged several regression models and network models to the
 ### Other
 * Animation of ridership [demo](http://nameless-mountain-3948.herokuapp.com/) / [code](/Stations/web-demo)  
   I build an animation using javascript to show the traffic between different stations in one day.
-* Data Scraper  [code](/station_scraper)
+* Data Scraper  [code](/station_scraper)   
   I got `# of bikes` from [Capital ridership](https://www.capitalbikeshare.com/system-data) into a postgresql database.
 
 [Post2]:/Kaggle/Week2/Week2.markdown
