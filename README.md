@@ -14,7 +14,7 @@ In this project, I leveraged several regression models and network models to the
 * [Post6] EDA on Ridership data(`duration`,`speed`,`location`)
 * [Post7] Analyze `# of bikes and empty slots` in each station
 * [Post8] Poisson process on Starting station within each hour
-* [Post9]
+
 
 ### Other
 * Animation of ridership [demo](http://nameless-mountain-3948.herokuapp.com/) / [code](/Stations/web-demo)  
@@ -29,5 +29,5 @@ In this project, I leveraged several regression models and network models to the
 [Post6]:/Stations/Week6/Week6.markdown
 [Post7]:/Stations/Winter/Week7.markdown
 [Post8]:/bikeshare/Poisson_process/1.markdown
-[Post9]:
+
 
