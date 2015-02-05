@@ -13,7 +13,8 @@ In this project, I leveraged several regression models and network models to the
 ### Traffic between Station
 * [Post6] EDA on Ridership data(`duration`,`speed`,`location`)
 * [Post7] Analyze `# of bikes and empty slots` in each station
-* [Post8]
+* [Post8] Poisson process on Starting station within each hour
+* [Post9]
 
 ### Other
 * Animation of ridership [demo](http://nameless-mountain-3948.herokuapp.com/) / [code](/Stations/web-demo)  
@@ -21,11 +22,12 @@ In this project, I leveraged several regression models and network models to the
 * Data Scraper  [code](/station_scraper)
   I got `# of bikes` from [Capital ridership](https://www.capitalbikeshare.com/system-data) into a postgresql database.
 
-[Post2]:
-[Post3]:
-[Post4]:
-[Post5]:
+[Post2]:/Kaggle/Week2/Week2.markdown
+[Post3]:/Kaggle/Week3/2014-10-21-week3.markdown
+[Post4]:/Kaggle/Week4/2014-10-27-week4.markdown
+[Post5]:/Kaggle/Week5/Week5.markdown
 [Post6]:/Stations/Week6/Week6.markdown
 [Post7]:/Stations/Winter/Week7.markdown
-[Post8]:
+[Post8]:/bikeshare/Poisson_process/1.markdown
+[Post9]:
 
