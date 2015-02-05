@@ -1,5 +1,6 @@
 # Capital Bikeshare Data Analysis
 In this project, I leveraged several regression models and network models to the [Washington D.C’s Bikeshare ridership data.](https://www.capitalbikeshare.com/system-data)
+
 ### EDA analyis on ridership data
 * [Post1](http://yunhaolucky.github.io/bikeshare/2014/09/05/week1.html) : Explantory Data analyis on ridership data from April - June 2012.
 
@@ -8,14 +9,23 @@ In this project, I leveraged several regression models and network models to the
 * [Post3] Explore Interactions and Model Selection
 * [Post4] Poisson Regression and Other Distribution
 * [Post5] More on Poisson Regression
-### traffic between Station
-* [Post6] 
-* [Post7] 
+
+### Traffic between Station
+* [Post6](/Stations/Week6/Week6.markdown) EDA on Ridership data(`duration`,`speed`,`location`)
+* [Post7](/Stations/Winter/Week7.markdown) Analyze `# of bikes and empty slots` in each station
 * [Post8]
+
 ### Other
-* Animation of ridership [demo](http://nameless-mountain-3948.herokuapp.com/) [code](/Stations/web-demo)  
+* Animation of ridership [demo](http://nameless-mountain-3948.herokuapp.com/) / [code](/Stations/web-demo)  
   I build an animation using javascript to show the traffic between different stations in one day.
-* Data Scraper [code](/station_scraper)  
-  Get `# of bikes` in each station from  [bikeshare data](https://www.capitalbikeshare.com/system-data) into postgresql database.
-  
+* Data Scraper  [code](/station_scraper)
+  I got `# of bikes` from [Capital ridership](https://www.capitalbikeshare.com/system-data) into a postgresql database.
+
+[Post2]:
+[Post3]:
+[Post4]:
+[Post5]:
+[Post6]:
+[Post7]:
+[Post8]:
 
