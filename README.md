@@ -6,4 +6,4 @@ In this project, I leveraged several regression models and network models to the
 [Week2] EDA and Linear Regression on [Kaggle's Data]
 
 
- [Kaggle's Data](http://www.kaggle.com/c/bike-sharing-demand)
+ [Kaggle's Data]: (http://www.kaggle.com/c/bike-sharing-demand)
