@@ -11,8 +11,8 @@ In this project, I leveraged several regression models and network models to the
 * [Post5] More on Poisson Regression
 
 ### Traffic between Station
-* [Post6](/Stations/Week6/Week6.markdown) EDA on Ridership data(`duration`,`speed`,`location`)
-* [Post7](/Stations/Winter/Week7.markdown) Analyze `# of bikes and empty slots` in each station
+* [Post6] EDA on Ridership data(`duration`,`speed`,`location`)
+* [Post7] Analyze `# of bikes and empty slots` in each station
 * [Post8]
 
 ### Other
@@ -25,7 +25,7 @@ In this project, I leveraged several regression models and network models to the
 [Post3]:
 [Post4]:
 [Post5]:
-[Post6]:
-[Post7]:
+[Post6]:/Stations/Week6/Week6.markdown
+[Post7]:/Stations/Winter/Week7.markdown
 [Post8]:
 
