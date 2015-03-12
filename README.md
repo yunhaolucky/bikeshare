@@ -14,6 +14,10 @@ In this project, I leveraged several regression models and network models to the
 * [Post6] EDA on Ridership data(`duration`,`speed`,`location`)
 * [Post7] Analyze `# of bikes and empty slots` in each station
 * [Post8] Poisson process on Starting station within each hour
+* [Post9] Clustering time patterns of different station
+
+### Conditional Probability given starting station, ending station and time -> P(s, e, t)
+* [Post10] Step 1: P(s) + Step 2: P(t|s)
 
 
 ### Other
@@ -29,5 +33,6 @@ In this project, I leveraged several regression models and network models to the
 [Post6]:/Stations/Week6/Week6.markdown
 [Post7]:/Stations/Winter/Week7.markdown
 [Post8]:/bikeshare/Poisson_process/1.markdown
-
+[Post9]:/contidional_prob/Post1/1.markdown
+[Post10]:/contidional_prob/Post2/report.pdf
 
