@@ -78,7 +78,7 @@ abline(0,0)
 plot(standard_resid~sample,main = "standard residual vs fitted",xlab = "fitted")
 residual = sum(residual^2)/length(residual)
 ## calculate mse
-predict = colMeans(prob_day_stations)
+ps.predict = colMeans(prob_day_stations)
 error = sweep(prob_day_stations,2,colMeans(prob_day_stations),`-`)
 mse = sum(error^2)/length(error)
 ##method 2
@@ -88,7 +88,7 @@ plot.stations$freq <- cut(stations$freq, 50, label = FALSE)
 colr <- rev(terrain.colors(20))
 
 plot(latitude ~ longitude,data = plot.stations,
-     col = colr[freq], pch = 20,main = "Stations: # of rides vs location")
+      pch = 20,main = "Stations: # of rides vs location")
 legend.col(col = colr, lev = plot.stations$freq) 
 
 plot.stations$predict <- cut(stations$predict, 50, label = FALSE)
@@ -129,7 +129,7 @@ sample = c(sample.ts)
 plot(standard_resid~sample,main = "standard residual vs fitted",xlab = "fitted",cex = 0.5)
 
 ## calculate mse
-predict =apply(dist.ts,c(2,3),mean)
+ps.predict =apply(dist.ts,c(2,3),mean)
 error = c(sweep(dist.ts,c(2,3),predict,`-`))
 mse = sum(error^2)/length(error)
 
@@ -144,6 +144,7 @@ for(i in c(1:length(sample))){
 ### get k value
 matplot(cluster.prob,)
 mydata = t(cluster.prob[,-36])
+
 wss <- (nrow(mydata)-1)*sum(apply(mydata,2,var))
 for (i in 2:10) wss[i] <- sum(kmeans(mydata,centers=i)$withinss)
 plot(1:10, wss, type="b", xlab="Number of Clusters",
@@ -199,10 +200,26 @@ for(i in c(11:13)){
 mydata$cluster = fit$cluster
 
 #png(filename="a.png")
-par(mfcol = c(5,1))
+par(mfcol = c(7,1),mar = c(0,4,0,0))
+title("stations grouped by clusters", outer=FALSE)
 for(i in  c(1:7)){
   this.cluster = mydata[mydata$cluster == i,]
-  matplot(t(this.cluster[c(1:24)]),type = "l",col = i)
+  matplot(t(this.cluster[c(1:24)]),type = "l",col = i,ylim = c(0,1),ylab = paste("p(t|s)","size = ",nrow(this.cluster)))
 }
-dev.off()
+predict.cluster =  as.matrix(cluster.means[c(2:25)])
+#ps.predict = sample
+#ps.predict = ps.predict[-36]# remove stations with no rides
+pts.predict = matrix(rep(0, 318 * 24),nrow = 318,ncol = 24)
+for(i in c(1:318)){
+  c = mydata$cluster[i]
+  pts.predict[i,] = predict.cluster[c,] * ps.predict[i] 
+}
+pts.true = sweep(start_day_stations,1,rowSums(start_day_stations),`/`)
+pts.true = pts.true[,,-36]
+pts.residual = c()
+for(i in c(1:21)){
+pts.residual = c(pts.residual,t(pts.true[i,,]) - pts.predict)
+}
+mse = sum((pts.residual) ^ 2)/length(pts.residual)
+plot(rep(pts.predict, 21),pts.residual,cex = 0.1,xlab = "fitted value", ylab = "residual", main = "residual plot for p(s,t)")
 

@@ -1,0 +1,263 @@
+Call:
+glm(formula = prob ~ (. - start_station - end_station - count) * 
+    (. - start_station - end_station - count), data = list_count_ride)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.94392  -0.17127  -0.07999   0.10079   1.01985  
+
+Coefficients: (14 not defined because of singularities)
+                                              Estimate Std. Error t value
+(Intercept)                                  2.450e+03  3.255e+03   0.753
+day                                         -3.735e-01  3.208e-01  -1.164
+time                                         4.192e-01  4.008e-01   1.046
+popular_station_name                        -8.017e+00  1.594e+01  -0.503
+`start.Galary Palace`                        1.441e+01  7.819e+00   1.843
+`start.Union Station`                        4.366e-01  1.612e+01   0.027
+start.Pentagon                              -5.437e+00  5.341e+00  -1.018
+`start.Capitol Hill`                                NA         NA      NA
+`end.Galary Palace`                          1.619e+01  7.409e+00   2.186
+`end.Union Station`                         -7.994e+00  1.490e+01  -0.537
+end.Pentagon                                 4.510e-01  5.050e+00   0.089
+`end.Capitol Hill`                          -8.432e+00  1.442e+01  -0.585
+s_lat                                        1.002e+02  5.244e+01   1.911
+s_lon                                        8.293e+01  4.372e+01   1.897
+e_lat                                        3.576e+01  4.851e+01   0.737
+e_lon                                        4.945e+01  4.260e+01   1.161
+day:time                                     2.672e-05  2.218e-05   1.205
+day:popular_station_name                    -5.909e-04  6.752e-04  -0.875
+day:`start.Galary Palace`                    2.635e-04  3.439e-04   0.766
+day:`start.Union Station`                    4.158e-04  7.139e-04   0.582
+day:start.Pentagon                           2.829e-04  2.479e-04   1.141
+day:`start.Capitol Hill`                            NA         NA      NA
+day:`end.Galary Palace`                      3.243e-04  3.413e-04   0.950
+day:`end.Union Station`                     -9.897e-04  7.022e-04  -1.409
+day:end.Pentagon                            -1.953e-04  2.452e-04  -0.797
+day:`end.Capitol Hill`                       5.056e-04  6.551e-04   0.772
+day:s_lat                                    1.495e-03  3.592e-03   0.416
+day:s_lon                                   -3.153e-03  3.264e-03  -0.966
+day:e_lat                                   -1.676e-03  3.339e-03  -0.502
+day:e_lon                                   -1.787e-03  3.138e-03  -0.570
+time:popular_station_name                    8.202e-03  8.867e-04   9.250
+time:`start.Galary Palace`                   9.724e-03  4.487e-04  21.674
+time:`start.Union Station`                  -1.506e-02  9.450e-04 -15.932
+time:start.Pentagon                          3.915e-03  3.211e-04  12.194
+time:`start.Capitol Hill`                           NA         NA      NA
+time:`end.Galary Palace`                    -1.210e-03  4.455e-04  -2.716
+time:`end.Union Station`                    -3.723e-03  9.050e-04  -4.114
+time:end.Pentagon                           -5.099e-03  3.153e-04 -16.171
+time:`end.Capitol Hill`                      4.131e-03  8.411e-04   4.912
+time:s_lat                                  -3.200e-02  4.596e-03  -6.962
+time:s_lon                                  -1.004e-02  4.207e-03  -2.387
+time:e_lat                                  -7.939e-03  4.177e-03  -1.901
+time:e_lon                                  -4.629e-03  4.025e-03  -1.150
+popular_station_name:`start.Galary Palace`   4.889e-01  2.620e-02  18.656
+popular_station_name:`start.Union Station`  -4.682e-01  2.957e-02 -15.837
+popular_station_name:start.Pentagon         -1.382e-01  1.768e-02  -7.815
+popular_station_name:`start.Capitol Hill`    2.305e-01  2.235e-02  10.314
+popular_station_name:`end.Galary Palace`    -1.201e-01  1.247e-02  -9.634
+popular_station_name:`end.Union Station`    -6.142e-03  2.324e-02  -0.264
+popular_station_name:end.Pentagon            4.081e-02  1.004e-02   4.065
+popular_station_name:`end.Capitol Hill`      1.443e-01  2.091e-02   6.897
+popular_station_name:s_lat                  -3.945e-01  2.224e-01  -1.774
+popular_station_name:s_lon                  -2.682e-01  1.376e-01  -1.950
+popular_station_name:e_lat                  -6.367e-02  1.449e-01  -0.439
+popular_station_name:e_lon                  -6.381e-02  1.194e-01  -0.535
+`start.Galary Palace`:`start.Union Station` -1.783e-01  1.603e-02 -11.121
+`start.Galary Palace`:start.Pentagon        -2.032e-02  6.895e-03  -2.948
+`start.Galary Palace`:`start.Capitol Hill`          NA         NA      NA
+`start.Galary Palace`:`end.Galary Palace`    2.288e-02  5.820e-03   3.932
+`start.Galary Palace`:`end.Union Station`   -2.403e-02  1.306e-02  -1.840
+`start.Galary Palace`:end.Pentagon          -2.936e-02  4.995e-03  -5.879
+`start.Galary Palace`:`end.Capitol Hill`     1.190e-02  1.214e-02   0.980
+`start.Galary Palace`:s_lat                  1.864e+00  9.687e-02  19.241
+`start.Galary Palace`:s_lon                  1.099e+00  7.136e-02  15.399
+`start.Galary Palace`:e_lat                 -1.523e-01  7.387e-02  -2.062
+`start.Galary Palace`:e_lon                 -4.489e-02  6.129e-02  -0.732
+`start.Union Station`:start.Pentagon         8.857e-02  1.971e-02   4.495
+`start.Union Station`:`start.Capitol Hill`          NA         NA      NA
+`start.Union Station`:`end.Galary Palace`    7.731e-02  1.316e-02   5.873
+`start.Union Station`:`end.Union Station`    6.208e-02  2.526e-02   2.457
+`start.Union Station`:end.Pentagon          -1.372e-02  1.063e-02  -1.290
+`start.Union Station`:`end.Capitol Hill`    -1.576e-01  2.348e-02  -6.712
+`start.Union Station`:s_lat                 -1.124e+00  2.249e-01  -5.000
+`start.Union Station`:s_lon                 -5.343e-01  1.473e-01  -3.627
+`start.Union Station`:e_lat                  1.851e-01  1.488e-01   1.244
+`start.Union Station`:e_lon                  5.813e-02  1.259e-01   0.462
+start.Pentagon:`start.Capitol Hill`                 NA         NA      NA
+start.Pentagon:`end.Galary Palace`           3.677e-02  4.804e-03   7.653
+start.Pentagon:`end.Union Station`          -7.401e-02  1.020e-02  -7.257
+start.Pentagon:end.Pentagon                 -1.344e-02  2.657e-03  -5.060
+start.Pentagon:`end.Capitol Hill`            3.151e-02  9.608e-03   3.280
+start.Pentagon:s_lat                        -5.038e-01  6.069e-02  -8.301
+start.Pentagon:s_lon                        -3.233e-01  4.698e-02  -6.881
+start.Pentagon:e_lat                         2.388e-02  4.829e-02   0.494
+start.Pentagon:e_lon                         1.110e-02  4.408e-02   0.252
+`start.Capitol Hill`:`end.Galary Palace`            NA         NA      NA
+`start.Capitol Hill`:`end.Union Station`            NA         NA      NA
+`start.Capitol Hill`:end.Pentagon                   NA         NA      NA
+`start.Capitol Hill`:`end.Capitol Hill`             NA         NA      NA
+`start.Capitol Hill`:s_lat                          NA         NA      NA
+`start.Capitol Hill`:s_lon                          NA         NA      NA
+`start.Capitol Hill`:e_lat                          NA         NA      NA
+`start.Capitol Hill`:e_lon                          NA         NA      NA
+`end.Galary Palace`:`end.Union Station`     -6.156e-02  1.572e-02  -3.916
+`end.Galary Palace`:end.Pentagon            -3.210e-02  7.003e-03  -4.584
+`end.Galary Palace`:`end.Capitol Hill`       7.539e-02  2.552e-02   2.954
+`end.Galary Palace`:s_lat                   -1.873e-01  8.301e-02  -2.256
+`end.Galary Palace`:s_lon                    1.339e-01  6.326e-02   2.117
+`end.Galary Palace`:e_lat                   -5.809e-03  8.163e-02  -0.071
+`end.Galary Palace`:e_lon                   -2.233e-02  6.509e-02  -0.343
+`end.Union Station`:end.Pentagon             9.528e-02  1.654e-02   5.762
+`end.Union Station`:`end.Capitol Hill`      -1.732e-02  9.060e-03  -1.912
+`end.Union Station`:s_lat                    1.366e+00  1.664e-01   8.211
+`end.Union Station`:s_lon                    2.560e-01  1.268e-01   2.019
+`end.Union Station`:e_lat                   -8.774e-02  1.761e-01  -0.498
+`end.Union Station`:e_lon                    2.868e-01  1.320e-01   2.172
+end.Pentagon:`end.Capitol Hill`             -5.725e-02  1.174e-02  -4.875
+end.Pentagon:s_lat                           4.687e-01  5.197e-02   9.020
+end.Pentagon:s_lon                           1.531e-01  4.292e-02   3.568
+end.Pentagon:e_lat                          -7.026e-02  4.983e-02  -1.410
+end.Pentagon:e_lon                           5.325e-02  4.512e-02   1.180
+`end.Capitol Hill`:s_lat                    -1.423e+00  1.645e-01  -8.649
+`end.Capitol Hill`:s_lon                    -4.984e-01  1.192e-01  -4.180
+`end.Capitol Hill`:e_lat                     1.295e-01  1.726e-01   0.750
+`end.Capitol Hill`:e_lon                    -2.642e-01  1.189e-01  -2.222
+s_lat:s_lon                                  4.229e-01  3.654e-01   1.157
+s_lat:e_lat                                  3.061e-01  5.900e-01   0.519
+s_lat:e_lon                                  1.014e+00  6.387e-01   1.588
+s_lon:e_lat                                  1.809e-01  6.151e-01   0.294
+s_lon:e_lon                                  1.374e+00  5.646e-01   2.433
+e_lat:e_lon                                  4.355e-01  3.260e-01   1.336
+                                            Pr(>|t|)    
+(Intercept)                                 0.451693    
+day                                         0.244343    
+time                                        0.295548    
+popular_station_name                        0.614945    
+`start.Galary Palace`                       0.065277 .  
+`start.Union Station`                       0.978396    
+start.Pentagon                              0.308647    
+`start.Capitol Hill`                              NA    
+`end.Galary Palace`                         0.028853 *  
+`end.Union Station`                         0.591606    
+end.Pentagon                                0.928843    
+`end.Capitol Hill`                          0.558634    
+s_lat                                       0.056021 .  
+s_lon                                       0.057815 .  
+e_lat                                       0.461030    
+e_lon                                       0.245739    
+day:time                                    0.228393    
+day:popular_station_name                    0.381510    
+day:`start.Galary Palace`                   0.443468    
+day:`start.Union Station`                   0.560329    
+day:start.Pentagon                          0.253872    
+day:`start.Capitol Hill`                          NA    
+day:`end.Galary Palace`                     0.341967    
+day:`end.Union Station`                     0.158719    
+day:end.Pentagon                            0.425628    
+day:`end.Capitol Hill`                      0.440279    
+day:s_lat                                   0.677227    
+day:s_lon                                   0.334112    
+day:e_lat                                   0.615707    
+day:e_lon                                   0.568959    
+time:popular_station_name                    < 2e-16 ***
+time:`start.Galary Palace`                   < 2e-16 ***
+time:`start.Union Station`                   < 2e-16 ***
+time:start.Pentagon                          < 2e-16 ***
+time:`start.Capitol Hill`                         NA    
+time:`end.Galary Palace`                    0.006611 ** 
+time:`end.Union Station`                    3.89e-05 ***
+time:end.Pentagon                            < 2e-16 ***
+time:`end.Capitol Hill`                     9.03e-07 ***
+time:s_lat                                  3.36e-12 ***
+time:s_lon                                  0.016999 *  
+time:e_lat                                  0.057335 .  
+time:e_lon                                  0.250083    
+popular_station_name:`start.Galary Palace`   < 2e-16 ***
+popular_station_name:`start.Union Station`   < 2e-16 ***
+popular_station_name:start.Pentagon         5.54e-15 ***
+popular_station_name:`start.Capitol Hill`    < 2e-16 ***
+popular_station_name:`end.Galary Palace`     < 2e-16 ***
+popular_station_name:`end.Union Station`    0.791579    
+popular_station_name:end.Pentagon           4.80e-05 ***
+popular_station_name:`end.Capitol Hill`     5.32e-12 ***
+popular_station_name:s_lat                  0.076035 .  
+popular_station_name:s_lon                  0.051225 .  
+popular_station_name:e_lat                  0.660446    
+popular_station_name:e_lon                  0.592976    
+`start.Galary Palace`:`start.Union Station`  < 2e-16 ***
+`start.Galary Palace`:start.Pentagon        0.003203 ** 
+`start.Galary Palace`:`start.Capitol Hill`        NA    
+`start.Galary Palace`:`end.Galary Palace`   8.44e-05 ***
+`start.Galary Palace`:`end.Union Station`   0.065813 .  
+`start.Galary Palace`:end.Pentagon          4.14e-09 ***
+`start.Galary Palace`:`end.Capitol Hill`    0.326878    
+`start.Galary Palace`:s_lat                  < 2e-16 ***
+`start.Galary Palace`:s_lon                  < 2e-16 ***
+`start.Galary Palace`:e_lat                 0.039173 *  
+`start.Galary Palace`:e_lon                 0.463920    
+`start.Union Station`:start.Pentagon        6.96e-06 ***
+`start.Union Station`:`start.Capitol Hill`        NA    
+`start.Union Station`:`end.Galary Palace`   4.28e-09 ***
+`start.Union Station`:`end.Union Station`   0.014003 *  
+`start.Union Station`:end.Pentagon          0.196879    
+`start.Union Station`:`end.Capitol Hill`    1.92e-11 ***
+`start.Union Station`:s_lat                 5.75e-07 ***
+`start.Union Station`:s_lon                 0.000287 ***
+`start.Union Station`:e_lat                 0.213356    
+`start.Union Station`:e_lon                 0.644347    
+start.Pentagon:`start.Capitol Hill`               NA    
+start.Pentagon:`end.Galary Palace`          1.97e-14 ***
+start.Pentagon:`end.Union Station`          3.97e-13 ***
+start.Pentagon:end.Pentagon                 4.21e-07 ***
+start.Pentagon:`end.Capitol Hill`           0.001038 ** 
+start.Pentagon:s_lat                         < 2e-16 ***
+start.Pentagon:s_lon                        5.97e-12 ***
+start.Pentagon:e_lat                        0.620973    
+start.Pentagon:e_lon                        0.801080    
+`start.Capitol Hill`:`end.Galary Palace`          NA    
+`start.Capitol Hill`:`end.Union Station`          NA    
+`start.Capitol Hill`:end.Pentagon                 NA    
+`start.Capitol Hill`:`end.Capitol Hill`           NA    
+`start.Capitol Hill`:s_lat                        NA    
+`start.Capitol Hill`:s_lon                        NA    
+`start.Capitol Hill`:e_lat                        NA    
+`start.Capitol Hill`:e_lon                        NA    
+`end.Galary Palace`:`end.Union Station`     9.02e-05 ***
+`end.Galary Palace`:end.Pentagon            4.57e-06 ***
+`end.Galary Palace`:`end.Capitol Hill`      0.003139 ** 
+`end.Galary Palace`:s_lat                   0.024049 *  
+`end.Galary Palace`:s_lon                   0.034232 *  
+`end.Galary Palace`:e_lat                   0.943264    
+`end.Galary Palace`:e_lon                   0.731533    
+`end.Union Station`:end.Pentagon            8.33e-09 ***
+`end.Union Station`:`end.Capitol Hill`      0.055878 .  
+`end.Union Station`:s_lat                    < 2e-16 ***
+`end.Union Station`:s_lon                   0.043527 *  
+`end.Union Station`:e_lat                   0.618360    
+`end.Union Station`:e_lon                   0.029845 *  
+end.Pentagon:`end.Capitol Hill`             1.09e-06 ***
+end.Pentagon:s_lat                           < 2e-16 ***
+end.Pentagon:s_lon                          0.000360 ***
+end.Pentagon:e_lat                          0.158513    
+end.Pentagon:e_lon                          0.237920    
+`end.Capitol Hill`:s_lat                     < 2e-16 ***
+`end.Capitol Hill`:s_lon                    2.91e-05 ***
+`end.Capitol Hill`:e_lat                    0.453157    
+`end.Capitol Hill`:e_lon                    0.026260 *  
+s_lat:s_lon                                 0.247103    
+s_lat:e_lat                                 0.603935    
+s_lat:e_lon                                 0.112315    
+s_lon:e_lat                                 0.768653    
+s_lon:e_lon                                 0.014979 *  
+e_lat:e_lon                                 0.181499    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.07028134)
+
+    Null deviance: 15610  on 166496  degrees of freedom
+Residual deviance: 11694  on 166390  degrees of freedom
+AIC: 30516
+
+Number of Fisher Scoring iterations: 2
