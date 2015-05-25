@@ -1,0 +1,350 @@
+{"_id":{"$oid":"556251ecf3bec3b69cb380e0"},"id":NumberInt(31001),"latitude":38.85725,"longitude":-77.05332,"name":"18th \u0026 Eads St."}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e1"},"id":NumberInt(31003),"latitude":38.86017,"longitude":-77.049593,"name":"15th \u0026 Crystal Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e2"},"id":NumberInt(31000),"latitude":38.8561,"longitude":-77.0512,"name":"20th \u0026 Bell St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e3"},"id":NumberInt(31005),"latitude":38.862303,"longitude":-77.059936,"name":"Pentagon City Metro / 12th \u0026 S Hayes St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e4"},"id":NumberInt(31007),"latitude":38.8573,"longitude":-77.0511,"name":"Crystal City Metro / 18th \u0026 Bell St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e5"},"id":NumberInt(31008),"latitude":38.8629,"longitude":-77.0528,"name":"12th \u0026 Army Navy Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e6"},"id":NumberInt(31002),"latitude":38.8564,"longitude":-77.0492,"name":"20th \u0026 Crystal Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e7"},"id":NumberInt(31009),"latitude":38.848441,"longitude":-77.051516,"name":"27th \u0026 Crystal Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e8"},"id":NumberInt(31011),"latitude":38.8533,"longitude":-77.0498,"name":"23rd \u0026 Crystal Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380e9"},"id":NumberInt(31012),"latitude":38.850688,"longitude":-77.05152,"name":"26th \u0026 S Clark St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380ea"},"id":NumberInt(31100),"latitude":38.9003,"longitude":-77.0429,"name":"19th St \u0026 Pennsylvania Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380eb"},"id":NumberInt(31101),"latitude":38.9176,"longitude":-77.0321,"name":"14th \u0026 V St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380ec"},"id":NumberInt(31102),"latitude":38.929464,"longitude":-77.027822,"name":"11th \u0026 Kenyon St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380ed"},"id":NumberInt(31108),"latitude":38.8767,"longitude":-77.0178,"name":"4th \u0026 M St SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380ee"},"id":NumberInt(31201),"latitude":38.90985,"longitude":-77.034438,"name":"15th \u0026 P St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380ef"},"id":NumberInt(31202),"latitude":38.912682,"longitude":-77.031681,"name":"14th \u0026 R St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f0"},"id":NumberInt(31204),"latitude":38.8963,"longitude":-77.045,"name":"20th \u0026 E St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f1"},"id":NumberInt(31205),"latitude":38.9008,"longitude":-77.047,"name":"21st \u0026 I St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f2"},"id":NumberInt(31400),"latitude":38.936043,"longitude":-77.024649,"name":"Georgia \u0026 New Hampshire Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f3"},"id":NumberInt(31502),"latitude":38.9346,"longitude":-76.9955,"name":"John McCormack Dr \u0026 Michigan Ave NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f4"},"id":NumberInt(31600),"latitude":38.90304,"longitude":-77.019027,"name":"5th \u0026 K St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f5"},"id":NumberInt(31702),"latitude":38.878,"longitude":-76.9607,"name":"Randle Circle \u0026 Minnesota Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f6"},"id":NumberInt(31704),"latitude":38.901385,"longitude":-76.941877,"name":"Nannie Helen Burroughs \u0026 Minnesota Ave NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f7"},"id":NumberInt(31801),"latitude":38.862669,"longitude":-76.994637,"name":"Anacostia Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f8"},"id":NumberInt(31206),"latitude":38.8952,"longitude":-77.0436,"name":"19th \u0026 E Street NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380f9"},"id":NumberInt(31111),"latitude":38.9172,"longitude":-77.0259,"name":"10th \u0026 U St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380fa"},"id":NumberInt(31207),"latitude":38.9249,"longitude":-77.0222,"name":"Georgia Ave and Fairmont St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380fb"},"id":NumberInt(31109),"latitude":38.9155,"longitude":-77.0222,"name":"7th \u0026 T St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380fc"},"id":NumberInt(31209),"latitude":38.8743,"longitude":-77.0057,"name":"1st \u0026 N St  SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380fd"},"id":NumberInt(31200),"latitude":38.9101,"longitude":-77.0444,"name":"Massachusetts Ave \u0026 Dupont Circle NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380fe"},"id":NumberInt(31603),"latitude":38.9057,"longitude":-77.0056,"name":"1st \u0026 M St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb380ff"},"id":NumberInt(31212),"latitude":38.90534,"longitude":-77.046774,"name":"21st \u0026 M St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38100"},"id":NumberInt(31213),"latitude":38.90276,"longitude":-77.03863,"name":"17th \u0026 K St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38101"},"id":NumberInt(31604),"latitude":38.899408,"longitude":-77.015289,"name":"3rd \u0026 H St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38102"},"id":NumberInt(31605),"latitude":38.8851,"longitude":-77.0023,"name":"3rd \u0026 D St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38103"},"id":NumberInt(31606),"latitude":38.8803,"longitude":-76.9862,"name":"Potomac \u0026 Pennsylvania Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38104"},"id":NumberInt(31607),"latitude":38.884,"longitude":-76.9861,"name":"14th \u0026 D St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38105"},"id":NumberInt(31608),"latitude":38.8792,"longitude":-76.9953,"name":"8th \u0026 Eye St SE / Barracks Row"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38106"},"id":NumberInt(31301),"latitude":38.938736,"longitude":-77.087171,"name":"Ward Circle / American University"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38107"},"id":NumberInt(31402),"latitude":38.947774,"longitude":-77.032818,"name":"14th St Heights / 14th \u0026 Crittenden St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38108"},"id":NumberInt(31804),"latitude":38.865784,"longitude":-76.9784,"name":"Anacostia Library"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38109"},"id":NumberInt(31805),"latitude":38.873057,"longitude":-76.971015,"name":"Pennsylvania \u0026 Minnesota Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3810a"},"id":NumberInt(31217),"latitude":38.887237,"longitude":-77.028226,"name":"USDA / 12th \u0026 Independence Ave SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3810b"},"id":NumberInt(31215),"latitude":38.9022212,"longitude":-77.059219,"name":"Georgetown Harbor / 30th St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3810c"},"id":NumberInt(31501),"latitude":38.933668,"longitude":-76.991016,"name":"12th \u0026 Newton St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3810d"},"id":NumberInt(31218),"latitude":38.886266,"longitude":-77.022241,"name":"L'Enfant Plaza / 7th \u0026 C St SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3810e"},"id":NumberInt(31219),"latitude":38.893028,"longitude":-77.026013,"name":"10th St \u0026 Constitution Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3810f"},"id":NumberInt(31211),"latitude":38.895184,"longitude":-77.054845,"name":"Kennedy Center"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38110"},"id":NumberInt(31221),"latitude":38.904742,"longitude":-77.041606,"name":"18th \u0026 M St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38111"},"id":NumberInt(31613),"latitude":38.884,"longitude":-76.995397,"name":"Eastern Market Metro / Pennsylvania Ave \u0026 7th St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38112"},"id":NumberInt(31611),"latitude":38.9003,"longitude":-76.9882,"name":"13th \u0026 H St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38113"},"id":NumberInt(31620),"latitude":38.897222,"longitude":-77.019347,"name":"5th \u0026 F St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38114"},"id":NumberInt(31223),"latitude":38.90572,"longitude":-77.022264,"name":"Convention Center / 7th \u0026 M St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38115"},"id":NumberInt(31112),"latitude":38.927872,"longitude":-77.043358,"name":"Harvard St \u0026 Adams Mill Rd NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38116"},"id":NumberInt(31224),"latitude":38.903407,"longitude":-77.043648,"name":"19th \u0026 L St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38117"},"id":NumberInt(31225),"latitude":38.90375,"longitude":-77.06269,"name":"C \u0026 O Canal \u0026 Wisconsin Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38118"},"id":NumberInt(31609),"latitude":38.87675,"longitude":-77.02127,"name":"6th \u0026 Water St SW / SW Waterfront"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38119"},"id":NumberInt(31228),"latitude":38.8997,"longitude":-77.023086,"name":"8th \u0026 H St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3811a"},"id":NumberInt(31504),"latitude":38.932514,"longitude":-76.992889,"name":"10th \u0026 Monroe St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3811b"},"id":NumberInt(31616),"latitude":38.900412,"longitude":-77.001949,"name":"3rd \u0026 H St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3811c"},"id":NumberInt(31617),"latitude":38.900413,"longitude":-76.982872,"name":"Bladensburg Rd \u0026 Benning Rd NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3811d"},"id":NumberInt(31619),"latitude":38.890461,"longitude":-76.988355,"name":"Lincoln Park / 13th \u0026 East Capitol St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3811e"},"id":NumberInt(31701),"latitude":38.8692,"longitude":-76.9599,"name":"Branch \u0026 Pennsylvania Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3811f"},"id":NumberInt(31622),"latitude":38.894832,"longitude":-76.987633,"name":"13th \u0026 D St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38120"},"id":NumberInt(31230),"latitude":38.898364,"longitude":-77.027869,"name":"Metro Center / 12th \u0026 G St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38121"},"id":NumberInt(31231),"latitude":38.894514,"longitude":-77.031617,"name":"14th \u0026 D St NW / Ronald Reagan Building"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38122"},"id":NumberInt(31232),"latitude":38.897324,"longitude":-77.022322,"name":"7th \u0026 F St NW / National Portrait Gallery"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38123"},"id":NumberInt(31233),"latitude":38.902061,"longitude":-77.038322,"name":"17th \u0026 K St NW / Farragut Square"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38124"},"id":NumberInt(31234),"latitude":38.908905,"longitude":-77.04478,"name":"20th \u0026 O St NW / Dupont South"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38125"},"id":NumberInt(31621),"latitude":38.895344,"longitude":-77.016106,"name":"4th \u0026 D St NW / Judiciary Square"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38126"},"id":NumberInt(31235),"latitude":38.8923,"longitude":-77.0436,"name":"19th St \u0026 Constitution Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38127"},"id":NumberInt(31236),"latitude":38.90774,"longitude":-77.071652,"name":"37th \u0026 O St NW / Georgetown University"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38128"},"id":NumberInt(31614),"latitude":38.899983,"longitude":-76.991383,"name":"11th \u0026 H St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38129"},"id":NumberInt(31237),"latitude":38.903827,"longitude":-77.053485,"name":"25th St \u0026 Pennsylvania Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3812a"},"id":NumberInt(31623),"latitude":38.89696,"longitude":-77.00493,"name":"Columbus Circle / Union Station"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3812b"},"id":NumberInt(31266),"latitude":38.905607,"longitude":-77.027137,"name":"11th \u0026 M St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3812c"},"id":NumberInt(31304),"latitude":38.922581,"longitude":-77.070334,"name":"36th \u0026 Calvert St NW / Glover Park"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3812d"},"id":NumberInt(31238),"latitude":38.898069,"longitude":-77.031823,"name":"14th \u0026 G St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3812e"},"id":NumberInt(31262),"latitude":38.897857,"longitude":-77.026975,"name":"11th \u0026 F St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3812f"},"id":NumberInt(31260),"latitude":38.896104,"longitude":-77.049882,"name":"23rd \u0026 E St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38130"},"id":NumberInt(31015),"latitude":38.8946,"longitude":-77.072305,"name":"Rosslyn Metro / Wilson Blvd \u0026 Ft Myer Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38131"},"id":NumberInt(31017),"latitude":38.891696,"longitude":-77.0846,"name":"Wilson Blvd \u0026 N Uhle St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38132"},"id":NumberInt(31706),"latitude":38.86559,"longitude":-76.952103,"name":"Fairfax Village"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38133"},"id":NumberInt(31261),"latitude":38.892459,"longitude":-77.046567,"name":"21st St \u0026 Constitution Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38134"},"id":NumberInt(31241),"latitude":38.9059,"longitude":-77.0325,"name":"Thomas Circle"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38135"},"id":NumberInt(31021),"latitude":38.8881,"longitude":-77.09308,"name":"Clarendon Blvd \u0026 N Fillmore St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38136"},"id":NumberInt(31242),"latitude":38.89968,"longitude":-77.041539,"name":"18th St \u0026 Pennsylvania Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38137"},"id":NumberInt(31243),"latitude":38.887299,"longitude":-77.018939,"name":"Maryland \u0026 Independence Ave SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38138"},"id":NumberInt(31244),"latitude":38.88412,"longitude":-77.017445,"name":"4th \u0026 E St SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38139"},"id":NumberInt(31625),"latitude":38.881185,"longitude":-77.001828,"name":"3rd \u0026 G St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3813a"},"id":NumberInt(31245),"latitude":38.912719,"longitude":-77.022155,"name":"7th \u0026 R St NW / Shaw Library"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3813b"},"id":NumberInt(31404),"latitude":38.9418,"longitude":-77.0251,"name":"9th \u0026 Upshur St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3813c"},"id":NumberInt(31115),"latitude":38.928156,"longitude":-77.02344,"name":"Columbia Rd \u0026 Georgia Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3813d"},"id":NumberInt(31116),"latitude":38.917761,"longitude":-77.04062,"name":"California St \u0026 Florida Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3813e"},"id":NumberInt(31707),"latitude":38.889935,"longitude":-76.93723,"name":"Benning Rd \u0026 East Capitol St NE / Benning Rd Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3813f"},"id":NumberInt(31307),"latitude":38.930282,"longitude":-77.055599,"name":"3000 Connecticut Ave NW / National Zoo"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38140"},"id":NumberInt(31626),"latitude":38.88732,"longitude":-76.983569,"name":"15th St \u0026 Massachusetts Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38141"},"id":NumberInt(31263),"latitude":38.90268,"longitude":-77.02674,"name":"11th \u0026 K St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38142"},"id":NumberInt(31628),"latitude":38.87861,"longitude":-77.006004,"name":"1st \u0026 K St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38143"},"id":NumberInt(31306),"latitude":38.922649,"longitude":-77.077271,"name":"39th \u0026 Calvert St NW / Stoddert"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38144"},"id":NumberInt(31507),"latitude":38.928743,"longitude":-77.012457,"name":"1st \u0026 Washington Hospital Center NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38145"},"id":NumberInt(31025),"latitude":38.88397,"longitude":-77.10783,"name":"Central Library / N Quincy St \u0026 10th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38146"},"id":NumberInt(31248),"latitude":38.888767,"longitude":-77.02858,"name":"Smithsonian / Jefferson Dr \u0026 12th St SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38147"},"id":NumberInt(31036),"latitude":38.87887,"longitude":-77.1207,"name":"George Mason Dr \u0026 Wilson Blvd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38148"},"id":NumberInt(31028),"latitude":38.893241,"longitude":-77.086045,"name":"N Veitch \u0026 Key Blvd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38149"},"id":NumberInt(31031),"latitude":38.89054,"longitude":-77.08095,"name":"15th \u0026 N Scott St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3814a"},"id":NumberInt(31037),"latitude":38.881044,"longitude":-77.111768,"name":"Ballston Metro / N Stuart \u0026 9th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3814b"},"id":NumberInt(31249),"latitude":38.879819,"longitude":-77.037413,"name":"Jefferson Memorial"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3814c"},"id":NumberInt(31508),"latitude":38.90509,"longitude":-76.9941,"name":"Gallaudet / 8th St \u0026 Florida Ave NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3814d"},"id":NumberInt(31250),"latitude":38.903584,"longitude":-77.044789,"name":"20th \u0026 L St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3814e"},"id":NumberInt(31251),"latitude":38.903819,"longitude":-77.0284,"name":"12th \u0026 L St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3814f"},"id":NumberInt(31252),"latitude":38.901539,"longitude":-77.046564,"name":"21st St \u0026 Pennsylvania Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38150"},"id":NumberInt(31253),"latitude":38.902204,"longitude":-77.04337,"name":"19th \u0026 K St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38151"},"id":NumberInt(31042),"latitude":38.804718,"longitude":-77.043363,"name":"Market Square / King St \u0026 Royal St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38152"},"id":NumberInt(31043),"latitude":38.810743,"longitude":-77.044664,"name":"Saint Asaph St \u0026 Pendleton  St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38153"},"id":NumberInt(31254),"latitude":38.902,"longitude":-77.03353,"name":"15th \u0026 K St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38154"},"id":NumberInt(31047),"latitude":38.814577,"longitude":-77.052808,"name":"Braddock Rd Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38155"},"id":NumberInt(31048),"latitude":38.805767,"longitude":-77.06072,"name":"King St Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38156"},"id":NumberInt(31255),"latitude":38.9066,"longitude":-77.05152,"name":"24th \u0026 N St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38157"},"id":NumberInt(31256),"latitude":38.895914,"longitude":-77.026064,"name":"10th \u0026 E St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38158"},"id":NumberInt(31257),"latitude":38.90088,"longitude":-77.048911,"name":"22nd \u0026 I St NW / Foggy Bottom"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38159"},"id":NumberInt(31258),"latitude":38.888251,"longitude":-77.049426,"name":"Lincoln Memorial"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3815a"},"id":NumberInt(31265),"latitude":38.90093,"longitude":-77.018677,"name":"5th St \u0026 Massachusetts Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3815b"},"id":NumberInt(31308),"latitude":38.943837,"longitude":-77.077078,"name":"39th \u0026 Veazey St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3815c"},"id":NumberInt(31309),"latitude":38.954812,"longitude":-77.082426,"name":"Fessenden St \u0026 Wisconsin Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3815d"},"id":NumberInt(31053),"latitude":38.863833,"longitude":-77.080319,"name":"Columbia Pike \u0026 S Courthouse Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3815e"},"id":NumberInt(31054),"latitude":38.857803,"longitude":-77.086733,"name":"Walter Reed Community Center / Walter Reed Dr \u0026 16th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3815f"},"id":NumberInt(31406),"latitude":38.942016,"longitude":-77.032652,"name":"14th \u0026 Upshur St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38160"},"id":NumberInt(31403),"latitude":38.956595,"longitude":-77.019815,"name":"5th \u0026 Kennedy St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38161"},"id":NumberInt(31058),"latitude":38.860789,"longitude":-77.09586,"name":"S Oakland St \u0026 Columbia Pike"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38162"},"id":NumberInt(31060),"latitude":38.84232,"longitude":-77.089555,"name":"S Arlington Mill Dr \u0026 Campbell Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38163"},"id":NumberInt(31057),"latitude":38.8444,"longitude":-77.085931,"name":"S Four Mile Run Dr \u0026 S Shirlington Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38164"},"id":NumberInt(31062),"latitude":38.854691,"longitude":-77.100555,"name":"S George Mason Dr \u0026 13th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38165"},"id":NumberInt(31310),"latitude":38.955016,"longitude":-77.069956,"name":"Connecticut \u0026 Nebraska Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38166"},"id":NumberInt(31267),"latitude":38.908142,"longitude":-77.038359,"name":"17th St \u0026 Massachusetts Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38167"},"id":NumberInt(31631),"latitude":38.897274,"longitude":-76.994749,"name":"8th \u0026 F St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38168"},"id":NumberInt(31510),"latitude":38.927095,"longitude":-76.978924,"name":"18th St \u0026 Rhode Island Ave NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38169"},"id":NumberInt(31632),"latitude":38.897195,"longitude":-76.983575,"name":"15th \u0026 F St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3816a"},"id":NumberInt(31511),"latitude":38.928644,"longitude":-76.990955,"name":"12th \u0026 Irving St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3816b"},"id":NumberInt(31063),"latitude":38.852248,"longitude":-77.105022,"name":"S George Mason Dr \u0026 Four Mile Run"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3816c"},"id":NumberInt(31269),"latitude":38.887378,"longitude":-77.001955,"name":"3rd St \u0026 Pennsylvania Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3816d"},"id":NumberInt(31270),"latitude":38.894851,"longitude":-77.02324,"name":"8th \u0026 D St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3816e"},"id":NumberInt(31118),"latitude":38.917622,"longitude":-77.01597,"name":"3rd \u0026 Elm St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3816f"},"id":NumberInt(31271),"latitude":38.892275,"longitude":-77.013917,"name":"Constitution Ave \u0026 2nd St NW/DOL"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38170"},"id":NumberInt(31272),"latitude":38.88731,"longitude":-77.01397,"name":"Washington \u0026 Independence Ave SW/HHS"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38171"},"id":NumberInt(31514),"latitude":38.927497,"longitude":-76.997194,"name":"Hamlin \u0026 7th St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38172"},"id":NumberInt(31067),"latitude":38.862478,"longitude":-77.086599,"name":"Columbia Pike \u0026 S Walter Reed Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38173"},"id":NumberInt(31069),"latitude":38.871822,"longitude":-77.107906,"name":"Pershing \u0026 N George Mason Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38174"},"id":NumberInt(32002),"latitude":38.981103,"longitude":-77.097426,"name":"Bethesda Ave \u0026 Arlington Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38175"},"id":NumberInt(32004),"latitude":39.096312,"longitude":-77.192672,"name":"Fallsgrove Blvd \u0026 Fallsgrove Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38176"},"id":NumberInt(32005),"latitude":39.093783,"longitude":-77.202501,"name":"Traville Gateway Dr \u0026 Gudelsky Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38177"},"id":NumberInt(32007),"latitude":39.084125,"longitude":-77.151291,"name":"E Montgomery Ave \u0026 Maryland Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38178"},"id":NumberInt(32011),"latitude":38.983627,"longitude":-77.006311,"name":"Maple \u0026 Ritchie Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38179"},"id":NumberInt(32014),"latitude":38.961763,"longitude":-77.085998,"name":"Friendship Hts Metro/Wisconsin Ave \u0026 Wisconsin Cir"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3817a"},"id":NumberInt(31634),"latitude":38.87501,"longitude":-77.0024,"name":"3rd \u0026 Tingey St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3817b"},"id":NumberInt(32015),"latitude":39.120045,"longitude":-77.156985,"name":"Crabbs Branch Way \u0026 Redland Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3817c"},"id":NumberInt(32016),"latitude":39.099376,"longitude":-77.188014,"name":"Fallsgrove Dr \u0026 W Montgomery Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3817d"},"id":NumberInt(32018),"latitude":39.123513,"longitude":-77.15741,"name":"Needwood Rd \u0026 Eagles Head Ct"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3817e"},"id":NumberInt(32019),"latitude":38.990249,"longitude":-77.02935,"name":"East West Hwy \u0026 Blair Mill Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3817f"},"id":NumberInt(32020),"latitude":39.107709,"longitude":-77.152072,"name":"Crabbs Branch Way \u0026 Calhoun Pl"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38180"},"id":NumberInt(32021),"latitude":38.982456,"longitude":-77.091991,"name":"47th \u0026 Elm St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38181"},"id":NumberInt(32028),"latitude":38.990639,"longitude":-77.100239,"name":"Norfolk \u0026 Rugby Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38182"},"id":NumberInt(32031),"latitude":39.094103,"longitude":-77.132954,"name":"Taft St \u0026 E Gude Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38183"},"id":NumberInt(32033),"latitude":39.102212,"longitude":-77.177091,"name":"Piccard \u0026 W Gude Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38184"},"id":NumberInt(32037),"latitude":39.114688,"longitude":-77.171487,"name":"King Farm Blvd \u0026 Pleasant Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38185"},"id":NumberInt(31636),"latitude":38.90706,"longitude":-77.015231,"name":"New Jersey Ave \u0026 N St NW/Dunbar HS"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38186"},"id":NumberInt(31710),"latitude":38.898536,"longitude":-76.931862,"name":"Nannie Helen Burroughs Ave \u0026 49th St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38187"},"id":NumberInt(31711),"latitude":38.908473,"longitude":-76.933099,"name":"Deanwood Rec Center"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38188"},"id":NumberInt(31273),"latitude":38.878433,"longitude":-77.03023,"name":"Hains Point/Buckeye \u0026 Ohio Dr SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38189"},"id":NumberInt(31070),"latitude":38.873755,"longitude":-77.089233,"name":"Arlington Blvd \u0026 Fillmore St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3818a"},"id":NumberInt(32039),"latitude":38.999634,"longitude":-77.109647,"name":"Old Georgetown Rd \u0026 Southwick St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3818b"},"id":NumberInt(32040),"latitude":38.96115,"longitude":-77.088659,"name":"Friendship Blvd \u0026 Willard Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3818c"},"id":NumberInt(31072),"latitude":38.837666,"longitude":-77.09482,"name":"31st \u0026 Woodrow St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3818d"},"id":NumberInt(31073),"latitude":38.873219,"longitude":-77.082104,"name":"Washington Blvd \u0026 Walter Reed Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3818e"},"id":NumberInt(31313),"latitude":38.941154,"longitude":-77.062036,"name":"Connecticut Ave \u0026 Tilden St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3818f"},"id":NumberInt(32041),"latitude":39.103091,"longitude":-77.196442,"name":"Medical Center Dr \u0026 Key West Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38190"},"id":NumberInt(31638),"latitude":38.900358,"longitude":-77.012108,"name":"1st \u0026 H St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38191"},"id":NumberInt(31515),"latitude":38.952369,"longitude":-77.002721,"name":"Fort Totten Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38192"},"id":NumberInt(31408),"latitude":38.975219,"longitude":-77.016855,"name":"Takoma Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38193"},"id":NumberInt(31075),"latitude":38.866471,"longitude":-77.076131,"name":"Rolfe St \u0026 9th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38194"},"id":NumberInt(31076),"latitude":38.839912,"longitude":-77.087083,"name":"Shirlington Transit Center / S Quincy \u0026 Randolph St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38195"},"id":NumberInt(32046),"latitude":38.964992,"longitude":-77.103381,"name":"River Rd \u0026 Landy Ln"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38196"},"id":NumberInt(32048),"latitude":38.984691,"longitude":-77.094537,"name":"Bethesda Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38197"},"id":NumberInt(31077),"latitude":38.88992,"longitude":-77.071301,"name":"Iwo Jima Memorial/N Meade \u0026 14th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38198"},"id":NumberInt(31006),"latitude":38.8637,"longitude":-77.0633,"name":"S Joyce \u0026 Army Navy Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38199"},"id":NumberInt(31104),"latitude":38.922925,"longitude":-77.042581,"name":"Adams Mill \u0026 Columbia Rd NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3819a"},"id":NumberInt(31106),"latitude":38.923203,"longitude":-77.047637,"name":"Calvert \u0026 Biltmore St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3819b"},"id":NumberInt(31107),"latitude":38.9319,"longitude":-77.0388,"name":"Lamont \u0026 Mt Pleasant NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3819c"},"id":NumberInt(31203),"latitude":38.9086,"longitude":-77.0323,"name":"14th \u0026 Rhode Island Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3819d"},"id":NumberInt(31401),"latitude":38.9375,"longitude":-77.0328,"name":"14th St \u0026 Spring Rd NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3819e"},"id":NumberInt(31601),"latitude":38.8896,"longitude":-76.9769,"name":"19th \u0026 East Capitol St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3819f"},"id":NumberInt(31602),"latitude":38.9308,"longitude":-77.0315,"name":"Park Rd \u0026 Holmead Pl NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a0"},"id":NumberInt(31700),"latitude":38.8601,"longitude":-76.9672,"name":"Good Hope \u0026 Naylor Rd SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a1"},"id":NumberInt(31305),"latitude":38.934267,"longitude":-77.057979,"name":"Connecticut Ave \u0026 Newark St NW / Cleveland Park"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a2"},"id":NumberInt(31703),"latitude":38.897063,"longitude":-76.947446,"name":"Minnesota Ave Metro/DOES"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a3"},"id":NumberInt(31208),"latitude":38.8763,"longitude":-77.0037,"name":"M St \u0026 New Jersey Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a4"},"id":NumberInt(31216),"latitude":38.899632,"longitude":-77.031686,"name":"14th St \u0026 New York Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a5"},"id":NumberInt(31705),"latitude":38.894,"longitude":-76.947974,"name":"Benning Branch Library"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a6"},"id":NumberInt(31220),"latitude":38.894919,"longitude":-77.046587,"name":"US Dept of State / Virginia Ave \u0026 21st St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a7"},"id":NumberInt(31222),"latitude":38.8991,"longitude":-77.0337,"name":"New York Ave \u0026 15th St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a8"},"id":NumberInt(31612),"latitude":38.894758,"longitude":-76.997114,"name":"D St \u0026 Maryland Ave NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381a9"},"id":NumberInt(31226),"latitude":38.916442,"longitude":-77.0682,"name":"34th St \u0026 Wisconsin Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381aa"},"id":NumberInt(31618),"latitude":38.889955,"longitude":-77.000349,"name":"4th \u0026 East Capitol St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ab"},"id":NumberInt(31229),"latitude":38.91554,"longitude":-77.03818,"name":"New Hampshire Ave \u0026 T St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ac"},"id":NumberInt(31016),"latitude":38.893648,"longitude":-77.076701,"name":"Clarendon Blvd \u0026 Pierce St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ad"},"id":NumberInt(31506),"latitude":38.915417,"longitude":-77.012289,"name":"1st \u0026 Rhode Island Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ae"},"id":NumberInt(31246),"latitude":38.905126,"longitude":-77.056887,"name":"M St \u0026 Pennsylvania Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381af"},"id":NumberInt(31035),"latitude":38.876393,"longitude":-77.107735,"name":"N Quincy St \u0026 Glebe Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b0"},"id":NumberInt(31033),"latitude":38.8815,"longitude":-77.10396,"name":"Wilson Blvd \u0026 N Oakland St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b1"},"id":NumberInt(31023),"latitude":38.885801,"longitude":-77.097745,"name":"Fairfax Dr \u0026 Wilson Blvd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b2"},"id":NumberInt(31024),"latitude":38.882788,"longitude":-77.103148,"name":"Virginia Square Metro / N Monroe St \u0026 9th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b3"},"id":NumberInt(31026),"latitude":38.884734,"longitude":-77.093485,"name":"Washington Blvd \u0026 10th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b4"},"id":NumberInt(31247),"latitude":38.888553,"longitude":-77.032429,"name":"Jefferson Dr \u0026 14th St SW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b5"},"id":NumberInt(31264),"latitude":38.894573,"longitude":-77.01994,"name":"6th St \u0026 Indiana Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b6"},"id":NumberInt(31032),"latitude":38.880834,"longitude":-77.091129,"name":"Washington Blvd \u0026 7th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b7"},"id":NumberInt(31034),"latitude":38.882629,"longitude":-77.109366,"name":"N Randolph St \u0026 Fairfax Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b8"},"id":NumberInt(31803),"latitude":38.866611,"longitude":-76.985238,"name":"Good Hope Rd \u0026 14th St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381b9"},"id":NumberInt(31039),"latitude":38.880151,"longitude":-77.107673,"name":"N Quincy St \u0026 Wilson Blvd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ba"},"id":NumberInt(31040),"latitude":38.884616,"longitude":-77.10108,"name":"Fairfax Dr \u0026 Kenmore St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381bb"},"id":NumberInt(31045),"latitude":38.805648,"longitude":-77.05293,"name":"Commerce St \u0026 Fayette St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381bc"},"id":NumberInt(31046),"latitude":38.811456,"longitude":-77.050276,"name":"Henry St \u0026 Pendleton St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381bd"},"id":NumberInt(31051),"latitude":38.889365,"longitude":-77.077294,"name":"Arlington Blvd \u0026 N Queen St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381be"},"id":NumberInt(31259),"latitude":38.894722,"longitude":-77.045128,"name":"20th St \u0026 Virginia Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381bf"},"id":NumberInt(31627),"latitude":38.905707,"longitude":-77.003041,"name":"M St \u0026 Delaware Ave NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c0"},"id":NumberInt(31055),"latitude":38.846222,"longitude":-77.069275,"name":"28th St S \u0026 S Meade St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c1"},"id":NumberInt(31114),"latitude":38.918809,"longitude":-77.041571,"name":"18th St \u0026 Wyoming Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c2"},"id":NumberInt(31405),"latitude":38.949662,"longitude":-77.027333,"name":"Georgia Ave \u0026 Emerson St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c3"},"id":NumberInt(31407),"latitude":38.956432,"longitude":-77.032947,"name":"14th St \u0026 Colorado Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c4"},"id":NumberInt(31059),"latitude":38.835213,"longitude":-77.094295,"name":"S Abingdon St \u0026 36th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c5"},"id":NumberInt(31312),"latitude":38.90849,"longitude":-77.063586,"name":"Wisconsin Ave \u0026 O St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c6"},"id":NumberInt(31629),"latitude":38.889988,"longitude":-76.995193,"name":"8th \u0026 East Capitol St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c7"},"id":NumberInt(31509),"latitude":38.912659,"longitude":-77.017669,"name":"New Jersey Ave \u0026 R St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c8"},"id":NumberInt(31630),"latitude":38.889908,"longitude":-76.983326,"name":"15th \u0026 East Capitol St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381c9"},"id":NumberInt(31709),"latitude":38.884085,"longitude":-76.957461,"name":"34th St \u0026 Minnesota Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ca"},"id":NumberInt(31807),"latitude":38.863897,"longitude":-76.990037,"name":"Pleasant St \u0026 MLK Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381cb"},"id":NumberInt(31512),"latitude":38.903732,"longitude":-76.987211,"name":"Neal St \u0026 Trinidad Ave NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381cc"},"id":NumberInt(31064),"latitude":38.834108,"longitude":-77.087323,"name":"S Stafford \u0026 34th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381cd"},"id":NumberInt(31065),"latitude":38.880705,"longitude":-77.08596,"name":"N Pershing Dr \u0026 Wayne St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ce"},"id":NumberInt(31066),"latitude":38.867262,"longitude":-77.072315,"name":"Columbia Pike \u0026 S Orme St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381cf"},"id":NumberInt(31513),"latitude":38.918155,"longitude":-77.004746,"name":"Rhode Island Ave \u0026 V St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d0"},"id":NumberInt(32001),"latitude":38.985404,"longitude":-77.023082,"name":"Fenton St \u0026 New York Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d1"},"id":NumberInt(32000),"latitude":38.988562,"longitude":-77.096539,"name":"Norfolk Ave \u0026 Fairmont St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d2"},"id":NumberInt(32009),"latitude":39.094772,"longitude":-77.145213,"name":"Frederick Ave \u0026 Horners Ln"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d3"},"id":NumberInt(32010),"latitude":38.98128,"longitude":-77.011336,"name":"Philadelphia \u0026 Maple Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d4"},"id":NumberInt(31635),"latitude":38.876737,"longitude":-76.994468,"name":"Potomac Ave \u0026 8th St SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d5"},"id":NumberInt(32012),"latitude":38.99521,"longitude":-77.02918,"name":"Silver Spring Metro/Colesville Rd \u0026 Wayne Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d6"},"id":NumberInt(32022),"latitude":39.000578,"longitude":-77.00149,"name":"Garland Ave \u0026 Walden Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d7"},"id":NumberInt(32023),"latitude":39.095661,"longitude":-77.159048,"name":"Montgomery College/W Campus Dr \u0026 Mannakee St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d8"},"id":NumberInt(32025),"latitude":38.975,"longitude":-77.01121,"name":"Carroll \u0026 Westmoreland Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381d9"},"id":NumberInt(32026),"latitude":38.977933,"longitude":-77.006472,"name":"Carroll \u0026 Ethan Allen Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381da"},"id":NumberInt(32027),"latitude":38.992375,"longitude":-77.100104,"name":"Battery Ln \u0026 Trolley Trail"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381db"},"id":NumberInt(32029),"latitude":38.977093,"longitude":-77.094589,"name":"Offutt Ln \u0026 Chevy Chase Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381dc"},"id":NumberInt(32030),"latitude":39.102099,"longitude":-77.200322,"name":"Broschart \u0026 Blackwell Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381dd"},"id":NumberInt(32032),"latitude":39.076331,"longitude":-77.141378,"name":"Fleet St \u0026 Ritchie Pkwy"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381de"},"id":NumberInt(32035),"latitude":38.999388,"longitude":-77.031555,"name":"Georgia Ave \u0026 Spring St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381df"},"id":NumberInt(32038),"latitude":39.110314,"longitude":-77.182669,"name":"King Farm Blvd \u0026 Piccard Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e0"},"id":NumberInt(32036),"latitude":38.997033,"longitude":-77.025608,"name":"Fenton St \u0026 Ellsworth Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e1"},"id":NumberInt(31121),"latitude":38.923583,"longitude":-77.050046,"name":"Calvert St \u0026 Woodley Pl NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e2"},"id":NumberInt(31637),"latitude":38.899703,"longitude":-77.008911,"name":"North Capitol St \u0026 G Pl NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e3"},"id":NumberInt(32043),"latitude":38.997445,"longitude":-77.023894,"name":"Veterans Pl \u0026 Pershing Dr"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e4"},"id":NumberInt(31516),"latitude":38.920682,"longitude":-76.995876,"name":"Rhode Island Ave Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e5"},"id":NumberInt(32045),"latitude":39.119765,"longitude":-77.166093,"name":"Shady Grove Metro West"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e6"},"id":NumberInt(31081),"latitude":38.804378,"longitude":-77.060866,"name":"Duke St \u0026 John Carlyle St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e7"},"id":NumberInt(31079),"latitude":38.894941,"longitude":-77.09169,"name":"Lee Hwy \u0026 N Cleveland St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e8"},"id":NumberInt(31274),"latitude":38.898404,"longitude":-77.024281,"name":"MLK Library/9th \u0026 G St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381e9"},"id":NumberInt(31084),"latitude":38.802677,"longitude":-77.063562,"name":"Ballenger Ave \u0026 Dulaney St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ea"},"id":NumberInt(31087),"latitude":38.820932,"longitude":-77.053096,"name":"Monroe Ave \u0026 Leslie Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381eb"},"id":NumberInt(32050),"latitude":38.997653,"longitude":-77.034499,"name":"Spring St \u0026 Second Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ec"},"id":NumberInt(31093),"latitude":38.898984,"longitude":-77.078317,"name":"21st St N \u0026 N Pierce St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ed"},"id":NumberInt(31094),"latitude":38.895377,"longitude":-77.09713,"name":"Lee Hwy \u0026 N Kirkwood Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ee"},"id":NumberInt(32008),"latitude":38.98954,"longitude":-77.098029,"name":"Cordell \u0026 Norfolk Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ef"},"id":NumberInt(32042),"latitude":39.097636,"longitude":-77.196636,"name":"Shady Grove Hospital"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f0"},"id":NumberInt(31049),"latitude":38.883669,"longitude":-77.113905,"name":"Utah St \u0026 11th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f1"},"id":NumberInt(31314),"latitude":38.903582,"longitude":-77.067786,"name":"34th \u0026 Water St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f2"},"id":NumberInt(31078),"latitude":38.869442,"longitude":-77.104503,"name":"Arlington Blvd \u0026 S George Mason Dr/NFATC"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f3"},"id":NumberInt(31633),"latitude":38.887312,"longitude":-77.025762,"name":"Independence Ave \u0026 L'Enfant Plaza SW/DOE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f4"},"id":NumberInt(31275),"latitude":38.901755,"longitude":-77.051084,"name":"New Hampshire Ave \u0026 24th St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f5"},"id":NumberInt(31074),"latitude":38.869418,"longitude":-77.095596,"name":"TJ Cmty Ctr / 2nd St \u0026 S Old Glebe Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f6"},"id":NumberInt(31500),"latitude":38.919077,"longitude":-77.000648,"name":"4th \u0026 W St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f7"},"id":NumberInt(32003),"latitude":38.983838,"longitude":-77.09221,"name":"Montgomery Ave \u0026 Waverly St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f8"},"id":NumberInt(31082),"latitude":38.801111,"longitude":-77.068952,"name":"Eisenhower Ave \u0026 Mill Race Ln"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381f9"},"id":NumberInt(31085),"latitude":38.820064,"longitude":-77.057619,"name":"Mount Vernon Ave \u0026 E Nelson Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381fa"},"id":NumberInt(31088),"latitude":38.833077,"longitude":-77.059821,"name":"Mount Vernon Ave \u0026 Kennedy St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381fb"},"id":NumberInt(31083),"latitude":38.82175,"longitude":-77.047494,"name":"Potomac Greens Dr \u0026 Slaters Ln"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381fc"},"id":NumberInt(31086),"latitude":38.82595,"longitude":-77.058541,"name":"Mount Vernon Ave \u0026 E Del Ray Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381fd"},"id":NumberInt(31089),"latitude":38.890612,"longitude":-77.084801,"name":"Court House Metro / 15th \u0026 N Uhle St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381fe"},"id":NumberInt(31268),"latitude":38.916787,"longitude":-77.028139,"name":"12th \u0026 U St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb381ff"},"id":NumberInt(31615),"latitude":38.899972,"longitude":-76.998347,"name":"6th \u0026 H St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38200"},"id":NumberInt(31090),"latitude":38.864702,"longitude":-77.048672,"name":"6th \u0026 S Ball St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38201"},"id":NumberInt(31276),"latitude":38.90381,"longitude":-77.034931,"name":"15th \u0026 L St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38202"},"id":NumberInt(31277),"latitude":38.89841,"longitude":-77.039624,"name":"17th \u0026 G St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38203"},"id":NumberInt(31315),"latitude":38.96497,"longitude":-77.075946,"name":"McKinley St \u0026 Connecticut Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38204"},"id":NumberInt(31091),"latitude":38.859254,"longitude":-77.063275,"name":"S Joyce \u0026 16th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38205"},"id":NumberInt(31278),"latitude":38.912648,"longitude":-77.041834,"name":"18th \u0026 R St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38206"},"id":NumberInt(31517),"latitude":38.908008,"longitude":-76.996985,"name":"Union Market/6th St \u0026 Neal Pl NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38207"},"id":NumberInt(31013),"latitude":38.853531,"longitude":-77.053509,"name":"23rd \u0026 Eads St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38208"},"id":NumberInt(31802),"latitude":38.867373,"longitude":-76.988039,"name":"Good Hope Rd \u0026 MLK Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38209"},"id":NumberInt(32049),"latitude":38.986743,"longitude":-77.000035,"name":"Washington Adventist U / Flower Ave \u0026 Division St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3820a"},"id":NumberInt(31110),"latitude":38.9154,"longitude":-77.0446,"name":"20th St \u0026 Florida Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3820b"},"id":NumberInt(31610),"latitude":38.886952,"longitude":-76.996806,"name":"Eastern Market / 7th \u0026 North Carolina Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3820c"},"id":NumberInt(31303),"latitude":38.947607,"longitude":-77.079382,"name":"Tenleytown / Wisconsin Ave \u0026 Albemarle St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3820d"},"id":NumberInt(31227),"latitude":38.900283,"longitude":-77.029822,"name":"13th St \u0026 New York Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3820e"},"id":NumberInt(31505),"latitude":38.910972,"longitude":-77.00495,"name":"Eckington Pl \u0026 Q St NE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3820f"},"id":NumberInt(31624),"latitude":38.897446,"longitude":-77.009888,"name":"North Capitol St \u0026 F St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38210"},"id":NumberInt(31052),"latitude":38.844015,"longitude":-77.050537,"name":"Potomac Ave \u0026 35th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38211"},"id":NumberInt(31240),"latitude":38.88412,"longitude":-77.04657,"name":"Ohio Dr \u0026 West Basin Dr SW / MLK \u0026 FDR Memorials"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38212"},"id":NumberInt(31019),"latitude":38.889,"longitude":-77.0925,"name":"Wilson Blvd \u0026 N Edgewood St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38213"},"id":NumberInt(31113),"latitude":38.920669,"longitude":-77.04368,"name":"Columbia Rd \u0026 Belmont St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38214"},"id":NumberInt(31239),"latitude":38.906602,"longitude":-77.038785,"name":"17th \u0026 Rhode Island Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38215"},"id":NumberInt(31020),"latitude":38.8904,"longitude":-77.0889,"name":"Wilson Blvd \u0026 Franklin Rd"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38216"},"id":NumberInt(31022),"latitude":38.88786,"longitude":-77.094875,"name":"Clarendon Metro / Wilson Blvd \u0026 N Highland St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38217"},"id":NumberInt(31708),"latitude":38.896544,"longitude":-76.96012,"name":"Anacostia Ave \u0026 Benning Rd NE / River Terrace"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38218"},"id":NumberInt(31806),"latitude":38.844711,"longitude":-76.987823,"name":"Congress Heights Metro"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38219"},"id":NumberInt(31004),"latitude":38.857866,"longitude":-77.05949,"name":"Aurora Hills Community Ctr/18th \u0026 Hayes St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3821a"},"id":NumberInt(31010),"latitude":38.8426,"longitude":-77.0502,"name":"S Glebe \u0026 Potomac Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3821b"},"id":NumberInt(31103),"latitude":38.926088,"longitude":-77.036536,"name":"16th \u0026 Harvard St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3821c"},"id":NumberInt(31105),"latitude":38.9268,"longitude":-77.0322,"name":"14th \u0026 Harvard St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3821d"},"id":NumberInt(31214),"latitude":38.9121,"longitude":-77.0387,"name":"17th \u0026 Corcoran St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3821e"},"id":NumberInt(31300),"latitude":38.944551,"longitude":-77.063896,"name":"Van Ness Metro / UDC"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3821f"},"id":NumberInt(31503),"latitude":38.9126,"longitude":-77.0135,"name":"Florida Ave \u0026 R St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38220"},"id":NumberInt(31014),"latitude":38.897315,"longitude":-77.070993,"name":"Lynn \u0026 19th St North"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38221"},"id":NumberInt(31018),"latitude":38.892164,"longitude":-77.079375,"name":"N Rhodes \u0026 16th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38222"},"id":NumberInt(31029),"latitude":38.896923,"longitude":-77.086502,"name":"N Veitch  \u0026 20th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38223"},"id":NumberInt(31027),"latitude":38.896015,"longitude":-77.078107,"name":"Key Blvd \u0026 N Quinn St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38224"},"id":NumberInt(31030),"latitude":38.89593,"longitude":-77.089006,"name":"N Adams St \u0026 Lee Hwy"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38225"},"id":NumberInt(31038),"latitude":38.883921,"longitude":-77.116817,"name":"Glebe Rd \u0026 11th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38226"},"id":NumberInt(31041),"latitude":38.803124,"longitude":-77.040363,"name":"Prince St \u0026 Union St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38227"},"id":NumberInt(31044),"latitude":38.805317,"longitude":-77.049883,"name":"King St \u0026 Patrick St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38228"},"id":NumberInt(31050),"latitude":38.884961,"longitude":-77.08777,"name":"Barton St \u0026 10th St N"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38229"},"id":NumberInt(31800),"latitude":38.843222,"longitude":-76.999388,"name":"Alabama \u0026 MLK Ave SE"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3822a"},"id":NumberInt(31117),"latitude":38.92333,"longitude":-77.0352,"name":"15th \u0026 Euclid St  NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3822b"},"id":NumberInt(31068),"latitude":38.856319,"longitude":-77.11153,"name":"Columbia Pike \u0026 S Dinwiddie St / Arlington Mill Community Center"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3822c"},"id":NumberInt(31119),"latitude":38.921074,"longitude":-77.031887,"name":"14th \u0026 Belmont St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3822d"},"id":NumberInt(32013),"latitude":38.983525,"longitude":-77.095367,"name":"Montgomery \u0026 East Ln"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3822e"},"id":NumberInt(31120),"latitude":38.920387,"longitude":-77.025672,"name":"10th \u0026 Florida Ave NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3822f"},"id":NumberInt(32024),"latitude":38.989724,"longitude":-77.023854,"name":"Fenton St \u0026 Gist Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38230"},"id":NumberInt(32034),"latitude":38.992679,"longitude":-77.029457,"name":"Ripley \u0026 Bonifant St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38231"},"id":NumberInt(31071),"latitude":38.86646,"longitude":-77.04826,"name":"Long Bridge Park/Long Bridge Dr \u0026 6th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38232"},"id":NumberInt(32044),"latitude":39.085394,"longitude":-77.145803,"name":"Rockville Metro East"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38233"},"id":NumberInt(32047),"latitude":39.084379,"longitude":-77.146866,"name":"Rockville Metro West"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38234"},"id":NumberInt(31080),"latitude":38.897612,"longitude":-77.080851,"name":"Lee Hwy \u0026 N Scott St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38235"},"id":NumberInt(31092),"latitude":38.895929,"longitude":-77.105246,"name":"N Nelson St \u0026 Lee Hwy"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38236"},"id":NumberInt(31056),"latitude":38.847977,"longitude":-77.075104,"name":"S Troy St \u0026 26th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38237"},"id":NumberInt(31061),"latitude":38.848454,"longitude":-77.084918,"name":"S Kenmore \u0026 24th St S"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38238"},"id":NumberInt(32006),"latitude":38.987,"longitude":-77.029417,"name":"13th St \u0026 Eastern Ave"}
+{"_id":{"$oid":"556251ecf3bec3b69cb38239"},"id":NumberInt(31279),"latitude":38.898412,"longitude":-77.043182,"name":"19th \u0026 G St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3823a"},"id":NumberInt(31302),"latitude":38.934881,"longitude":-77.072755,"name":"Wisconsin Ave \u0026 Newark St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3823b"},"id":NumberInt(31095),"latitude":38.862467,"longitude":-77.068242,"name":"Army Navy Dr \u0026 S Nash St"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3823c"},"id":NumberInt(31280),"latitude":38.913761,"longitude":-77.027025,"name":"11th \u0026 S St NW"}
+{"_id":{"$oid":"556251ecf3bec3b69cb3823d"},"id":NumberInt(32017),"latitude":39.082779,"longitude":-77.148827,"name":"Monroe St \u0026 Monroe Pl"}
