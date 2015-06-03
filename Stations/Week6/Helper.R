@@ -108,3 +108,6 @@ add_distance_speed <- function(data){
   speed = distance/duration
   return(data.frame(data,distance,speed))
 }
+
+head(ride)
+dim(ride)
