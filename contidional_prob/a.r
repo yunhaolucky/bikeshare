@@ -6,10 +6,11 @@ range = which(date == unique(date)[1])
 temp.ride = ride[range,]
 json = json.add_property(json,"date",unique(date)[1])
 json = output.ridership.json(temp.ride,json)
-sink("/ride.json")
 
+sink("ride.json")
+cat('{',json,'}')
+sink()
 output.ridership.json <- function(ridership,json,filename){
-  json = ""
   minstart = as.numeric(as.POSIXlt(ridership$Start.date[length(ridership[,1])],format = "%m/%d/%Y %H:%M"))
   start = (as.numeric(as.POSIXlt(ridership$Start.date,format = "%m/%d/%Y %H:%M"))-minstart)/60
   end = (as.numeric(as.POSIXlt(ridership$End.date,format = "%m/%d/%Y %H:%M"))-minstart)/60
