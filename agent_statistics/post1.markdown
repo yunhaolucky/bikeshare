@@ -13,15 +13,15 @@ The real distribution should be more skewed than this one.
 #### Google Map and Directions
 Google map provide a bike map and bike direction service.The green lines on the map are bike friendly roads including trails and roads with bike lanes.
 It is unclear that how routes are chosen by Google Map.
-According to [How accurate are Google Maps cycling time estimates?](http://www.betterbybicycle.com/2014/09/how-accurate-are-google-maps-cycling.html), Google choose roads with following factors:
-1. Roads with bicycling infrastructure
-2. Roads that it estimate to take less time
-3. don't involve significant elevations
+According to [How accurate are Google Maps cycling time estimates?](http://www.betterbybicycle.com/2014/09/how-accurate-are-google-maps-cycling.html), Google choose roads with following factors:  
+1. Roads with bicycling infrastructure  
+2. Roads that it estimate to take less time  
+3. don't involve significant elevations  
 
 The effect of factor 1 and factor 2 can be observed from my experiment.(Factor 3 is not clear).
-As estimated time is one of the key factors of choosing routes, it is important to understand how Google estimate time:
-1. Most bike speeds are in the range of (0.15 - 0.22) mile/min. (Bikeshare speed limit 20mph = 0.33 mile/min).
-2. I think google include the intersection stopped time.(Path with more intersects generally takes longer).（Ride \#7 \#40)
+As estimated time is one of the key factors of choosing routes, it is important to understand how Google estimate time:  
+1. Most bike speeds are in the range of (0.15 - 0.22) mile/min. (Bikeshare speed limit 20mph = 0.33 mile/min).  
+2. I think google include the intersection stopped time.(Path with more intersects generally takes longer).（Ride \#7 \#40)  
 
 #### Ride Time Distribution
 The riding time from the bikeshare history data always include some unusual rides that take much more time. So I remove those outliers if its difference with the mean is larger than 4 times of standard deviation.  
